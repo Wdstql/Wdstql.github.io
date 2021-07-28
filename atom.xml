@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Wdstql</title>
+  
+  <subtitle>Wdstqlのblog</subtitle>
+  <link href="https://wdstql.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://wdstql.github.io/"/>
+  <updated>2021-07-28T12:58:03.786Z</updated>
+  <id>https://wdstql.github.io/</id>
+  
+  <author>
+    <name>Wdstql</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>碎碎念</title>
+    <link href="https://wdstql.github.io/2021/07/28/hello-world/"/>
+    <id>https://wdstql.github.io/2021/07/28/hello-world/</id>
+    <published>2021-07-28T06:55:00.000Z</published>
+    <updated>2021-07-28T12:58:03.786Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;第0篇博客，不知道写啥，就碎碎念一下好了&lt;/p&gt;
+&lt;h1 id=&quot;起啥标题呢……&quot;&gt;&lt;a href=&quot;#起啥标题呢……&quot; class=&quot;headerlink&quot; title=&quot;起啥标题呢…….&quot;&gt;&lt;/a&gt;起啥标题呢…….&lt;/h1&gt;&lt;h2 id=&quot;介绍一下这个网站&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="life" scheme="https://wdstql.github.io/tags/life/"/>
+    
+  </entry>
+  
+</feed>
