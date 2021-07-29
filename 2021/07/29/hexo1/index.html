@@ -410,8 +410,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-git/">
-                                <span class="chip bg-color">博客搭建, git</span>
+                            <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                                <span class="chip bg-color">博客搭建</span>
+                            </a>
+                        
+                            <a href="/tags/git/">
+                                <span class="chip bg-color">git</span>
                             </a>
                         
                     </div>
@@ -435,7 +439,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    1970-10-31
+                    2021-07-29
                 </div>
                 
 
@@ -523,7 +527,7 @@ ssh-keygen -t rsa -C <span class="token string">"你注册的邮箱地址"</span
 <h3 id="配置一下deploy-最后啦，别放弃"><a href="#配置一下deploy-最后啦，别放弃" class="headerlink" title="配置一下deploy(最后啦，别放弃)"></a>配置一下deploy(最后啦，别放弃)</h3><p>装个依赖</p>
 <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>然后请打开你放博客的文件夹(如我上面的Myhexoblog)，你会看到一个**_config.yml**文件，这是管理你网站全局的一个文件，用编辑器打开它，应该在末尾处，你会看到deploy的一些配置，请做出如下的修改:</p>
+<p>然后请打开你放博客的文件夹(如我上面的Myhexoblog)，你会看到一个 <strong>_config.yml</strong> 文件，这是管理你网站全局的一个文件，用编辑器打开它，应该在末尾处，你会看到deploy的一些配置，请做出如下的修改:</p>
 <pre class="line-numbers language-none"><code class="language-none">deploy:
   type: git
   repo: 你之前创建的那个仓库的地址，如git@github.com:Wdstql&#x2F;Wdstql.github.io.git(此为ssh地址，如果直接复制http地址应该也可)
@@ -536,7 +540,7 @@ hexo g <span class="token comment">#hexo d前必须先生成静态博客先</spa
 hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>然后稍等一会就可以通过访问 <strong>“xxx.github.io”</strong> (xxx是你用户名)来看到你的博客网站啦！当然，如果你想换域名的话也可以去买一个，然后去网上搜别的教程来改，我这里因为我没改就不写了</p>
-<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>最后讲一下每次改动的步骤吧，一般都是在改动之后，clean一下，然后hexo s在本地先预览，最后等所有改动都做好，在hexo g+hexo d推送到网站上，这大概就是我的工作流程吧。至于换主题嘛，下篇在说啦 &#x1F606;。如果本篇博客中的某个地方有任何bug或者有什么说的不够严谨的地方可以随时来call我。</p>
+<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>最后讲一下每次改动的步骤吧，一般都是在改动之后，clean一下，然后hexo s在本地先预览，最后等所有改动都做好，再hexo g+hexo d推送到网站上，这大概就是我的工作流程吧。至于换主题嘛，下篇在说啦 &#x1F606;。如果本篇博客中的某个地方有任何bug或者有什么说的不够严谨的地方可以随时来call我。</p>
 <p>感谢你看到这里，也恭喜你拥有了一个可能还不怎么好看但起码是自己做的一个有模有样的博客网站！求收藏，求关注，求转发<del>(一键三连)</del>，我们下篇再见。</p>
 
                 
@@ -564,7 +568,7 @@ hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" cla
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wdstql.github.io/1970/10/31/hexo1/">https://wdstql.github.io/1970/10/31/hexo1/</a>
+                    <a href="https://wdstql.github.io/2021/07/29/hexo1/">https://wdstql.github.io/2021/07/29/hexo1/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -602,8 +606,12 @@ hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" cla
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-git/">
-                                    <span class="chip bg-color">博客搭建, git</span>
+                                <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                                    <span class="chip bg-color">博客搭建</span>
+                                </a>
+                            
+                                <a href="/tags/git/">
+                                    <span class="chip bg-color">git</span>
                                 </a>
                             
                         </div>
@@ -649,60 +657,12 @@ hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" cla
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
-            <div class="card">
-                <a href="/2021/07/28/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="碎碎念">
-                        
-                        <span class="card-title">碎碎念</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-28
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E9%97%B2%E8%81%8A/" class="post-category">
-                                    闲聊
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/life/">
-                        <span class="chip bg-color">life</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/1970/10/31/hexo1/">
+                <a href="/2021/07/29/hexo1/">
                     <div class="card-image">
                         
                         
@@ -719,7 +679,7 @@ hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" cla
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>1970-10-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-29
                             </span>
                         <span class="publish-author">
                             
@@ -737,8 +697,61 @@ hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" cla
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-git/">
-                        <span class="chip bg-color">博客搭建, git</span>
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">博客搭建</span>
+                    </a>
+                    
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/07/28/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="碎碎念">
+                        
+                        <span class="card-title">碎碎念</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-28
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E9%97%B2%E8%81%8A/" class="post-category">
+                                    闲聊
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/life/">
+                        <span class="chip bg-color">life</span>
                     </a>
                     
                 </div>
