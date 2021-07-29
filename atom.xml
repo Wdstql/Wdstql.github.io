@@ -6,7 +6,7 @@
   <link href="https://wdstql.github.io/atom.xml" rel="self"/>
   
   <link href="https://wdstql.github.io/"/>
-  <updated>2021-07-28T12:58:03.786Z</updated>
+  <updated>2021-07-29T03:28:28.122Z</updated>
   <id>https://wdstql.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://wdstql.github.io/2021/07/28/hello-world/"/>
     <id>https://wdstql.github.io/2021/07/28/hello-world/</id>
     <published>2021-07-28T06:55:00.000Z</published>
-    <updated>2021-07-28T12:58:03.786Z</updated>
+    <updated>2021-07-29T03:28:28.122Z</updated>
     
     
       
@@ -35,8 +35,35 @@
     
     
     
+    <category term="闲聊" scheme="https://wdstql.github.io/categories/%E9%97%B2%E8%81%8A/"/>
+    
     
     <category term="life" scheme="https://wdstql.github.io/tags/life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo学习记录1(保姆级教程)</title>
+    <link href="https://wdstql.github.io/1970/10/31/hexo1/"/>
+    <id>https://wdstql.github.io/1970/10/31/hexo1/</id>
+    <published>1970-10-31T04:02:57.060Z</published>
+    <updated>2021-07-29T03:27:11.190Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;hexo-github-page-让你拥有你自己的博客网站&quot;&gt;&lt;a href=&quot;#hexo-github-page-让你拥有你自己的博客网站&quot; class=&quot;headerlink&quot; title=&quot;hexo+github page</summary>
+        
+      
+    
+    
+    
+    <category term="实用教程" scheme="https://wdstql.github.io/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="博客搭建, git" scheme="https://wdstql.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-git/"/>
     
   </entry>
   
