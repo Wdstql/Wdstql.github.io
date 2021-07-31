@@ -309,10 +309,6 @@
 
 </header>
 
-    <!--
-    <script src="/live2d/js/live2d.js"></script>
-    <canvas class="live2d" id="live2d" width="180" height="480"></canvas>
-    -->
     <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
@@ -722,9 +718,9 @@
     
     <div class="row">
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
+                   server="tencent"
                    type="playlist"
-                   id="503838841"
+                   id="1642022289"
                    fixed='true'
                    autoplay='false'
                    theme='#42b983'
@@ -1027,20 +1023,8 @@ $(function () {
     
     <script src="https://cdn.jsdelivr.net/gh/wdstql/wdstql.github.io/libs/instantpage/instantpage.js" type="module"></script>
     
-    <!--
-    <style>
-    .live2d {
-        position: fixed;
-        bottom: 0;
-        z-index: 10000;
-    }
-    </style>
-
-    <script type="text/javascript">
-    loadlive2d("live2d", "/live2d/model/22_high/model.json");
-    </script>
-    -->
-<script>
+   
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/22_high.model.json"},"display":{"position":"right","width":180,"height":480},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 preloadRatio: 1,
