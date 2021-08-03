@@ -6,7 +6,7 @@
   <link href="https://wdstql.github.io/atom.xml" rel="self"/>
   
   <link href="https://wdstql.github.io/"/>
-  <updated>2021-07-29T03:53:15.083Z</updated>
+  <updated>2021-08-03T07:05:40.901Z</updated>
   <id>https://wdstql.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>hexo学习记录2(帅，是一辈子的事)</title>
+    <link href="https://wdstql.github.io/2021/08/03/matery/"/>
+    <id>https://wdstql.github.io/2021/08/03/matery/</id>
+    <published>2021-08-03T07:00:00.000Z</published>
+    <updated>2021-08-03T07:05:40.901Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;del&gt;全文建议配合梯子食用&lt;/del&gt;&lt;/p&gt;
+&lt;h1 id=&quot;hexo主题美化，让你的博客焕然一新&quot;&gt;&lt;a href=&quot;#hexo主题美化，让你的博客焕然一新&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="实用教程" scheme="https://wdstql.github.io/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="博客搭建" scheme="https://wdstql.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="主题美化" scheme="https://wdstql.github.io/tags/%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo学习记录1(保姆级教程)</title>
     <link href="https://wdstql.github.io/2021/07/29/hexo1/"/>
     <id>https://wdstql.github.io/2021/07/29/hexo1/</id>
     <published>2021-07-29T03:30:00.000Z</published>
-    <updated>2021-07-29T03:53:15.083Z</updated>
+    <updated>2021-08-03T06:53:32.382Z</updated>
     
     
       

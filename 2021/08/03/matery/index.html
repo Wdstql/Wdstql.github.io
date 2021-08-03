@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo学习记录1(保姆级教程), Wdstql">
+    <meta name="keywords" content="hexo学习记录2(帅，是一辈子的事), Wdstql">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo学习记录1(保姆级教程) | Wdstql</title>
+    <title>hexo学习记录2(帅，是一辈子的事) | Wdstql</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo学习记录1(保姆级教程)</h1>
+                    <h1 class="description center-align post-title">hexo学习记录2(帅，是一辈子的事)</h1>
                 </div>
             </div>
         </div>
@@ -438,8 +438,8 @@
                                 <span class="chip bg-color">博客搭建</span>
                             </a>
                         
-                            <a href="/tags/git/">
-                                <span class="chip bg-color">git</span>
+                            <a href="/tags/%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/">
+                                <span class="chip bg-color">主题美化</span>
                             </a>
                         
                     </div>
@@ -463,7 +463,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-29
+                    2021-08-03
                 </div>
                 
 
@@ -472,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    2.6k
                 </div>
                 
 
@@ -492,80 +492,121 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="hexo-github-page-让你拥有你自己的博客网站"><a href="#hexo-github-page-让你拥有你自己的博客网站" class="headerlink" title="hexo+github page 让你拥有你自己的博客网站"></a>hexo+github page 让你拥有你自己的博客网站</h1><p>本文主要用于记录我搭建本博客网站的学习记录，要是刚好能帮到你，那真是不胜荣幸。电脑环境为<strong>ubuntu 20.04</strong>,虽win系统下大同小异，但仍建议参考别的基于win系统搭建的教程。</p>
-<pre><code>声明：请以终端中报的提示为主，本教程中代码可能不完全适用，请谨慎食用。
+                <p><del>全文建议配合梯子食用</del></p>
+<h1 id="hexo主题美化，让你的博客焕然一新"><a href="#hexo主题美化，让你的博客焕然一新" class="headerlink" title="hexo主题美化，让你的博客焕然一新"></a>hexo主题美化，让你的博客焕然一新</h1><p>上篇博客中，我讲完了如何利用hexo和githubpage初步在你的ubuntu上搭好一个博客网站，但这样搭出来的网站显然不太符合我们代码人的口味(可能只有我不太喜欢？)。而这篇博客就是教你让你的hexo换个主题，并且做yi点点自定义的美化，本文选用的博客的主题是<strong>matery</strong>，也是我的博客正在使用的主题。</p>
+<h2 id="matery主题"><a href="#matery主题" class="headerlink" title="matery主题"></a>matery主题</h2><p>matery主题是一个采用<code>Material Design</code> 和响应式设计的 Hexo 博客主题，这是<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">它的github仓库地址</a>，点击<a href="https://wdstql.github.io/">这里</a>查看演示效果(其实就是我的主页)。</p>
+<h3 id="安装与切换主题"><a href="#安装与切换主题" class="headerlink" title="安装与切换主题"></a>安装与切换主题</h3><p>在你博客根目录下的theme文件夹打开终端，键入以下命令</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone git@github.com:blinkfox/hexo-theme-matery.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>安装完后，你的theme文件夹下就会多出一个hexo-theme-matery的文件夹，切换主题也很简单，只需打开博客根目录下的<code>_config.yml</code>文件，找到theme，将它的值由landscape修改为hexo-theme-matery。</p>
+<h3 id="基础修改"><a href="#基础修改" class="headerlink" title="基础修改"></a>基础修改</h3><p>打开根目录下的<code>_config.yml</code>文件(主题文件夹和博客根目录下各有一个同名文件，请区分开)，修改title，subtitle为自己想要的，并自行查看效果，language改为zh-CN。</p>
+<p>接下来的一系列对于该主题的基础配置，请自行查阅主题作者写的官方文档，不知道比我写得高哪里去了，点击<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">此处</a>可查。下文只讲我在查阅该文档时遇到的问题以及一些其他的个性化配置。</p>
+<h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><h3 id="文件路径"><a href="#文件路径" class="headerlink" title="文件路径"></a>文件路径</h3><pre><code>本处内容是基于我浅薄的认识写的
 </code></pre>
-<h2 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h2><p>hexo 是一个基于nodejs 的快速生成静态博客的开源框架，支持Markdown和大多数Octopress插件，一个命令即可部署到GitHub页面、Giteee、Heroku等，强大的API，可无限扩展，拥有数百个主题和插件，其特点在于能极速渲染出静态页面。</p>
-<h2 id="在本地服务器安装hexo"><a href="#在本地服务器安装hexo" class="headerlink" title="在本地服务器安装hexo"></a>在本地服务器安装hexo</h2><p><strong>请先打开终端</strong></p>
-<h3 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h3><p>nvm 是用于安装nodejs的工具，可用下面的命令来安装(可能需要梯子)</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">curl</span> https://raw.github.com/creationix/nvm/master/install.sh <span class="token operator">|</span> <span class="token function">sh</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>首先先讲一下matery主题文件夹下各个文件和文件夹的作用(其实就讲两个).最重要的是<code>_config.yml</code>文件,负责管理网站的总设置，用于添加或开关网站中的某功能。一个是<code>layout</code>，管理着网站各个部分的格式和结构.一个是<code>source</code>,存放着对网站各处的美化和<strong>本地图片的源文件</strong>。也就是说你在<code>_config.yml</code>或其他文件，涉及到本地图片的路径，源文件夹就是<code>source</code>。举个例子，假如你要修改你的logo，那么你可以把下载下来的logo.png放在<code>/source/medias</code>中，然后在<code>_config.yml</code>文件中找到logo，将其值改为<code>/medias/logo.png</code>，更多关于图片的问题，下文将会继续讲解。</p>
+<h3 id="图片加载问题"><a href="#图片加载问题" class="headerlink" title="图片加载问题"></a>图片加载问题</h3><p>图片的存放大体上有两种方式，一种是本地，一种利用图床生成链接地址来直接访问，本地的话不再赘述，下面将向大家介绍一款十分好用的工具picgo来搭建你的博客图床</p>
+<h4 id="picgo安装"><a href="#picgo安装" class="headerlink" title="picgo安装"></a>picgo安装</h4><p>请到picgo仓库中自行安装对应版本，<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo">此处</a>为其仓库。</p>
+<h4 id="picgo搭建github图床"><a href="#picgo搭建github图床" class="headerlink" title="picgo搭建github图床"></a>picgo搭建github图床</h4><p>此处以搭建github图床为例</p>
+<ol>
+<li>首先在你的github中创建一个放博客图片的仓库，此处举例命名为blog_image</li>
+<li>然后点击右上角你的头像，再点击settings，进去后找到并点击Developer settings，再点Personal access tokens，如果你先前没有生成过token的话，点击Generate new token</li>
+<li>输入密码后开始配置token，选择Expiration(有效日期)，下面的勾选，<strong>一定要勾选repo</strong>，推荐勾选write:packages、admin:org，然后点击Generate token，你的token就生成好了，<strong>请即刻复制下来</strong>，因为你之后无法再看到这个token.</li>
+<li>在picgo主页中点击图床设置，再点github图床，填入设定好仓库名和token,cdn加速下面再讲，点击确定就设置好了</li>
+<li>使用时在上传区传入图片后，会自动生成链接，将该链接放到博客或其他配置文件中即可。</li>
+</ol>
+<h4 id="图片分辨率过高"><a href="#图片分辨率过高" class="headerlink" title="图片分辨率过高"></a>图片分辨率过高</h4><p>如果你要使用的图片分辨率过高，或者换句话说，图片大于1M，这都会导致你加载图片过慢，此时推荐一个图片压缩神器<a target="_blank" rel="noopener" href="https://www.picdiet.com/zh-cn">picdiet</a>，可在线压缩图片。</p>
+<h3 id="文章标签问题"><a href="#文章标签问题" class="headerlink" title="文章标签问题"></a>文章标签问题</h3><p>一般来说，在写博客的时候，tag可以有多个，而categories一般只有一个，而在写多个tags时请看一下格式。</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">tags: 
+  <span class="token list punctuation">-</span> a
+  <span class="token list punctuation">-</span> b<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>如果提示没有curl,可先按照终端给出的提示(或下面的代码)来安装curl工具</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">curl</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="cdn加速"><a href="#cdn加速" class="headerlink" title="cdn加速"></a>cdn加速</h3><p>可利用免费的jsdelivr来进行加速，如上面讲到的picgo图床，可在图床设置中的自定义域名中填入<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BB%93%E5%BA%93%E5%90%8D%EF%BC%8C%E4%BE%BF%E5%8F%AF%E4%BB%A5%E4%BA%86%E3%80%82">https://cdn.jsdelivr.net/gh/用户名/仓库名，便可以了。</a></p>
+<p>而在主题的设置中，可在matery下的<code>_config.yml</code>文件中找到jsDelivr，将#删掉，便可完成加速。但是要注意的是，配置了此项就代表着本地调试的时候，网站依然会去GitHub请求资源（原来的资源），<strong>本地调试的时候记得将此项配置注释或者删除掉</strong>。</p>
+<h3 id="图片懒加载"><a href="#图片懒加载" class="headerlink" title="图片懒加载"></a>图片懒加载</h3><p>请参考这篇Sky03大佬的博客<a target="_blank" rel="noopener" href="https://blog.sky03.cn/posts/42790.html#toc-heading-15">Hexo进阶之各种优化</a>，这里面还有很多其他技巧哦！</p>
+<h2 id="自定义美化"><a href="#自定义美化" class="headerlink" title="自定义美化"></a>自定义美化</h2><p>请在阅读完主题的官方文档再来看这里</p>
+<h3 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a>评论系统</h3><p>先从比较实用的功能讲起，matery的评论系统支持多种api的接入，此处以gittalk为例。</p>
+<ol>
+<li>首先点击右上角你的头像，再点击settings，进去后找到并点击Developer settings<del>(是不是有点似曾相识)</del>，然后点击OAuth Apps，接下来点击New OAuth Apps</li>
+<li>在配置中，其他随便搞搞就行，<strong>重点是在Authorization callback URL这一栏中填入自己博客的域名或ip地址</strong>，如xxx.github.io(xxx为你的用户名)。</li>
+<li>完成创建后会生成client id和client secret，将这两项复制，然后打开matery下的<code>_config.yml</code>文件，找到gittalk，按下面的配置就可以了</li>
+</ol>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">gitalk:
+  enable: true #true为打开
+  owner: xxx #github用户名
+  repo: xxx.github.io #
+  oauth:
+    clientId: xxxx #刚复制的
+    clientSecret: xxxx
+  admin: xxx<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="node-js"><a href="#node-js" class="headerlink" title="node.js"></a>node.js</h3><p>安装完nvm后只需一行代码搞定nodejs</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ nvm <span class="token function">install</span> stable<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="修改封面图"><a href="#修改封面图" class="headerlink" title="修改封面图"></a>修改封面图</h3><p>鲁迅曾经说过，一个好的封面是博客的门面。这里介绍一下如何更换你的封面图，其实很简单，首先matery主题默认是轮播封面，一星期7天，每天一张。</p>
+<p>打开主题下的<code>/source/medias/banner</code>文件夹，你会找到0123456等7张jpg，而这些就是你的封面，所以你只要下载你想要的图片到该文件夹中，并重命名为相应的名字即可。</p>
+<p>如果你想自行修改图片轮播逻辑或图片读取路径，也可打开主题文件夹下的<code>/layout/_partial/bg-cover-content.ejs</code>自行操作。如果只想关掉轮播，只需到matery下的<code>_config.yml</code>文件中找到cover这一项，看注释修改即可。</p>
+<pre><code>顺便说一下，_config.yml文件中还有很多可开关的功能，可自行摸索。
+</code></pre>
+<h3 id="菜单栏透明"><a href="#菜单栏透明" class="headerlink" title="菜单栏透明"></a>菜单栏透明</h3><p>你是否因为菜单栏那一片绿色而在苦恼，你是否看到大佬们<del>(除我)</del>的博客那与封面融为一体的菜单栏而感到羡慕，这里我将教你如何变透明(bushi)。这也是很多美化博客貌似没讲到的内容，其实只要在<code>/source/medias/css/matery.css</code>中找到<code>.bg-color</code>一项，做以下修改即可。</p>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.bg-color</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to right<span class="token punctuation">,</span> #3fd9ff 0%<span class="token punctuation">,</span> #5637c6 100%<span class="token punctuation">)</span><span class="token punctuation">;</span> #颜色自行选择
+    <span class="token property">opacity</span><span class="token punctuation">:</span> 0.7<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h3><p>npm是用来安装hexo的(当然不止于此)，而npm的源又在国外，所以可换成淘宝源来加速(其他源也可)</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> config <span class="token builtin class-name">set</span> registry https://registry.npm.taobao.org <span class="token comment">#换淘宝源</span>
-<span class="token function">npm</span> config list <span class="token comment">#请勿省略</span>
-<span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> <span class="token function">npm</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="浏览器搞笑标题"><a href="#浏览器搞笑标题" class="headerlink" title="浏览器搞笑标题"></a>浏览器搞笑标题</h3><p>在主题文件夹下的<code>\source\js</code> 下新建一个 FunnyTitle.js 文件，填写如下代码：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 浏览器搞笑标题</span>
+<span class="token keyword">var</span> OriginTitle <span class="token operator">=</span> document<span class="token punctuation">.</span>title<span class="token punctuation">;</span>
+<span class="token keyword">var</span> titleTime<span class="token punctuation">;</span>
+document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'visibilitychange'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>hidden<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'[rel="icon"]'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">'href'</span><span class="token punctuation">,</span> <span class="token string">"/funny.ico"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">'╭(°A°`)╮ 页面崩溃啦 ~'</span><span class="token punctuation">;</span>
+        <span class="token function">clearTimeout</span><span class="token punctuation">(</span>titleTime<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+        <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'[rel="icon"]'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">'href'</span><span class="token punctuation">,</span> <span class="token string">"/favicon.ico"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        document<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">'(ฅ>ω&lt;*ฅ) 噫又好啦 ~'</span> <span class="token operator">+</span> OriginTitle<span class="token punctuation">;</span>
+        titleTime <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            document<span class="token punctuation">.</span>title <span class="token operator">=</span> OriginTitle<span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">/*此代码为转载
+来源: Shawlon`s Blog
+作者: Tyzhao
+链接: https://www.yshawlon.cn/hexo-ge-ren-bo-ke-zhi-bo-ke-zhu-ti-mei-hua.html#toc-head/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><p>前置工作终于做完了，下一个就是你了，hexo！</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在主题文件夹下的<code>layout\layout.ejs</code>文件中添加如下代码：</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>浏览器搞笑标题<span class="token operator">--</span><span class="token operator">></span>
+<span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span> src<span class="token operator">=</span><span class="token string">"/js/FunnyTitle.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>在装完hexo，请先选择一个目录作为你放网站文件的目录，然后在此目录下打开终端，然后执行以下代码。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo init MyHexoBlog <span class="token comment">#名字可换</span>
-<span class="token builtin class-name">cd</span> MyHexoBlog <span class="token comment">#用cd命令切换到该目录下</span>
-<span class="token function">npm</span> <span class="token function">install</span> <span class="token comment">#请勿省略此行代码</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h3 id="live2d"><a href="#live2d" class="headerlink" title="live2d"></a>live2d</h3><p>如果你想要你的”老婆”做你博客的看板娘的话，那这个功能可太适合你了。</p>
+<p>首先安装依赖</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> --save hexo-helper-live2d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>然后为了能在本地服务器进行预览，请安装以下依赖</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">npm</span> <span class="token function">install</span> hexo-server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后如果你想从现有的模型库中获取的话则较为方便，模型库预览点击<a target="_blank" rel="noopener" href="https://github.com/xiazeyu/live2d-widget-models">此处</a>，直接安装包即可，举个例子：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> live2d-widget-model-shizuku<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>紧接着执行的是常用命令</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo g <span class="token comment">#生成静态博客</span>
-hexo s <span class="token comment">#开始运行本地服务器</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>然后在博客根目录下的<code>_config.yml</code>文件中，添加以下代码：</p>
+<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"># 注意缩进
+live2d:
+   enable: true
+   scriptFrom: local
+   model:
+     use: live2d-widget-model-shizuku #填模型名
+   display:
+     position: right #left或right
+     width: 180
+     height: 480
+   mobile:
+     show: false<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>此时打开 “<a target="_blank" rel="noopener" href="http://localhost:4000/&quot;">http://localhost:4000/&quot;</a> 这个网址便可看到本地的预览了，此时你的本地网站已经初步搭建完成，博客使用的是自带的landscape主题，关于换主题应该要等到下篇博客再讲了..下面先讲如何让网站能被其他人访问呢。</p>
-<h2 id="github-page牛逼"><a href="#github-page牛逼" class="headerlink" title="github page牛逼"></a>github page牛逼</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>首先介绍下<strong>github</strong>,这是全世界最大的开发者同性交友网站<del>(bushi)</del>,而github page是github提供的一个承载文字的平台，其实用github page也能直接搭出个人博客，但hexo能用很多很好看的开源主题(颜值即正义)，而且渲染起来也比较快。另外github page实际上不是完全免费的，而是有<em>300MB</em>的限额的，不过我认为搭个个人博客绰绰有余。</p>
-<h3 id="注册github"><a href="#注册github" class="headerlink" title="注册github"></a>注册github</h3><p>就正常注册，但注意github有时会进行限流，最好自备梯子，不然只能随缘，然后创建一个新仓库，仓库名请一定要命名为<strong>xxx.github.io</strong>(其中xxx为你github的用户名)，然后一定要创建的是<strong>公有仓库(public)！公有仓库(public)！公有仓库(public)！</strong>重要的事情说三遍。</p>
-<h3 id="git"><a href="#git" class="headerlink" title="git"></a>git</h3><p>首先你需要有个git,在本教程中你只需要知道git这玩意是用来把你本地的代码送到github上的。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> git-core <span class="token comment">#装git</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h3 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h3><p>执行下面命令生成SSH公钥，这是为了让你的github仓库能接受你这台电脑(雾)</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">ssh-keygen<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>看终端上提示操作，大概需要敲三次回车后，便可生成id_rsa.pub文件,然后可用cat命令打开该文件(先切到其目录)，里面存放的便是公钥内容，一般以ssh-rsa开头，将其中内容复制下来，然后打开github,点击右上角的头像，然后点击setting(设置)，在左侧找到SSH and RPG keys(反正有SSH就完事了)，然后点击new ssh key,将复制的内容粘贴到下面的key中，然后取个title，点击下面的add就配置好了。(这一步较为冗长，但我懒得配图了，按文字描述的来应该没啥问题，有问题来找我┌(。Д。)┐ )<br>最后在终端中输入以下命令</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ssh</span> -T git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>如果出现</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Hi<span class="token operator">!</span> You've successfully authenticated, but GitHub
- does not provide shell access.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>那说明莫得问题了。</p>
-<h3 id="配置git"><a href="#配置git" class="headerlink" title="配置git"></a>配置git</h3><p>第一次配置git的同学看过来，在终端输入以下命令</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> config --global user.name <span class="token string">"github用户名"</span> <span class="token comment">#记得换，别光ctrlcv啦</span>
-<span class="token function">git</span> config --global user.email <span class="token string">"你注册的邮箱地址"</span>
-ssh-keygen -t rsa -C <span class="token string">"你注册的邮箱地址"</span> <span class="token comment">#生成个git的个人密钥</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="配置一下deploy-最后啦，别放弃"><a href="#配置一下deploy-最后啦，别放弃" class="headerlink" title="配置一下deploy(最后啦，别放弃)"></a>配置一下deploy(最后啦，别放弃)</h3><p>装个依赖</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>然后请打开你放博客的文件夹(如我上面的Myhexoblog)，你会看到一个 <strong>_config.yml</strong> 文件，这是管理你网站全局的一个文件，用编辑器打开它，应该在末尾处，你会看到deploy的一些配置，请做出如下的修改:</p>
-<pre class="line-numbers language-none"><code class="language-none">deploy:
-  type: git
-  repo: 你之前创建的那个仓库的地址，如git@github.com:Wdstql&#x2F;Wdstql.github.io.git(此为ssh地址，如果直接复制http地址应该也可)
-  branch: main(改成main，因为现在github默认分支为main)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>很重要的一点是，<strong>冒号后面一定是接一个半角空格</strong>，别漏了。</p>
-<h2 id="开冲"><a href="#开冲" class="headerlink" title="开冲"></a>开冲</h2><p>执行以下命令，便可将你的静态博客放到githubpage上让大家观摩啦</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean <span class="token comment">#建议时不时clean一下</span>
-hexo g <span class="token comment">#hexo d前必须先生成静态博客先</span>
-hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p>然后稍等一会就可以通过访问 <strong>“xxx.github.io”</strong> (xxx是你用户名)来看到你的博客网站啦！当然，如果你想换域名的话也可以去买一个，然后去网上搜别的教程来改，我这里因为我没改就不写了</p>
-<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>最后讲一下每次改动的步骤吧，一般都是在改动之后，clean一下，然后hexo s在本地先预览，最后等所有改动都做好，再hexo g+hexo d推送到网站上，这大概就是我的工作流程吧。至于换主题嘛，下篇在说啦 &#x1F606;。如果本篇博客中的某个地方有任何bug或者有什么说的不够严谨的地方可以随时来call我。</p>
-<p>感谢你看到这里，也恭喜你拥有了一个可能还不怎么好看但起码是自己做的一个有模有样的博客网站！求收藏，求关注，求转发<del>(一键三连)</del>，我们下篇再见。</p>
+<h4 id="自己的不在库中的模型"><a href="#自己的不在库中的模型" class="headerlink" title="自己的不在库中的模型"></a>自己的不在库中的模型</h4><p>这里讲一下，如果你想用你自己有的模型来做看板娘该如何操作，其实就是将你的模型作为npm包发布出去，再自己install回来。</p>
+<ol>
+<li>先在你的模型文件夹中打开终端，键入<code>npm init</code>按提示填好信息，此处建议包名填<strong>live-widget-model-xxx</strong>,你就会发现多了package.json</li>
+<li>在<a target="_blank" rel="noopener" href="https://www.npmjs.com/">npm官网</a>注册一个npm账号,然后回到刚刚的模型文件夹中，键入<code>npm login</code>，输入用户名和密码，完成登录</li>
+<li>键入<code>npm publish</code>上传包，出现+代表成功了。</li>
+<li>然后在你的博客文件夹打开终端，用npm将你刚刚的那个包install回来，**注意：请将你模型中的model.json改为xxx.model.json(xxx为包名后的那个xxx，如shizuku)**，下回来的包会在<code>node_modules</code>中。然后把上面那个配置的model:use:的值改为live-widget-model-xxx即可。</li>
+</ol>
+<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>那么这篇教程到这里就结束，别看这篇教程中的一些话不是很长，但有些东西真的过了几天才解决的，毕竟网上的教程那么多，不可能每篇都能囊括到方方面面，很多问题真的是翻来翻去都找不到答案。哎….不说了，都是泪，这篇教程我已经就我所能将我遇到的问题和解决方法放了上去，希望能帮到你。</p>
+<p>感谢你看到这里，也恭喜你拥有了算的上好看的博客网站啦（至少在我看来）！如果真的有看我这篇教程搭出了自己的博客网站的，欢迎在评论区发出链接给大家膜哦！求收藏，求关注，求转发<del>(一键三连)</del>，我们下篇再见。</p>
 
                 
             </div>
@@ -592,7 +633,7 @@ hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" cla
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wdstql.github.io/2021/07/29/hexo1/">https://wdstql.github.io/2021/07/29/hexo1/</a>
+                    <a href="https://wdstql.github.io/2021/08/03/matery/">https://wdstql.github.io/2021/08/03/matery/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -634,8 +675,8 @@ hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" cla
                                     <span class="chip bg-color">博客搭建</span>
                                 </a>
                             
-                                <a href="/tags/git/">
-                                    <span class="chip bg-color">git</span>
+                                <a href="/tags/%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/">
+                                    <span class="chip bg-color">主题美化</span>
                                 </a>
                             
                         </div>
@@ -680,7 +721,7 @@ hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" cla
         repo: 'wdstql.github.io',
         owner: 'wdstql',
         admin: "wdstql",
-        id: '2021-07-29T11-30-00',
+        id: '2021-08-03T15-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -708,9 +749,10 @@ hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" cla
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/08/03/matery/">
                     <div class="card-image">
@@ -728,9 +770,9 @@ hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" cla
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -743,6 +785,7 @@ hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" cla
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -765,13 +808,13 @@ hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" cla
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/28/hello-world/">
+                <a href="/2021/07/29/hexo1/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/wdstql/blog_image/b25ce6184da053bf90f048dd6211cd24.gif" data-original="/medias/featureimages/21.jpg" class="responsive-img" alt="碎碎念">
+                        <img src="https://cdn.jsdelivr.net/gh/wdstql/blog_image/b25ce6184da053bf90f048dd6211cd24.gif" data-original="/medias/featureimages/19.jpg" class="responsive-img" alt="hexo学习记录1(保姆级教程)">
                         
-                        <span class="card-title">碎碎念</span>
+                        <span class="card-title">hexo学习记录1(保姆级教程)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -782,14 +825,14 @@ hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" cla
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-29
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E9%97%B2%E8%81%8A/" class="post-category">
-                                    闲聊
+                            <a href="/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/" class="post-category">
+                                    实用教程
                                 </a>
                             
                             
@@ -799,8 +842,12 @@ hexo d <span class="token comment">#deploy啦</span><span aria-hidden="true" cla
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/life/">
-                        <span class="chip bg-color">life</span>
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">博客搭建</span>
+                    </a>
+                    
+                    <a href="/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
