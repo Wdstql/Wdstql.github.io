@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="hexo学习记录2(帅，是一辈子的事), Wdstql">
+    <meta name="keywords" content="leetcode刷题day1, Wdstql">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>hexo学习记录2(帅，是一辈子的事) | Wdstql</title>
+    <title>leetcode刷题day1 | Wdstql</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/wdstql/blog_image/wallhaven-y8eyvl.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/wdstql/blog_image/wallhaven-4gem2e.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">hexo学习记录2(帅，是一辈子的事)</h1>
+                    <h1 class="description center-align post-title">leetcode刷题day1</h1>
                 </div>
             </div>
         </div>
@@ -434,12 +434,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                                <span class="chip bg-color">博客搭建</span>
+                            <a href="/tags/leetcode/">
+                                <span class="chip bg-color">leetcode</span>
                             </a>
                         
-                            <a href="/tags/%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/">
-                                <span class="chip bg-color">主题美化</span>
+                            <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                                <span class="chip bg-color">动态规划</span>
                             </a>
                         
                     </div>
@@ -450,8 +450,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/" class="post-category">
-                                实用教程
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" class="post-category">
+                                数据结构与算法
                             </a>
                         
                     </div>
@@ -463,7 +463,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-03
+                    2021-08-12
                 </div>
                 
 
@@ -472,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.6k
+                    1.1k
                 </div>
                 
 
@@ -492,121 +492,100 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><del>全文建议配合梯子食用</del></p>
-<h1 id="hexo主题美化，让你的博客焕然一新"><a href="#hexo主题美化，让你的博客焕然一新" class="headerlink" title="hexo主题美化，让你的博客焕然一新"></a>hexo主题美化，让你的博客焕然一新</h1><p>上篇博客中，我讲完了如何利用hexo和githubpage初步在你的ubuntu上搭好一个博客网站，但这样搭出来的网站显然不太符合我们代码人的口味(可能只有我不太喜欢？)。而这篇博客就是教你让你的hexo换个主题，并且做yi点点自定义的美化，本文选用的博客的主题是<strong>matery</strong>，也是我的博客正在使用的主题。</p>
-<h2 id="matery主题"><a href="#matery主题" class="headerlink" title="matery主题"></a>matery主题</h2><p>matery主题是一个采用<code>Material Design</code> 和响应式设计的 Hexo 博客主题，这是<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">它的github仓库地址</a>，点击<a href="https://wdstql.github.io/">这里</a>查看演示效果(其实就是我的主页)。</p>
-<h3 id="安装与切换主题"><a href="#安装与切换主题" class="headerlink" title="安装与切换主题"></a>安装与切换主题</h3><p>在你博客根目录下的theme文件夹打开终端，键入以下命令</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone git@github.com:blinkfox/hexo-theme-matery.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>安装完后，你的theme文件夹下就会多出一个hexo-theme-matery的文件夹，切换主题也很简单，只需打开博客根目录下的<code>_config.yml</code>文件，找到theme，将它的值由landscape修改为hexo-theme-matery。</p>
-<h3 id="基础修改"><a href="#基础修改" class="headerlink" title="基础修改"></a>基础修改</h3><p>打开根目录下的<code>_config.yml</code>文件(主题文件夹和博客根目录下各有一个同名文件，请区分开)，修改title，subtitle为自己想要的，并自行查看效果，language改为zh-CN。</p>
-<p>接下来的一系列对于该主题的基础配置，请自行查阅主题作者写的官方文档，不知道比我写得高哪里去了，点击<a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery/blob/develop/README_CN.md">此处</a>可查。下文只讲我在查阅该文档时遇到的问题以及一些其他的个性化配置。</p>
-<h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><h3 id="文件路径"><a href="#文件路径" class="headerlink" title="文件路径"></a>文件路径</h3><pre><code>本处内容是基于我浅薄的认识写的
-</code></pre>
-<p>首先先讲一下matery主题文件夹下各个文件和文件夹的作用(其实就讲两个).最重要的是<code>_config.yml</code>文件,负责管理网站的总设置，用于添加或开关网站中的某功能。一个是<code>layout</code>，管理着网站各个部分的格式和结构.一个是<code>source</code>,存放着对网站各处的美化和<strong>本地图片的源文件</strong>。也就是说你在<code>_config.yml</code>或其他文件，涉及到本地图片的路径，源文件夹就是<code>source</code>。举个例子，假如你要修改你的logo，那么你可以把下载下来的logo.png放在<code>/source/medias</code>中，然后在<code>_config.yml</code>文件中找到logo，将其值改为<code>/medias/logo.png</code>，更多关于图片的问题，下文将会继续讲解。</p>
-<h3 id="图片加载问题"><a href="#图片加载问题" class="headerlink" title="图片加载问题"></a>图片加载问题</h3><p>图片的存放大体上有两种方式，一种是本地，一种利用图床生成链接地址来直接访问，本地的话不再赘述，下面将向大家介绍一款十分好用的工具picgo来搭建你的博客图床</p>
-<h4 id="picgo安装"><a href="#picgo安装" class="headerlink" title="picgo安装"></a>picgo安装</h4><p>请到picgo仓库中自行安装对应版本，<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo">此处</a>为其仓库。</p>
-<h4 id="picgo搭建github图床"><a href="#picgo搭建github图床" class="headerlink" title="picgo搭建github图床"></a>picgo搭建github图床</h4><p>此处以搭建github图床为例</p>
-<ol>
-<li>首先在你的github中创建一个放博客图片的仓库，此处举例命名为blog_image</li>
-<li>然后点击右上角你的头像，再点击settings，进去后找到并点击Developer settings，再点Personal access tokens，如果你先前没有生成过token的话，点击Generate new token</li>
-<li>输入密码后开始配置token，选择Expiration(有效日期)，下面的勾选，<strong>一定要勾选repo</strong>，推荐勾选write:packages、admin:org，然后点击Generate token，你的token就生成好了，<strong>请即刻复制下来</strong>，因为你之后无法再看到这个token.</li>
-<li>在picgo主页中点击图床设置，再点github图床，填入设定好仓库名和token,cdn加速下面再讲，点击确定就设置好了</li>
-<li>使用时在上传区传入图片后，会自动生成链接，将该链接放到博客或其他配置文件中即可。</li>
+                <h1 id="leetcode今日两题-动态规划（1）"><a href="#leetcode今日两题-动态规划（1）" class="headerlink" title="leetcode今日两题-动态规划（1）"></a>leetcode今日两题-动态规划（1）</h1><h2 id="313、超级丑数"><a href="#313、超级丑数" class="headerlink" title="313、超级丑数"></a>313、超级丑数</h2><p>原题链接：”<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/super-ugly-number/&quot;">https://leetcode-cn.com/problems/super-ugly-number/&quot;</a></p>
+<p>本题此处提供两种解法，<strong>Key:新的丑数=旧的丑数Xprimes序列中的数</strong>。</p>
+<h3 id="1-优先队列-哈希集合"><a href="#1-优先队列-哈希集合" class="headerlink" title="1.优先队列+哈希集合"></a>1.优先队列+哈希集合</h3><ol>
+<li>先将1加入最小堆</li>
+<li>然后将堆顶元素弹出</li>
+<li>用该元素乘上primes中所有数并将其加入堆中</li>
+<li>由于会出现重复，所以使用哈希集合来去重</li>
+<li>重复以上234步骤n次</li>
 </ol>
-<h4 id="图片分辨率过高"><a href="#图片分辨率过高" class="headerlink" title="图片分辨率过高"></a>图片分辨率过高</h4><p>如果你要使用的图片分辨率过高，或者换句话说，图片大于1M，这都会导致你加载图片过慢，此时推荐一个图片压缩神器<a target="_blank" rel="noopener" href="https://www.picdiet.com/zh-cn">picdiet</a>，可在线压缩图片。</p>
-<h3 id="文章标签问题"><a href="#文章标签问题" class="headerlink" title="文章标签问题"></a>文章标签问题</h3><p>一般来说，在写博客的时候，tag可以有多个，而categories一般只有一个，而在写多个tags时请看一下格式。</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">tags: 
-  <span class="token list punctuation">-</span> a
-  <span class="token list punctuation">-</span> b<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="cdn加速"><a href="#cdn加速" class="headerlink" title="cdn加速"></a>cdn加速</h3><p>可利用免费的jsdelivr来进行加速，如上面讲到的picgo图床，可在图床设置中的自定义域名中填入<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BB%93%E5%BA%93%E5%90%8D%EF%BC%8C%E4%BE%BF%E5%8F%AF%E4%BB%A5%E4%BA%86%E3%80%82">https://cdn.jsdelivr.net/gh/用户名/仓库名，便可以了。</a></p>
-<p>而在主题的设置中，可在matery下的<code>_config.yml</code>文件中找到jsDelivr，将#删掉，便可完成加速。但是要注意的是，配置了此项就代表着本地调试的时候，网站依然会去GitHub请求资源（原来的资源），<strong>本地调试的时候记得将此项配置注释或者删除掉</strong>。</p>
-<h3 id="图片懒加载"><a href="#图片懒加载" class="headerlink" title="图片懒加载"></a>图片懒加载</h3><p>请参考这篇Sky03大佬的博客<a target="_blank" rel="noopener" href="https://blog.sky03.cn/posts/42790.html#toc-heading-15">Hexo进阶之各种优化</a>，这里面还有很多其他技巧哦！</p>
-<h2 id="自定义美化"><a href="#自定义美化" class="headerlink" title="自定义美化"></a>自定义美化</h2><p>请在阅读完主题的官方文档再来看这里</p>
-<h3 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a>评论系统</h3><p>先从比较实用的功能讲起，matery的评论系统支持多种api的接入，此处以gittalk为例。</p>
-<ol>
-<li>首先点击右上角你的头像，再点击settings，进去后找到并点击Developer settings<del>(是不是有点似曾相识)</del>，然后点击OAuth Apps，接下来点击New OAuth Apps</li>
-<li>在配置中，其他随便搞搞就行，<strong>重点是在Authorization callback URL这一栏中填入自己博客的域名或ip地址</strong>，如xxx.github.io(xxx为你的用户名)。</li>
-<li>完成创建后会生成client id和client secret，将这两项复制，然后打开matery下的<code>_config.yml</code>文件，找到gittalk，按下面的配置就可以了</li>
-</ol>
-<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml">gitalk:
-  enable: true #true为打开
-  owner: xxx #github用户名
-  repo: xxx.github.io #
-  oauth:
-    clientId: xxxx #刚复制的
-    clientSecret: xxxx
-  admin: xxx<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="修改封面图"><a href="#修改封面图" class="headerlink" title="修改封面图"></a>修改封面图</h3><p>鲁迅曾经说过，一个好的封面是博客的门面。这里介绍一下如何更换你的封面图，其实很简单，首先matery主题默认是轮播封面，一星期7天，每天一张。</p>
-<p>打开主题下的<code>/source/medias/banner</code>文件夹，你会找到0123456等7张jpg，而这些就是你的封面，所以你只要下载你想要的图片到该文件夹中，并重命名为相应的名字即可。</p>
-<p>如果你想自行修改图片轮播逻辑或图片读取路径，也可打开主题文件夹下的<code>/layout/_partial/bg-cover-content.ejs</code>自行操作。如果只想关掉轮播，只需到matery下的<code>_config.yml</code>文件中找到cover这一项，看注释修改即可。</p>
-<pre><code>顺便说一下，_config.yml文件中还有很多可开关的功能，可自行摸索。
-</code></pre>
-<h3 id="菜单栏透明"><a href="#菜单栏透明" class="headerlink" title="菜单栏透明"></a>菜单栏透明</h3><p>你是否因为菜单栏那一片绿色而在苦恼，你是否看到大佬们<del>(除我)</del>的博客那与封面融为一体的菜单栏而感到羡慕，这里我将教你如何变透明(bushi)。这也是很多美化博客貌似没讲到的内容，其实只要在<code>/source/medias/css/matery.css</code>中找到<code>.bg-color</code>一项，做以下修改即可。</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.bg-color</span> <span class="token punctuation">&#123;</span>
-    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to right<span class="token punctuation">,</span> #3fd9ff 0%<span class="token punctuation">,</span> #5637c6 100%<span class="token punctuation">)</span><span class="token punctuation">;</span> #颜色自行选择
-    <span class="token property">opacity</span><span class="token punctuation">:</span> 0.7<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="浏览器搞笑标题"><a href="#浏览器搞笑标题" class="headerlink" title="浏览器搞笑标题"></a>浏览器搞笑标题</h3><p>在主题文件夹下的<code>\source\js</code> 下新建一个 FunnyTitle.js 文件，填写如下代码：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token comment">// 浏览器搞笑标题</span>
-<span class="token keyword">var</span> OriginTitle <span class="token operator">=</span> document<span class="token punctuation">.</span>title<span class="token punctuation">;</span>
-<span class="token keyword">var</span> titleTime<span class="token punctuation">;</span>
-document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'visibilitychange'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>document<span class="token punctuation">.</span>hidden<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'[rel="icon"]'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">'href'</span><span class="token punctuation">,</span> <span class="token string">"/funny.ico"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">'╭(°A°`)╮ 页面崩溃啦 ~'</span><span class="token punctuation">;</span>
-        <span class="token function">clearTimeout</span><span class="token punctuation">(</span>titleTime<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<p>(ps:也可以用底层为红黑树的set来一步到位，但效率较差，经比较大概比以上方法慢了一倍)</p>
+<p>以下为代码实现：</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> ll<span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">&#123;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">int</span> <span class="token function">nthSuperUglyNumber</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">,</span> vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> primes<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        unordered_set<span class="token operator">&lt;</span>ll<span class="token operator">></span>s<span class="token punctuation">;</span>
+        priority_queue<span class="token operator">&lt;</span>ll<span class="token punctuation">,</span> vector<span class="token operator">&lt;</span>ll<span class="token operator">></span><span class="token punctuation">,</span> greater<span class="token operator">&lt;</span>ll<span class="token operator">></span> <span class="token operator">></span>q<span class="token punctuation">;</span><span class="token comment">//最小堆，记得greater那要留多个空格</span>
+        q<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        s<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        ll cnt<span class="token punctuation">;</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+            cnt<span class="token operator">=</span>q<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            q<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">auto</span> e<span class="token operator">:</span>primes<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+                ll temp<span class="token operator">=</span>cnt<span class="token operator">*</span>e<span class="token punctuation">;</span><span class="token comment">//用long long是因为这一步有可能爆精</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>temp<span class="token punctuation">)</span><span class="token operator">==</span>s<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token comment">//哈希集合的find方法，找不到即返回s.end()</span>
+                    q<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    s<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span>temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token punctuation">&#125;</span>
+            <span class="token punctuation">&#125;</span>
+        <span class="token punctuation">&#125;</span>
+        <span class="token keyword">return</span> cnt<span class="token punctuation">;</span>
     <span class="token punctuation">&#125;</span>
-    <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
-        <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'[rel="icon"]'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">'href'</span><span class="token punctuation">,</span> <span class="token string">"/favicon.ico"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        document<span class="token punctuation">.</span>title <span class="token operator">=</span> <span class="token string">'(ฅ>ω&lt;*ฅ) 噫又好啦 ~'</span> <span class="token operator">+</span> OriginTitle<span class="token punctuation">;</span>
-        titleTime <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-            document<span class="token punctuation">.</span>title <span class="token operator">=</span> OriginTitle<span class="token punctuation">;</span>
-        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>时间复杂度约为O(mnlogn)</p>
+<h3 id="2-动态规划（非严谨）"><a href="#2-动态规划（非严谨）" class="headerlink" title="2.动态规划（非严谨）"></a>2.动态规划（非严谨）</h3><p><strong>核心：用multi数组决定要序列中的数要乘哪个旧丑数</strong></p>
+<p>为了保证预备丑数序列的递增性，所以要用尽量小的旧丑数去乘primes中的数，但之前生成过丑数的组合不能再相乘，因此其要向前进一，multi数组储存的是primes数组中对应数字在这次计算中需要相乘的旧丑数的index。<br>同时由于丑数序列的递增性，如果出现重复必然是与前一个数重复，所以通过简单的判断即可排除重复情况<br>下面是代码实现：</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> ll<span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">&#123;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">int</span> <span class="token function">nthSuperUglyNumber</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">,</span> vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> primes<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">int</span> m<span class="token operator">=</span>primes<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        vector<span class="token operator">&lt;</span>ll<span class="token operator">></span><span class="token function">dp</span><span class="token punctuation">(</span>n<span class="token operator">+</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        vector<span class="token operator">&lt;</span>ll<span class="token operator">></span><span class="token function">multi</span><span class="token punctuation">(</span>m<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        dp<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>i<span class="token operator">&lt;=</span>n<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+            ll minv<span class="token operator">=</span>INT_MAX<span class="token punctuation">,</span>temp<span class="token punctuation">;</span>
+            <span class="token keyword">int</span> pos<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>m<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+                temp<span class="token operator">=</span>dp<span class="token punctuation">[</span>multi<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token operator">*</span>primes<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//旧丑数乘primes中数</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>minv<span class="token operator">></span>temp<span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token comment">//找最小值</span>
+                    minv<span class="token operator">=</span>temp<span class="token punctuation">;</span>pos<span class="token operator">=</span>j<span class="token punctuation">;</span><span class="token comment">//获取生成该丑数对应primes中的数字</span>
+                <span class="token punctuation">&#125;</span>
+            <span class="token punctuation">&#125;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">!=</span>minv<span class="token punctuation">)</span><span class="token comment">//避免重复</span>
+                dp<span class="token punctuation">[</span><span class="token operator">++</span>i<span class="token punctuation">]</span><span class="token operator">=</span>minv<span class="token punctuation">;</span>
+            multi<span class="token punctuation">[</span>pos<span class="token punctuation">]</span><span class="token operator">++</span><span class="token punctuation">;</span><span class="token comment">//关键</span>
+        <span class="token punctuation">&#125;</span>
+        <span class="token keyword">return</span> dp<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token comment">/*此代码为转载
-来源: Shawlon`s Blog
-作者: Tyzhao
-链接: https://www.yshawlon.cn/hexo-ge-ren-bo-ke-zhi-bo-ke-zhu-ti-mei-hua.html#toc-head/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>在主题文件夹下的<code>layout\layout.ejs</code>文件中添加如下代码：</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>浏览器搞笑标题<span class="token operator">--</span><span class="token operator">></span>
-<span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">"text/javascript"</span> src<span class="token operator">=</span><span class="token string">"/js/FunnyTitle.js"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>经检验，该方法时间复杂度为O(mn)，但实测比第一种快了好几倍。</p>
+<h2 id="446、等差数列划分"><a href="#446、等差数列划分" class="headerlink" title="446、等差数列划分"></a>446、等差数列划分</h2><p>原题链接：”<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/arithmetic-slices-ii-subsequence/&quot;">https://leetcode-cn.com/problems/arithmetic-slices-ii-subsequence/&quot;</a></p>
+<h3 id="序列dp"><a href="#序列dp" class="headerlink" title="序列dp"></a>序列dp</h3><p><strong>弱等差子序列</strong>：一个序列中至少有<strong>二个元素</strong>，并且任意两个相邻元素之差相同。（显然任何一对元素都满足）</p>
+<p>状态描述：dp[i][d]表示<strong>以nums[i]为结尾，公差为d</strong>的弱等差子序列个数。dp[i]应该是一个「集合」，该集合记录下了所有以nums[i]为结尾，差值为所有情况的子序列的个数。</p>
+<p>推导：设i,j(j &lt; i)来做二重循环，其中nums[i]为子序列结尾，nums[j]为倒数第二。循环的目的是对于每个i,枚举区间[0, i - 1]的所有数。<strong>枚举当前位置前面的所有位置的目的，是为了找到当前位置的数，能够接在哪一个位置的后面，形成序列</strong><br>对于每个i,j，记d=nums[i]-nums[j],需要去找dp[j][d]，因为将nums[i]插到以nums[j]结尾的子序列中，构成以nums[i]为结尾的子序列，再nums[j],nums[i]也构成一个弱等差子序列，因此得出转移方程：dp[i][d]+=dp[j][d]+1;<br>而因为差值d有可能会过大爆精，但差值本身的数量是有限的，因此选用longlong和哈希map,至于答案便是递推过程中dp[j][d]的求和<br>代码实现如下：</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> ll<span class="token punctuation">;</span>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">&#123;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    ll <span class="token function">numberOfArithmeticSlices</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> nums<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        ll ans<span class="token punctuation">&#123;</span><span class="token number">0LL</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span>cnt<span class="token punctuation">;</span>
+        <span class="token keyword">int</span> l<span class="token operator">=</span>nums<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        vector<span class="token operator">&lt;</span>unordered_map<span class="token operator">&lt;</span>ll<span class="token punctuation">,</span><span class="token keyword">int</span><span class="token operator">>></span><span class="token function">dp</span><span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//哈希map快</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>l<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>i<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+                ll d<span class="token operator">=</span><span class="token number">1LL</span><span class="token operator">*</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">-</span>nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//可能爆精</span>
+                <span class="token keyword">auto</span> it<span class="token operator">=</span>dp<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//找是否有dp[j][d]</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>it<span class="token operator">!=</span>dp<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>cnt<span class="token operator">=</span>it<span class="token operator">-></span>second<span class="token punctuation">;</span>
+                <span class="token keyword">else</span> cnt<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+                ans<span class="token operator">+=</span>cnt<span class="token punctuation">;</span><span class="token comment">//加和答案</span>
+                dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>d<span class="token punctuation">]</span><span class="token operator">+=</span>dp<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span>d<span class="token punctuation">]</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token comment">//转移方程</span>
+            <span class="token punctuation">&#125;</span>
+        <span class="token punctuation">&#125;</span>
+        <span class="token keyword">return</span> ans<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="live2d"><a href="#live2d" class="headerlink" title="live2d"></a>live2d</h3><p>如果你想要你的”老婆”做你博客的看板娘的话，那这个功能可太适合你了。</p>
-<p>首先安装依赖</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> --save hexo-helper-live2d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>然后如果你想从现有的模型库中获取的话则较为方便，模型库预览点击<a target="_blank" rel="noopener" href="https://github.com/xiazeyu/live2d-widget-models">此处</a>，直接安装包即可，举个例子：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> live2d-widget-model-shizuku<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>然后在博客根目录下的<code>_config.yml</code>文件中，添加以下代码：</p>
-<pre class="line-numbers language-yml" data-language="yml"><code class="language-yml"># 注意缩进
-live2d:
-   enable: true
-   scriptFrom: local
-   model:
-     use: live2d-widget-model-shizuku #填模型名
-   display:
-     position: right #left或right
-     width: 180
-     height: 480
-   mobile:
-     show: false<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h4 id="自己的不在库中的模型"><a href="#自己的不在库中的模型" class="headerlink" title="自己的不在库中的模型"></a>自己的不在库中的模型</h4><p>这里讲一下，如果你想用你自己有的模型来做看板娘该如何操作，其实就是将你的模型作为npm包发布出去，再自己install回来。</p>
-<ol>
-<li>先在你的模型文件夹中打开终端，键入<code>npm init</code>按提示填好信息，此处建议包名填<strong>live-widget-model-xxx</strong>,你就会发现多了package.json</li>
-<li>在<a target="_blank" rel="noopener" href="https://www.npmjs.com/">npm官网</a>注册一个npm账号,然后回到刚刚的模型文件夹中，键入<code>npm login</code>，输入用户名和密码，完成登录</li>
-<li>键入<code>npm publish</code>上传包，出现+代表成功了。</li>
-<li>然后在你的博客文件夹打开终端，用npm将你刚刚的那个包install回来，**注意：请将你模型中的model.json改为xxx.model.json(xxx为包名后的那个xxx，如shizuku)**，下回来的包会在<code>node_modules</code>中。然后把上面那个配置的model:use:的值改为live-widget-model-xxx即可。</li>
-</ol>
-<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>那么这篇教程到这里就结束，别看这篇教程中的一些话不是很长，但有些东西真的过了几天才解决的，毕竟网上的教程那么多，不可能每篇都能囊括到方方面面，很多问题真的是翻来翻去都找不到答案。哎….不说了，都是泪，这篇教程我已经就我所能将我遇到的问题和解决方法放了上去，希望能帮到你。</p>
-<p>感谢你看到这里，也恭喜你拥有了算的上好看的博客网站啦（至少在我看来）！如果真的有看我这篇教程搭出了自己的博客网站的，欢迎在评论区发出链接给大家膜哦！求收藏，求关注，求转发<del>(一键三连)</del>，我们下篇再见。</p>
+<p>时间复杂度为O(n^2).</p>
 
                 
             </div>
@@ -633,7 +612,7 @@ live2d:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://wdstql.github.io/2021/08/03/matery/">https://wdstql.github.io/2021/08/03/matery/</a>
+                    <a href="https://wdstql.github.io/2021/08/12/leetcode1/">https://wdstql.github.io/2021/08/12/leetcode1/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -671,12 +650,12 @@ live2d:
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-                                    <span class="chip bg-color">博客搭建</span>
+                                <a href="/tags/leetcode/">
+                                    <span class="chip bg-color">leetcode</span>
                                 </a>
                             
-                                <a href="/tags/%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/">
-                                    <span class="chip bg-color">主题美化</span>
+                                <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                                    <span class="chip bg-color">动态规划</span>
                                 </a>
                             
                         </div>
@@ -721,7 +700,7 @@ live2d:
         repo: 'wdstql.github.io',
         owner: 'wdstql',
         admin: "wdstql",
-        id: '2021-08-03T15-00-00',
+        id: '2021-08-12T07-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -749,9 +728,10 @@ live2d:
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/08/12/leetcode1/">
                     <div class="card-image">
@@ -769,9 +749,9 @@ live2d:
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-12
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-12
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -784,6 +764,7 @@ live2d:
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -806,13 +787,13 @@ live2d:
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/29/hexo1/">
+                <a href="/2021/08/03/matery/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/wdstql/blog_image/015f1e5bd2e432a8012099c8141cb1.gif" data-original="https://cdn.jsdelivr.net/gh/wdstql/blog_image/wallhaven-pkw6y3.jpg" class="responsive-img" alt="hexo学习记录1(保姆级教程)">
+                        <img src="https://cdn.jsdelivr.net/gh/wdstql/blog_image/015f1e5bd2e432a8012099c8141cb1.gif" data-original="https://cdn.jsdelivr.net/gh/wdstql/blog_image/wallhaven-y8eyvl.jpg" class="responsive-img" alt="hexo学习记录2(帅，是一辈子的事)">
                         
-                        <span class="card-title">hexo学习记录1(保姆级教程)</span>
+                        <span class="card-title">hexo学习记录2(帅，是一辈子的事)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -823,7 +804,7 @@ live2d:
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-03
                             </span>
                         <span class="publish-author">
                             
@@ -844,8 +825,8 @@ live2d:
                         <span class="chip bg-color">博客搭建</span>
                     </a>
                     
-                    <a href="/tags/git/">
-                        <span class="chip bg-color">git</span>
+                    <a href="/tags/%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/">
+                        <span class="chip bg-color">主题美化</span>
                     </a>
                     
                 </div>
