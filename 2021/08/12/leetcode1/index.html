@@ -472,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.6k
                 </div>
                 
 
@@ -528,7 +528,7 @@
     <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>时间复杂度约为O(mnlogn)</p>
+<p>时间复杂度约为$O(mnlogn)$</p>
 <h3 id="2-动态规划（非严谨）"><a href="#2-动态规划（非严谨）" class="headerlink" title="2.动态规划（非严谨）"></a>2.动态规划（非严谨）</h3><p><strong>核心：用multi数组决定要序列中的数要乘哪个旧丑数</strong></p>
 <p>为了保证预备丑数序列的递增性，所以要用尽量小的旧丑数去乘primes中的数，但之前生成过丑数的组合不能再相乘，因此其要向前进一，multi数组储存的是primes数组中对应数字在这次计算中需要相乘的旧丑数的index。<br>同时由于丑数序列的递增性，如果出现重复必然是与前一个数重复，所以通过简单的判断即可排除重复情况<br>下面是代码实现：</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> ll<span class="token punctuation">;</span>
@@ -558,11 +558,11 @@
     <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>经检验，该方法时间复杂度为O(mn)，但实测比第一种快了好几倍。</p>
+<p>经检验，该方法时间复杂度为$O(mn)$，但实测比第一种快了好几倍。</p>
 <h2 id="446、等差数列划分"><a href="#446、等差数列划分" class="headerlink" title="446、等差数列划分"></a>446、等差数列划分</h2><p>原题链接：”<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/arithmetic-slices-ii-subsequence/&quot;">https://leetcode-cn.com/problems/arithmetic-slices-ii-subsequence/&quot;</a></p>
-<h3 id="序列dp"><a href="#序列dp" class="headerlink" title="序列dp"></a>序列dp</h3><p><strong>弱等差子序列</strong>：一个序列中至少有<strong>二个元素</strong>，并且任意两个相邻元素之差相同。（显然任何一对元素都满足）</p>
+<h3 id="序列dp"><a href="#序列dp" class="headerlink" title="序列dp"></a>序列dp</h3><p><strong>弱等差子序列</strong>：一个序列中至少有<strong>两个元素</strong>，并且任意两个相邻元素之差相同。（显然任何一对元素都满足）</p>
 <p>状态描述：dp[i][d]表示<strong>以nums[i]为结尾，公差为d</strong>的弱等差子序列个数。dp[i]应该是一个「集合」，该集合记录下了所有以nums[i]为结尾，差值为所有情况的子序列的个数。</p>
-<p>推导：设i,j(j &lt; i)来做二重循环，其中nums[i]为子序列结尾，nums[j]为倒数第二。循环的目的是对于每个i,枚举区间[0, i - 1]的所有数。<strong>枚举当前位置前面的所有位置的目的，是为了找到当前位置的数，能够接在哪一个位置的后面，形成序列</strong><br>对于每个i,j，记d=nums[i]-nums[j],需要去找dp[j][d]，因为将nums[i]插到以nums[j]结尾的子序列中，构成以nums[i]为结尾的子序列，再nums[j],nums[i]也构成一个弱等差子序列，因此得出转移方程：dp[i][d]+=dp[j][d]+1;<br>而因为差值d有可能会过大爆精，但差值本身的数量是有限的，因此选用longlong和哈希map,至于答案便是递推过程中dp[j][d]的求和<br>代码实现如下：</p>
+<p>推导：设i,j（j &lt; i）来做二重循环，其中nums[i]为子序列结尾，nums[j]为倒数第二。循环的目的是对于每个i,枚举区间[0, i - 1]的所有数。<strong>枚举当前位置前面的所有位置的目的，是为了找到当前位置的数，能够接在哪一个位置的后面，形成序列</strong>。<br>对于每个i,j，记d=nums[i]-nums[j],需要去找dp[j][d]，因为将nums[i]插到以nums[j]结尾的子序列中，构成以nums[i]为结尾的子序列，再nums[j],nums[i]也构成一个弱等差子序列，因此得出转移方程：$dp[i][d]+=dp[j][d]+1$;<br>而因为差值d有可能会过大爆精，但差值本身的数量是有限的，因此选用longlong和哈希map,至于答案便是递推过程中dp[j][d]的求和<br>代码实现如下：</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">typedef</span> <span class="token keyword">long</span> <span class="token keyword">long</span> ll<span class="token punctuation">;</span>
 <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 <span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">&#123;</span>
@@ -585,7 +585,35 @@
     <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>时间复杂度为O(n^2).</p>
+<p>时间复杂度为$O(n^2)$.</p>
+<h2 id="516、最长回文子序列"><a href="#516、最长回文子序列" class="headerlink" title="516、最长回文子序列"></a>516、最长回文子序列</h2><p>原题链接：”<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/longest-palindromic-subsequence/&quot;">https://leetcode-cn.com/problems/longest-palindromic-subsequence/&quot;</a></p>
+<h3 id="序列dp-1"><a href="#序列dp-1" class="headerlink" title="序列dp"></a>序列dp</h3><p>类似上面那道等差子序列，都是处理具有某种性质的子序列。</p>
+<p>状态描述：dp[i][j]表示<strong>在区间[i,j]中最长回文子序列的长度</strong>，题目求的就是dp[0][n-1] （n为字符串长度,i &lt; j）</p>
+<p>推导过程：设字符串为s，由于所有的单个字符都为回文串，所以所有的dp[i][i]都为1，而在[i,j]区间中对s[i]和s[j]分两种情况讨论:</p>
+<ol>
+<li>当s[i]==s[j]，那么直接将这两个字符加入[i+1,j-1]的最长回文串中即可，即转移方程为 $dp[i][j]=dp[i+1][j-1]+2$;</li>
+<li>当s[i]!=s[j]，那么其并不能改变目前的最长回文串，dp[i][j]等于比[i,j]小一点点的区间里的dp值，即转移方程为 $dp[i][j]=max(dp[i+1][j],dp[i][j-1])$;</li>
+</ol>
+<p>$$<br>dp[i][j]=\left\lbrace<br>\begin{array}{llc}<br>1 &amp; i==j  \\<br>dp[i+1][j-1]+2 &amp; s[i]==s[j]  \\<br>max(dp[i+1][j],dp[i][j-1]) &amp; s[i]!=s[j]<br>\end{array}<br>\right.<br>$$</p>
+<p>解题中需注意<strong>计算顺序</strong>，我下面写的题解是i从后往前递推，对于每个i,都让j从i+1开始往后递推，这样实质上保证了在计算dp[i][j]时，dp[i+1][j-1],dp[i][j-1],dp[i+1][j]都已经计算好了。（虽然我也写了从前往后递推的版本）</p>
+<p>下面是代码实现</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">&#123;</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+    <span class="token keyword">int</span> <span class="token function">longestPalindromeSubseq</span><span class="token punctuation">(</span>string s<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">int</span> n<span class="token operator">=</span>s<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        vector<span class="token operator">&lt;</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> <span class="token operator">></span><span class="token function">dp</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span><span class="token generic-function"><span class="token function">vector</span><span class="token generic class-name"><span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span></span></span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//相当于二维数组</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">>=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+            dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span><span class="token comment">//单个字符都为回文</span>
+            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token comment">//分类讨论</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">==</span>s<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span>dp<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">;</span>
+                <span class="token keyword">else</span> dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">max</span><span class="token punctuation">(</span>dp<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span>dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">&#125;</span>
+        <span class="token punctuation">&#125;</span>
+        <span class="token keyword">return</span> dp<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>时间复杂度为$O(n^2)$.</p>
 
                 
             </div>
@@ -958,6 +986,13 @@
 </main>
 
 
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
 
     
     <footer class="page-footer bg-color">
@@ -1031,7 +1066,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">6.1k</span>
+                        class="white-color">6.6k</span>
             
             
             
