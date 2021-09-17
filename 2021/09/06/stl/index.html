@@ -472,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.4k
+                    2.5k
                 </div>
                 
 
@@ -536,6 +536,7 @@ v<span class="token punctuation">.</span><span class="token function">back</span
 s<span class="token operator">+=</span><span class="token string">"123"</span><span class="token punctuation">;</span><span class="token comment">//+运算符已被重载，方便！</span>
 string s1<span class="token operator">=</span>s<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//从索引3开始连续5个字符组成的子串，注意索引从0开始</span>
 <span class="token keyword">int</span> pos<span class="token operator">=</span>s1<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//第二个参数和第三个参数代表从起始查询位置1起的6个字符，返回值是子串在母串中的位置（下标记录），如果没有找到，那么会返回一个特别的标记string::npos。</span>
+<span class="token keyword">auto</span> pos2<span class="token operator">=</span>s1<span class="token punctuation">.</span><span class="token function">rfind</span><span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//从索引为9的地方开始反着寻找子串</span>
 s1<span class="token punctuation">.</span><span class="token function">find_first_of</span><span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 s1<span class="token punctuation">.</span><span class="token function">find_last_of</span><span class="token punctuation">(</span><span class="token string">"123"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//都是字面意思</span>
 s1<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>pos<span class="token punctuation">,</span>len<span class="token punctuation">,</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//用str替换指定字符串从起始位置pos开始长度为len的字符,这个函数用法请参照https://blog.csdn.net/cai_niaocainiao/article/details/81260902</span>
@@ -548,7 +549,7 @@ s2<span class="token punctuation">.</span><span class="token function">erase</sp
 s3<span class="token punctuation">.</span><span class="token function">c_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//转成const char*型</span>
 s3<span class="token operator">=</span><span class="token function">to_string</span><span class="token punctuation">(</span><span class="token number">123</span><span class="token punctuation">)</span><span class="token comment">//s3="123",to_string实现将数字直接转成字符串，好用</span>
 <span class="token keyword">int</span> a<span class="token operator">=</span><span class="token function">stoi</span><span class="token punctuation">(</span><span class="token string">"12331"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//将string类型转换成int,atoi是将const char*转成int</span>
-<span class="token keyword">float</span> b<span class="token operator">=</span><span class="token function">stof</span><span class="token punctuation">(</span><span class="token string">"123.123"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//string转float</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">float</span> b<span class="token operator">=</span><span class="token function">stof</span><span class="token punctuation">(</span><span class="token string">"123.123"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//string转float</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <h3 id="哈希容器"><a href="#哈希容器" class="headerlink" title="哈希容器"></a>哈希容器</h3><p>散列表（Hash table，也叫哈希表），是根据键（Key）而直接访问在内存存储位置的数据结构。也就是说，它通过计算一个关于键值的函数，将所需查询的数据映射到表中一个位置来访问记录，这<strong>加快了查找速度</strong>。这个映射函数称做散列函数，存放记录的数组称做散列表。<br>STL中包括两个常用的哈希数据结构，<strong>unordered_map和unordered_set</strong>，这两个容器都可以使用迭代器来进行遍历（其实一般不用遍历），都没法用[]来遍历。使用哈希容器一般是用于查找键值，要注意的是<strong>键是唯一</strong>的。</p>
 <h4 id="unordered-map"><a href="#unordered-map" class="headerlink" title="unordered_map"></a>unordered_map</h4><p>其与map都为关联容器，都是存键值对的。其与map不同的地方是，map底层是用红黑树实现的，查询和修改都是$O(logn)$的时间复杂度，而unordered_map查询是$O(1)$的，快就完事了。但哈希容器都是无序的，所以对于那些有顺序要求的题，还得用map。</p>
@@ -1120,7 +1121,7 @@ priority_queue<span class="token operator">&lt;</span>pair<span class="token ope
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">17.2k</span>
+                        class="white-color">18.9k</span>
             
             
             
