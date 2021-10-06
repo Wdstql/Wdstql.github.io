@@ -472,7 +472,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.5k
+                    2.6k
                 </div>
                 
 
@@ -515,8 +515,11 @@
 </li>
 <li><p><strong>distance（begin,end）</strong>:用于计算两个迭代器表示的范围内包含元素的个数</p>
 </li>
+<li><p><strong>find_if（begin,end,mycmp）</strong>:它可以在前两个参数指定的范围内查找可以使第三个参数指定的谓词返回 true 的第一个对象。谓词不能修改传给它的对象。</p>
+</li>
+<li><p><strong>transform(first,last,result,op)</strong>:first是容器的首迭代器，last为容器的末迭代器，result为存放结果的容器，op为要进行操作的一元函数对象或sturct、class。比如op是一个将小写字母转为大写字母的函数，则这个就可以将first到last的元素中所有小写转大写并将结果的首迭代器存在result中</p>
+</li>
 </ol>
-<p>11.<strong>find_if（begin,end,mycmp）</strong>:它可以在前两个参数指定的范围内查找可以使第三个参数指定的谓词返回 true 的第一个对象。谓词不能修改传给它的对象。</p>
 <h2 id="常用数据结构"><a href="#常用数据结构" class="headerlink" title="常用数据结构"></a>常用数据结构</h2><p>这里是介绍一些常用数据结构的API</p>
 <h3 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h3><p>不必多说，基本算是用的最多的了，相当于能动态插入和删除的数组</p>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">std<span class="token double-colon punctuation">::</span>vector<span class="token operator">&lt;</span>T<span class="token operator">></span> <span class="token function">v</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//初始化n个元素</span>
@@ -1121,7 +1124,7 @@ priority_queue<span class="token operator">&lt;</span>pair<span class="token ope
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">18.9k</span>
+                        class="white-color">21.9k</span>
             
             
             
