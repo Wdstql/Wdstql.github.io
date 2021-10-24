@@ -6,7 +6,7 @@
   <link href="https://wdstql.github.io/atom.xml" rel="self"/>
   
   <link href="https://wdstql.github.io/"/>
-  <updated>2021-10-08T13:32:20.186Z</updated>
+  <updated>2021-10-24T16:53:47.723Z</updated>
   <id>https://wdstql.github.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>快速幂</title>
+    <link href="https://wdstql.github.io/2021/10/25/quickmul/"/>
+    <id>https://wdstql.github.io/2021/10/25/quickmul/</id>
+    <published>2021-10-24T16:00:00.000Z</published>
+    <updated>2021-10-24T16:53:47.723Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;聊聊快速幂&quot;&gt;&lt;a href=&quot;#聊聊快速幂&quot; class=&quot;headerlink&quot; title=&quot;聊聊快速幂&quot;&gt;&lt;/a&gt;聊聊快速幂&lt;/h1&gt;&lt;p&gt;今天leetcode正好刷到了，就来写一下吧&lt;/p&gt;
+&lt;h2 id=&quot;快速幂的定义&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="数据结构与算法" scheme="https://wdstql.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="leetcode" scheme="https://wdstql.github.io/tags/leetcode/"/>
+    
+    <category term="洛谷" scheme="https://wdstql.github.io/tags/%E6%B4%9B%E8%B0%B7/"/>
+    
+    <category term="比赛" scheme="https://wdstql.github.io/tags/%E6%AF%94%E8%B5%9B/"/>
+    
+    <category term="快速幂" scheme="https://wdstql.github.io/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/"/>
+    
+    <category term="递归" scheme="https://wdstql.github.io/tags/%E9%80%92%E5%BD%92/"/>
+    
+  </entry>
   
   <entry>
     <title>go开发基础（二）</title>
