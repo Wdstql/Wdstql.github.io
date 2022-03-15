@@ -6,7 +6,7 @@
   <link href="https://wdstql.github.io/atom.xml" rel="self"/>
   
   <link href="https://wdstql.github.io/"/>
-  <updated>2022-03-10T05:30:52.694Z</updated>
+  <updated>2022-03-15T05:45:55.655Z</updated>
   <id>https://wdstql.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>sql学习记录（二）</title>
+    <link href="https://wdstql.github.io/2022/03/15/database2/"/>
+    <id>https://wdstql.github.io/2022/03/15/database2/</id>
+    <published>2022-03-15T05:30:00.000Z</published>
+    <updated>2022-03-15T05:45:55.655Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;sql学习记录（二）&quot;&gt;&lt;a href=&quot;#sql学习记录（二）&quot; class=&quot;headerlink&quot; title=&quot;sql学习记录（二）&quot;&gt;&lt;/a&gt;sql学习记录（二）&lt;/h1&gt;&lt;p&gt;腹泻式更新了属于是&lt;/p&gt;
+&lt;p&gt;（一）看这里：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="实用教程" scheme="https://wdstql.github.io/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="sql" scheme="https://wdstql.github.io/tags/sql/"/>
+    
+    <category term="基础语法" scheme="https://wdstql.github.io/tags/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>sql学习记录（一）</title>
     <link href="https://wdstql.github.io/2022/03/10/database1/"/>
     <id>https://wdstql.github.io/2022/03/10/database1/</id>
     <published>2022-03-10T04:30:00.000Z</published>
-    <updated>2022-03-10T05:30:52.694Z</updated>
+    <updated>2022-03-15T05:45:38.755Z</updated>
     
     
       
