@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签: sql, Wdstql">
+    <meta name="keywords" content="Wdstql">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>标签: sql | Wdstql</title>
+    <title>Wdstql</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -331,385 +331,554 @@
 
 </header>
 
-    <div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                Wdstqlのblog
-                
-            </div>
+    
 
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "忘却了所有悲剧，所见皆是奇迹",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/wdstql/blog_image/wallhaven-pkw6y3.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-04-10
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="碎碎念-1"><a href="#碎碎念-1" class="headerlink" title="碎碎念-1"></a>碎碎念-1</h1><p>好久没更新博客，今天突然想讲点东西，也不知道为啥，想到哪写到哪吧（反正也没人看）</p>
+<h2 id="现状"><a href="#现状" class="headerlink" title="现状"></a>现状</h2><p>可能有人会说，你是不是闲的没事干在这碎碎念呀，其实还挺忙的，而且是因为实在太忙了，反而容易摆烂，感觉之前不是那么忙的时候，我每天的学习时间反而要比现在多，怎么回事呢？</p>
+<p>现在就是肝论文，肝实验咯，系统实现还拖着一大堆进度，论文里面还有一大堆东西要改，每周二还要讲科研创新的东西，我真是x了，真是任务越多越想摆烂，越畏惧做那些任务。</p>
+<p>不管那么多了，睡觉起来就开肝咯，其实主要是迷茫，觉得无论怎么做都做不完，该咋办呢？哎~，想那麽多也莫得啥子用，先把手机ban了再说</p>
+<h2 id="为啥写碎碎念"><a href="#为啥写碎碎念" class="headerlink" title="为啥写碎碎念"></a>为啥写碎碎念</h2><p>其实就是开摆不想干活然后看完了赛马娘，挺有感慨的，又突然想起之前我就想过写自己的2022年度推荐游戏和动漫啥的，干脆就现在想到什么写什么了</p>
+<h2 id="聊聊赛马娘"><a href="#聊聊赛马娘" class="headerlink" title="聊聊赛马娘"></a>聊聊赛马娘</h2><p>今天在看完天国大魔境后想起了赛马娘就把它补完了，一口气看了9集，爽~。</p>
+<p>关注赛马娘主要还是看了泛哥哥的mad，真的看了很多遍这个mad，包括看了很多人的reaction。先聊聊对动画的感受吧，一个是跑的时候确实蛮燃的，还有一个就是情绪调动和渲染确实厉害，至于作画嘛我知道它的手绘live很厉害，但我主要对live其实本身就没啥感觉，这还是容纳在作品整体舒适度里面吧。</p>
+<p>其中单论动画来说第5集讲了麦昆和帝皇的天皇赏之战我倒是没有太多的感觉，后面7，8集对米浴的描写还是蛮有意思的，主要这种我的胜利却破坏了别人的梦想确实没怎么见过，然后米浴的黑色刺客属实是帅到了，不过这一部分最喜欢的部分还是米浴在跑完后无人欢呼最后由她的对手来为她鼓掌，以及成为了波旁的英雄。</p>
+<p>我最喜欢的肯定是第10集了，帝宝要引退，然后她身边的所有人为她做的事情，包括双涡轮挑战她并证明了什么叫永不放弃呀，北黑的护身符呀，训练员的呐喊呀，还有spica队友的表白呀，还有无数为她应援的人们的话语啊，共同加起来真的很让人泪目。</p>
+<p>第11集的贴贴还是很不错的，第12集就一转刀了，帝宝对麦昆的关于奇迹出现的承诺也恰好呼应了前面双涡轮对帝宝永不放弃的承诺；第13集也是演出超神的一集，可惜就是我提前先看了泛哥哥mad中对这一部分的诠释，我确实觉得mad在这里确实部分超越了动画本身，包括在保留那段麦昆视角四周寂静只剩喘息声的基础上加上了超燃的bgm，然后帝皇说完台词后蹬地，歌一顶上来真的爽，最后的点睛之笔更不用说就是真人赛马的场景与赛马娘的结合堪称神来之笔，原解说的一句“东海帝皇，奇迹的复活”真的是令人感概，包括冲过线后的真马的移动和帝宝的移动也是衔接的很好，很舒服。当然这里不是说原片不好的意思，原片会有更多的细节，包括对麦昆视角更多的描写，对整个赛程的描写等等等。</p>
+<p>综上所述，<strong>快去看赛马娘第二季！！！</strong></p>
+<h2 id="聊聊年度动画"><a href="#聊聊年度动画" class="headerlink" title="聊聊年度动画"></a>聊聊年度动画</h2><p>我看的动画确实越来越少了，就2022年而言，我推荐的动画大概就是以下这些：</p>
+<ul>
+<li><p>孤独摇滚：这个不必多说，搞笑和励志齐飞，巨好看，是我最推荐的一部，音乐也贼好听，尤其是第12话的第2首歌，波奇酱社恐的部分也是惟妙惟肖，巨好笑，看就完事了</p>
+</li>
+<li><p>间谍过家家：阿尼亚可爱捏，也是搞笑带着家庭的温馨，黄昏、约尔、阿尼亚、邦德组成的这么一个家庭真的是看起来太舒服了，每个人各自隐藏身份产生的碰撞确实好看，下半部分的suki也是印象深刻，然后两首op,ed真的超高质量，还有就是，阿尼亚可爱捏</p>
+</li>
+<li><p>辉夜3+剧场版：3是去年4月的，剧场版则是刚出的四集，都很值得推荐，3的话每一集都有新活，每一集都能让我开怀大笑，真的是恋爱喜剧的巅峰之作，包括说第5话的rap，早阪和白银的ktv，石燕的一些剧情，反正还有很多，而剧场版的话辉夜的内部人格法庭，小辉夜真的可爱，冰辉直球爆杀，最后恋爱观的碰撞也蛮有意思，搞笑也是维持了一贯的高水准，圣诞交换礼物的手铐确实印象深刻，只是感觉最后进度快了点，略过了很多有意思的剧情</p>
+</li>
+<li><p>鬼灭之刃花街篇：这部倒是没那么推荐，主要就是ufo最后的打戏做的太帅了，前面的文戏确实拖沓，我都是倍速看的，鬼灭倒是符合我脑内妄想的中二设定</p>
+</li>
+<li><p>高木同学3+剧场版：这个甜甜甜就完事了，我真的是看的在床上扭成蛆了，还有后面的剧场版，西片终于直球了一波，高木和西片的互动确实有意思</p>
+</li>
+</ul>
+<p>大概就上面这些了，我看的确实少呀，包括灵能百分百，死神，更衣人偶等佳片都没看</p>
+<h2 id="聊聊漫画"><a href="#聊聊漫画" class="headerlink" title="聊聊漫画"></a>聊聊漫画</h2><p>突然又想起可以聊聊漫画，主要就是分享一下我看的漫画吧</p>
+<ul>
+<li><p>外天楼：石黑正树的短篇，几个看似不相关的故事却联系在一起构建出了人和机器生命共存的诡异世界观，里面的伏笔与反转确实妙，整个世界观也很有意思，其中人伦的问题真的惊讶</p>
+</li>
+<li><p>夏日重现：一天看完，看的贼爽，中后期基本上就是奇幻战斗了，前面的悬疑氛围真的重，包括两个女二，男主每一次轮回的智斗真的看爽，后面就是看战斗了</p>
+</li>
+<li><p>亲爱的你包含杀意：这个前期的氛围真的挺爽，男主双重人格，那种一觉醒来发现有几天被跳过了，你都不知道这几天你干了什么，还有就是身边的人的反转真的爽，最让我印象深刻的应该是那个警察的一幕，中间那个女主暴露自己之后我都不知道要怎么画了，不过整体还是维持了很高的水准，最后犯人的揭晓也蛮有意思的</p>
+</li>
+</ul>
+<h2 id="聊聊看的视频和直播"><a href="#聊聊看的视频和直播" class="headerlink" title="聊聊看的视频和直播"></a>聊聊看的视频和直播</h2><p>主要最近看泛哥哥的视频和直播都很多，视频方面整活真的越来越让人眼前一黑了，更多的想聊的还是直播方面，直播游戏主要看了泛哥哥播的一些视觉小说，包括人狼村、ever17，也看了很多次杂谈回，以及一些泛哥哥对视频的reaction也蛮有意思，包括mad大赛的录播，生日回，看孤独摇滚，看唐诱等等</p>
+<p>还有一些印象比较深的包括散人的蓝鲸岛，桀哥的各种视频，stn快报，还有各种mad等等</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>先讲到这里吧，游戏什么的先不写了，摸了</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Wdstql</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://wdstql.github.io/2023/04/10/talk1/">https://wdstql.github.io/2023/04/10/talk1/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Wdstql</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    let gitalk = new Gitalk({
+        clientID: 'f0145574412edf49e989',
+        clientSecret: '3be630c52507b489351938486b92f888f6605891',
+        repo: 'wdstql.github.io',
+        owner: 'wdstql',
+        admin: "wdstql",
+        id: '2023-04-10T02-28-33',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
 </script>
 
-
-    </div>
-</div>
-
-<main class="content">
+    
 
     
 
-<div id="tags" class="container chip-container">
-    <div class="card">
-        <div class="card-content">
-            <div class="tag-title center-align">
-                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
-            <div class="tag-chips">
-                
-                
-                <a href="/tags/leetcode/" title="leetcode: 6">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="leetcode" style="background-color: #F9EBEA;">leetcode
-                        <span class="tag-length">6</span>
-                    </span>
+            <div class="card">
+                <a href="/2023/04/10/talk1/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/wdstql/blog_image/015f1e5bd2e432a8012099c8141cb1.gif" data-original="https://cdn.jsdelivr.net/gh/wdstql/blog_image/wallhaven-pkw6y3.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
                 </a>
-                
-                
-                <a href="/tags/%E6%B4%9B%E8%B0%B7/" title="洛谷: 5">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="洛谷" style="background-color: #F5EEF8;">洛谷
-                        <span class="tag-length">5</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/trie/" title="trie: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="trie" style="background-color: #D5F5E3;">trie
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/kmp/" title="kmp: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="kmp" style="background-color: #E8F8F5;">kmp
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/ac%E8%87%AA%E5%8A%A8%E6%9C%BA/" title="ac自动机: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="ac自动机" style="background-color: #FEF9E7;">ac自动机
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%AF%94%E8%B5%9B/" title="比赛: 6">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="比赛" style="background-color: #F8F9F9;">比赛
-                        <span class="tag-length">6</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E5%B7%AE%E5%88%86/" title="差分: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="差分" style="background-color: #82E0AA;">差分
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/" title="前缀和: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="前缀和" style="background-color: #D7BDE2;">前缀和
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/sql/" title="sql: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            data-tagname="sql" style="background-color: #A3E4D7;">sql
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/" title="基础语法: 4">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="基础语法" style="background-color: #85C1E9;">基础语法
-                        <span class="tag-length">4</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86/" title="文本处理: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="文本处理" style="background-color: #F8C471;">文本处理
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/" title="文件读写: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="文件读写" style="background-color: #F9E79F;">文件读写
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="正则表达式: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="正则表达式" style="background-color: #FFF;">正则表达式
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" title="二分查找: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="二分查找" style="background-color: #F5EEF8;">二分查找
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E4%BA%8C%E5%88%86%E7%AD%94%E6%A1%88/" title="二分答案: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="二分答案" style="background-color: #D7BDE2;">二分答案
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E9%AB%98%E7%B2%BE%E5%BA%A6/" title="高精度: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="高精度" style="background-color: #FFF;">高精度
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/go/" title="go: 3">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="go" style="background-color: #D5F5E3;">go
-                        <span class="tag-length">3</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" title="环境搭建: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="环境搭建" style="background-color: #F8F9F9;">环境搭建
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/life/" title="life: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="life" style="background-color: #F8F9F9;">life
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="博客搭建: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="博客搭建" style="background-color: #F8F9F9;">博客搭建
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/git/" title="git: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="git" style="background-color: #F8F9F9;">git
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" title="动态规划: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="动态规划" style="background-color: #F8C471;">动态规划
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/" title="主题美化: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="主题美化" style="background-color: #F8C471;">主题美化
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E5%BF%AB%E9%80%9F%E5%B9%82/" title="快速幂: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="快速幂" style="background-color: #85C1E9;">快速幂
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E9%80%92%E5%BD%92/" title="递归: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="递归" style="background-color: #82E0AA;">递归
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/STL/" title="STL: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="STL" style="background-color: #F8C471;">STL
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/API/" title="API: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="API" style="background-color: #F8F9F9;">API
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-10
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Wdstql
+                            
+                        </span>
+                    </div>
+                </div>
+
                 
             </div>
         </div>
-    </div>
-</div>
-
-    
-
-    <article id="articles" class="container articles">
-        <div class="row tags-posts">
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="sql, 基础语法" data-aos="fade-up">
-                <div class="card">
-                    <a href="/2022/03/15/database2/">
-                        <div class="card-image tag-image">
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/15/database2/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="https://cdn.jsdelivr.net/gh/wdstql/blog_image/015f1e5bd2e432a8012099c8141cb1.gif" data-original="https://cdn.jsdelivr.net/gh/wdstql/blog_image/wallhaven-pkw6y3.jpg" class="responsive-img" alt="sql学习记录（二）">
+                        
+                        <span class="card-title">sql学习记录（二）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
                             
-                            
-                            <img src="https://cdn.jsdelivr.net/gh/wdstql/blog_image/015f1e5bd2e432a8012099c8141cb1.gif" data-original="https://cdn.jsdelivr.net/gh/wdstql/blog_image/wallhaven-pkw6y3.jpg" class="responsive-img" alt="sql学习记录（二）">
-                            
-                            <span class="card-title">sql学习记录（二）</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
+                        
+                    </div>
+                    <div class="publish-info">
                             <span class="publish-date">
                                 <i class="far fa-clock fa-fw icon-date"></i>2022-03-15
                             </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/" class="post-category">
-                                实用教程
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/" class="post-category">
+                                    实用教程
                                 </a>
-                                
-                                
-                            </span>
-                        </div>
+                            
+                            
+                        </span>
                     </div>
                 </div>
-            </div>
-            
-            
-            <div class="article tag-post col s12 m6 l4" data-tags="sql, 基础语法" data-aos="fade-up">
-                <div class="card">
-                    <a href="/2022/03/10/database1/">
-                        <div class="card-image tag-image">
-                            
-                            
-                            <img src="https://cdn.jsdelivr.net/gh/wdstql/blog_image/015f1e5bd2e432a8012099c8141cb1.gif" data-original="https://cdn.jsdelivr.net/gh/wdstql/blog_image/wallhaven-pkw6y3.jpg" class="responsive-img" alt="sql学习记录（一）">
-                            
-                            <span class="card-title">sql学习记录（一）</span>
-                        </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/sql/">
+                        <span class="chip bg-color">sql</span>
                     </a>
-                    <div class="card-content article-content">
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-10
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%AE%9E%E7%94%A8%E6%95%99%E7%A8%8B/" class="post-category">
-                                实用教程
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
+                    
+                    <a href="/tags/%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">
+                        <span class="chip bg-color">基础语法</span>
+                    </a>
+                    
                 </div>
+                
             </div>
-            
         </div>
-    </article>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
 </main>
 
 
