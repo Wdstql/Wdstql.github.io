@@ -1,0 +1,97 @@
+{
+    "window.commandCenter": true,
+    "terminal.integrated.defaultProfile.windows": "conda_shell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "conda_shell": {
+            "path": "C:\\Windows\\System32\\cmd.exe",
+            "args": [
+                "/K",
+                "C:\\Users\\cjh\\miniconda3\\Scripts\\activate.bat C:\\Users\\cjh\\miniconda3" 
+            ]
+        }
+    },
+    "remote.SSH.remotePlatform": {
+        "cjh@120.79.62.221": "linux",
+        "120.79.62.221": "linux",
+        "remote.cnb.space": "linux"
+    },
+    "workbench.settings.applyToAllProfiles": [],
+    "http.proxy": "http://127.0.0.1:7897",
+    "background.editor": {
+        "useFront": true,
+        "style": {
+            "background-position": "center",
+            "background-size": "cover",
+            "opacity": 0.2
+        },
+        "styles": [
+            {},
+            {},
+            {}
+        ],
+        "images": [
+            "file:///C:/me/blog/Wdstql.github.io/medias/background/0.jpg",
+            "file:///C:/me/blog/Wdstql.github.io/medias/background/1.png",
+            "file:///C:/me/blog/Wdstql.github.io/medias/background/2.png",
+            "file:///C:/me/blog/Wdstql.github.io/medias/background/3.png",
+            "file:///C:/me/blog/Wdstql.github.io/medias/background/4.jpg",
+            "file:///C:/me/blog/Wdstql.github.io/medias/background/5.jpg",
+            "file:///C:/me/blog/Wdstql.github.io/medias/background/6.jpg",            
+        ],
+        "interval": 0,
+        "random": true
+    },
+    "background.panel": {
+        "images": [
+            "file:///C:/me/blog/Wdstql.github.io/medias/background/7.jpg",
+            "file:///C:/me/blog/Wdstql.github.io/medias/background/8.jpg",
+            "file:///C:/me/blog/Wdstql.github.io/medias/background/9.jpg",
+            "file:///C:/me/blog/Wdstql.github.io/medias/background/10.jpg",
+            "file:///C:/me/blog/Wdstql.github.io/medias/background/11.jpg",
+        ],
+        "opacity": 0.1,
+        "size": "cover",
+        "position": "center",
+        "interval": 0,
+        "random": true
+    },
+    "background.fullscreen": {
+        "images": [],
+        "opacity": 0.1,
+        "size": "cover",
+        "position": "center",
+        "interval": 0,
+        "random": false
+    },
+    "background.enabled": true,
+    "editor.mouseWheelZoom": true,
+    "background.sidebar": {
+        "images": [
+            "file:///C:/me/blog/Wdstql.github.io/medias/portal/1.jpg",
+            "file:///C:/me/blog/Wdstql.github.io/medias/portal/2.png",
+            "file:///C:/me/blog/Wdstql.github.io/medias/portal/3.jpg",
+            "file:///C:/me/blog/Wdstql.github.io/medias/portal/4.jpg",
+            "file:///C:/me/blog/Wdstql.github.io/medias/portal/5.jpg",
+        ],
+        "opacity": 0.1,
+        "size": "cover",
+        "position": "center",
+        "interval": 0,
+        "random": true
+    }
+}
