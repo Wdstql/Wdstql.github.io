@@ -1,19 +1,21 @@
 {
   "id": "prince-of-persia-lost-crown",
   "title": "波斯王子：失落的王冠",
-  "platforms": [],
+  "platforms": [
+    "PC"
+  ],
   "genres": [
     "类银河恶魔城",
     "动作",
     "平台跳跃"
   ],
   "status": "finished",
-  "score": null,
+  "score": 83,
   "moments": [],
   "fanworks": [],
   "tags": [],
   "createdAt": "2026-10-08T19:07:30.278Z",
-  "updatedAt": "2026-10-10T18:41:18.633Z",
+  "updatedAt": "2026-10-10T18:51:26.930Z",
   "titleEn": "Prince of Persia: The Lost Crown",
   "steamAppId": 2751000,
   "release": "2024-01",
@@ -22,5 +24,8 @@
   "hero": "/media/prince-of-persia-lost-crown/hero.jpg",
   "thumb": "/media/prince-of-persia-lost-crown/thumb-muzwxufl.webp",
   "playedFrom": "2026-09",
-  "hours": null
+  "hours": 30,
+  "playedTo": "2026-10",
+  "oneLiner": "很扎实和标准的一款类银",
+  "review": "育碧的罐头，但是好玩的罐头。\n整体玩下来很扎实和标准的一款类银河恶魔城游戏：\n- 演出比较有特色，甚至很多BOSS有多个交互动画，包括特殊弹反、处决等等。\n- 关卡设计上有不少受苦跳跳乐，甚至最难的我都跳过了，但有一说一玩时受苦过后才爽。\n- 敌人设计上还不错，有不少boss都挺帅的，可惜的是到后期我的血条已经太厚了，很多Boss后期反而过的快都是堆血过去的，从帅气程度上比较喜欢普通拉姆->大流士->神拉姆，从boss交互上反而是前中期的森林女王、拉坚等等还阔以。\n- 扣分点主要在于要大后期才能拿到篝火之间的传送，使得很多时候在跑重复的路，这对于已经玩过不少类银的我来说还是很烦的。"
 }
