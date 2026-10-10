@@ -11,11 +11,17 @@
   ],
   "status": "finished",
   "score": 73,
-  "moments": [],
+  "moments": [
+    {
+      "id": "0f453ac2",
+      "src": "/media/zaijian-duandao/moments/1791659583825-0f453ac2.png",
+      "addedAt": "2026-10-10T19:13:03.833Z"
+    }
+  ],
   "fanworks": [],
   "tags": [],
   "createdAt": "2026-10-08T19:07:34.404Z",
-  "updatedAt": "2026-10-08T19:07:35.113Z",
+  "updatedAt": "2026-10-10T19:13:05.882Z",
   "titleEn": "再见断刀 (Zaijian Duandao)",
   "steamAppId": 2663950,
   "release": "2025-02",
