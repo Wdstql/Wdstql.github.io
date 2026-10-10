@@ -115,13 +115,26 @@ export function parseBvid(input: string): string | null {
   return input.match(/BV[0-9A-Za-z]{10}/)?.[0] ?? null
 }
 
+let cookie: Promise<string> | undefined
+
+/** Anonymous visitor ids (buvid3/buvid4), the same ones a browser gets on its first visit. */
+function biliCookie(): Promise<string> {
+  cookie ??= fetch('https://api.bilibili.com/x/frontend/finger/spi', { headers: UA, signal: AbortSignal.timeout(10000) })
+    .then((r) => r.json() as Promise<{ data?: { b_3?: string; b_4?: string } }>)
+    .then(({ data }) => (data?.b_3 ? `buvid3=${data.b_3}; buvid4=${encodeURIComponent(data.b_4 ?? '')}` : ''))
+    .catch(() => '')
+  return cookie
+}
+
 export async function biliInfo(gameId: string, input: string): Promise<Omit<Fanwork, 'id' | 'addedAt'>> {
   const bvid = parseBvid(input)
   if (!bvid) throw new HttpError(400, `没有识别出 BV 号：${input}`)
   const out: Omit<Fanwork, 'id' | 'addedAt'> = { bvid }
   try {
-    const res = await fetch(`https://api.bilibili.com/x/web-interface/view?bvid=${bvid}`, { headers: { ...UA, Referer: 'https://www.bilibili.com/' }, signal: AbortSignal.timeout(15000) })
-    const body = (await res.json()) as { code: number; data?: { title: string; pic: string; duration: number; owner?: { name: string } } }
+    // Requests without a visitor cookie are often rejected from datacenter IPs (e.g. CI runners).
+    const headers = { ...UA, Referer: 'https://www.bilibili.com/', Cookie: await biliCookie() }
+    const res = await fetch(`https://api.bilibili.com/x/web-interface/view?bvid=${bvid}`, { headers, signal: AbortSignal.timeout(15000) })
+    const body = (await res.json().catch(() => ({ code: res.status, message: `HTTP ${res.status}` }))) as { code: number; message?: string; data?: { title: string; pic: string; duration: number; owner?: { name: string } } }
     if (body.code === 0 && body.data) {
       out.title = body.data.title
       out.author = body.data.owner?.name
@@ -130,9 +143,12 @@ export async function biliInfo(gameId: string, input: string): Promise<Omit<Fanw
       const img = await download(body.data.pic.replace(/^http:/, 'https:') + '@640w_400h_1c.jpg', { Referer: 'https://www.bilibili.com/' })
         ?? await download(body.data.pic.replace(/^http:/, 'https:'), { Referer: 'https://www.bilibili.com/' })
       if (img) out.cover = await saveMedia(gameId, 'fanworks', `${bvid}.jpg`, img.data)
+    } else {
+      console.warn(`[bili] ${bvid}: code ${body.code} ${body.message ?? ''}`)
     }
-  } catch {
+  } catch (e) {
     // Offline or rate-limited: keep the BV id; the card still embeds the player.
+    console.warn(`[bili] ${bvid}: ${(e as Error).message}`)
   }
   return out
 }
