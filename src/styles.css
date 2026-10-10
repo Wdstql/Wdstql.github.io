@@ -161,9 +161,13 @@ h1, h2, h3, .ttl { font-family: var(--font-title); letter-spacing: .01em; font-s
   background-size: 200% 100%;
   box-shadow: 0 0 0 1px rgba(70, 227, 255, .4), 0 8px 30px -10px var(--cyan);
 }
-.btn-primary:hover { background-position: 100% 0; color: #000; }
+.btn-primary:hover {
+  color: #000; border: none;
+  background: linear-gradient(100deg, var(--cyan), #8af1ff 55%, var(--cyan));
+  background-size: 200% 100%; background-position: 100% 0;
+}
 .btn-pink { color: #fff; border: none; background: linear-gradient(100deg, #ff4f9a, #ff7cbc); box-shadow: 0 8px 30px -12px var(--pink); }
-.btn-pink:hover { color: #fff; filter: brightness(1.08); }
+.btn-pink:hover { color: #fff; border: none; background: linear-gradient(100deg, #ff4f9a, #ff7cbc); filter: brightness(1.08); }
 .btn-ghost { background: transparent; border-color: transparent; }
 .btn-danger:hover { border-color: #ff5f7a; color: #ff8fa1; background: rgba(255, 95, 122, .08); }
 
