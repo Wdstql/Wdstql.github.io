@@ -1,0 +1,28 @@
+{
+  "id": "hades",
+  "title": "哈迪斯",
+  "platforms": [],
+  "genres": [
+    "Roguelike",
+    "动作",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 87,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:27.482Z",
+  "updatedAt": "2026-10-08T19:07:27.867Z",
+  "titleEn": "Hades",
+  "steamAppId": 1145360,
+  "release": "2020-09",
+  "developer": "Supergiant Games",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/hades/cover.jpg",
+  "hero": "/media/hades/hero.jpg",
+  "thumb": "/media/hades/thumb-muzwxu3f.webp"
+}

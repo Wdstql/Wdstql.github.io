@@ -1,0 +1,27 @@
+{
+  "id": "expedition-33",
+  "title": "光与影：33号远征队",
+  "platforms": [],
+  "genres": [
+    "角色扮演",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 88,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:27.056Z",
+  "updatedAt": "2026-10-08T19:07:27.380Z",
+  "titleEn": "Clair Obscur: Expedition 33",
+  "steamAppId": 1903340,
+  "release": "2025-04",
+  "developer": "Sandfall Interactive",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/expedition-33/cover.jpg",
+  "hero": "/media/expedition-33/hero.jpg",
+  "thumb": "/media/expedition-33/thumb-muzwxtyl.webp"
+}

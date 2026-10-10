@@ -1,0 +1,59 @@
+# Builds the site and publishes it to GitHub Pages on every push to main.
+# Online edits (commits made from the website) land here too. Before building, the
+# hydrate step downloads Steam art and Bilibili metadata the browser couldn't fetch,
+# and commits those files back so the repo stays the single source of truth.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Fetch Steam art and Bilibili info
+        run: npm run hydrate
+
+      - name: Commit fetched media
+        run: |
+          git add data public/media
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "hydrate: Steam art and Bilibili info"
+          git pull --rebase origin main && git push origin HEAD:main || echo "push skipped; the next run will retry"
+
+      - run: npm run build
+
+      # Single-page app: unknown paths (e.g. /game/sekiro) fall back to the app shell.
+      - run: cp dist/index.html dist/404.html
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

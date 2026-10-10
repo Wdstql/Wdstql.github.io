@@ -1,0 +1,28 @@
+{
+  "id": "bang-dream",
+  "title": "BanG Dream! 少女乐团派对",
+  "platforms": [
+    "Mobile"
+  ],
+  "genres": [
+    "音游"
+  ],
+  "status": "finished",
+  "score": 72,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:31.969Z",
+  "updatedAt": "2026-10-08T19:07:32.075Z",
+  "titleEn": "BanG Dream! Girls Band Party!",
+  "titleJa": "バンドリ！ ガールズバンドパーティ！",
+  "steamAppId": null,
+  "release": "2015-03",
+  "developer": "Craft Egg / Bushiroad",
+  "inferred": [
+    "score",
+    "platforms"
+  ],
+  "cover": "/media/bang-dream/cover.jpg",
+  "thumb": "/media/bang-dream/thumb-muzwxtpq.webp"
+}

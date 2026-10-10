@@ -1,0 +1,26 @@
+{
+  "id": "i-wanna",
+  "title": "I Wanna 系列",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "平台跳跃"
+  ],
+  "status": "finished",
+  "score": 70,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.406Z",
+  "updatedAt": "2026-10-08T19:07:32.406Z",
+  "titleEn": "I Wanna Be the Guy",
+  "steamAppId": null,
+  "release": "2007-10",
+  "developer": "Kayin",
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ]
+}

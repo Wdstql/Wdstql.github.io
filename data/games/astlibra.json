@@ -1,0 +1,25 @@
+{
+  "id": "astlibra",
+  "title": "神之天平 ASTLIBRA Revision",
+  "platforms": [],
+  "genres": [
+    "动作",
+    "角色扮演",
+    "叙事"
+  ],
+  "status": "unplayed",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:28.502Z",
+  "updatedAt": "2026-10-08T19:07:28.826Z",
+  "titleEn": "ASTLIBRA Revision",
+  "titleJa": "ASTLIBRA ～生きた証～ Revision",
+  "steamAppId": 1718570,
+  "release": "2022-10",
+  "developer": "KEIZO",
+  "cover": "/media/astlibra/cover.jpg",
+  "hero": "/media/astlibra/hero.jpg",
+  "thumb": "/media/astlibra/thumb-muzwxton.webp"
+}

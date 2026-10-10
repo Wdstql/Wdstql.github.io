@@ -1,0 +1,29 @@
+{
+  "id": "ace-attorney-investigations",
+  "title": "逆转检察官1&2 御剑精选集",
+  "platforms": [],
+  "genres": [
+    "推理",
+    "文字冒险",
+    "解谜"
+  ],
+  "status": "finished",
+  "score": 86,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:26.691Z",
+  "updatedAt": "2026-10-08T19:07:27.005Z",
+  "titleEn": "Ace Attorney Investigations Collection",
+  "titleJa": "逆転検事1&2 御剣セレクション",
+  "steamAppId": 2401970,
+  "release": "2009-05",
+  "developer": "Capcom",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/ace-attorney-investigations/cover.jpg",
+  "hero": "/media/ace-attorney-investigations/hero.jpg",
+  "thumb": "/media/ace-attorney-investigations/thumb-muzwxtlx.webp"
+}

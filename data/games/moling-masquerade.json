@@ -1,0 +1,31 @@
+{
+  "id": "moling-masquerade",
+  "title": "魔灵 假面舞会",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "推理",
+    "悬疑",
+    "解谜"
+  ],
+  "status": "finished",
+  "score": 73,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:33.794Z",
+  "updatedAt": "2026-10-08T19:07:34.599Z",
+  "titleEn": "DAEMON MASQUERADE",
+  "steamAppId": 2277090,
+  "release": "2024-10",
+  "developer": "Callum Page",
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ],
+  "cover": "/media/moling-masquerade/cover.jpg",
+  "hero": "/media/moling-masquerade/hero.jpg",
+  "thumb": "/media/moling-masquerade/thumb-muzwxuao.webp"
+}

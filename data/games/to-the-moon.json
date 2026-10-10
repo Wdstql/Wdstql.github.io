@@ -1,0 +1,28 @@
+{
+  "id": "to-the-moon",
+  "title": "去月球",
+  "platforms": [],
+  "genres": [
+    "叙事",
+    "解谜",
+    "角色扮演"
+  ],
+  "status": "finished",
+  "score": 90,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:28.800Z",
+  "updatedAt": "2026-10-08T19:07:29.060Z",
+  "titleEn": "To the Moon",
+  "steamAppId": 206440,
+  "release": "2011-11",
+  "developer": "Freebird Games",
+  "oneLiner": "玩了去月球本体，后续的还没完",
+  "inferred": [
+    "score"
+  ],
+  "cover": "/media/to-the-moon/cover.jpg",
+  "hero": "/media/to-the-moon/hero.jpg",
+  "thumb": "/media/to-the-moon/thumb-muzwxunf.webp"
+}

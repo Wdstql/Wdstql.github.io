@@ -1,0 +1,24 @@
+{
+  "id": "neon-white",
+  "title": "霓虹白客",
+  "platforms": [],
+  "genres": [
+    "射击",
+    "平台跳跃",
+    "动作"
+  ],
+  "status": "paused",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:29.061Z",
+  "updatedAt": "2026-10-08T19:07:29.377Z",
+  "titleEn": "Neon White",
+  "steamAppId": 1533420,
+  "release": "2022-06",
+  "developer": "Angel Matrix",
+  "cover": "/media/neon-white/cover.jpg",
+  "hero": "/media/neon-white/hero.jpg",
+  "thumb": "/media/neon-white/thumb-muzwxucb.webp"
+}

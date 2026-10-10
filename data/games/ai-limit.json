@@ -1,0 +1,27 @@
+{
+  "id": "ai-limit",
+  "title": "无限机兵",
+  "platforms": [],
+  "genres": [
+    "魂系",
+    "动作",
+    "角色扮演"
+  ],
+  "status": "finished",
+  "score": 80,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:38.068Z",
+  "updatedAt": "2026-10-08T19:07:38.358Z",
+  "titleEn": "AI LIMIT",
+  "steamAppId": 2407270,
+  "release": "2025-03",
+  "developer": "SenseGames",
+  "inferred": [
+    "score"
+  ],
+  "cover": "/media/ai-limit/cover.jpg",
+  "hero": "/media/ai-limit/hero.jpg",
+  "thumb": "/media/ai-limit/thumb-muzwxtmn.webp"
+}

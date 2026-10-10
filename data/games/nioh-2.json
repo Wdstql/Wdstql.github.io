@@ -1,0 +1,25 @@
+{
+  "id": "nioh-2",
+  "title": "仁王2",
+  "platforms": [],
+  "genres": [
+    "魂系",
+    "动作",
+    "角色扮演"
+  ],
+  "status": "unplayed",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:29.456Z",
+  "updatedAt": "2026-10-08T19:07:29.799Z",
+  "titleEn": "Nioh 2",
+  "titleJa": "仁王2",
+  "steamAppId": 1325200,
+  "release": "2020-03",
+  "developer": "Team NINJA",
+  "cover": "/media/nioh-2/cover.jpg",
+  "hero": "/media/nioh-2/hero.jpg",
+  "thumb": "/media/nioh-2/thumb-muzwxudn.webp"
+}

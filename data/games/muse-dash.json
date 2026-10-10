@@ -1,0 +1,26 @@
+{
+  "id": "muse-dash",
+  "title": "喵斯快跑",
+  "platforms": [],
+  "genres": [
+    "音游"
+  ],
+  "status": "finished",
+  "score": 84,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:27.062Z",
+  "updatedAt": "2026-10-08T19:07:27.406Z",
+  "titleEn": "Muse Dash",
+  "steamAppId": 774171,
+  "release": "2018-06",
+  "developer": "PeroPeroGames",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/muse-dash/cover.jpg",
+  "hero": "/media/muse-dash/hero.jpg",
+  "thumb": "/media/muse-dash/thumb-muzwxubm.webp"
+}

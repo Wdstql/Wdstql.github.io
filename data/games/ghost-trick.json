@@ -1,0 +1,29 @@
+{
+  "id": "ghost-trick",
+  "title": "幽灵诡计：幻影侦探",
+  "platforms": [],
+  "genres": [
+    "解谜",
+    "推理",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 87,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:27.791Z",
+  "updatedAt": "2026-10-08T19:07:28.501Z",
+  "titleEn": "Ghost Trick: Phantom Detective",
+  "titleJa": "ゴースト トリック",
+  "steamAppId": 1967430,
+  "release": "2010-06",
+  "developer": "Capcom",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/ghost-trick/cover.jpg",
+  "hero": "/media/ghost-trick/hero.jpg",
+  "thumb": "/media/ghost-trick/thumb-muzwxu17.webp"
+}

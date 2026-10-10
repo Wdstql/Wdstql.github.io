@@ -1,0 +1,29 @@
+{
+  "id": "backpack-battles",
+  "title": "背包乱斗",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "策略",
+    "Roguelike"
+  ],
+  "status": "finished",
+  "score": 77,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:34.888Z",
+  "updatedAt": "2026-10-08T19:07:35.201Z",
+  "titleEn": "Backpack Battles",
+  "steamAppId": 2427700,
+  "release": "2025-06",
+  "developer": "PlayWithFurcifer",
+  "inferred": [
+    "score",
+    "platforms"
+  ],
+  "cover": "/media/backpack-battles/cover.jpg",
+  "hero": "/media/backpack-battles/hero.jpg",
+  "thumb": "/media/backpack-battles/thumb-muzwxtpc.webp"
+}

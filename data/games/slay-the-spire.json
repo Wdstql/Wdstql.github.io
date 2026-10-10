@@ -1,0 +1,28 @@
+{
+  "id": "slay-the-spire",
+  "title": "杀戮尖塔",
+  "platforms": [],
+  "genres": [
+    "Roguelike",
+    "卡牌",
+    "策略"
+  ],
+  "status": "finished",
+  "score": 94,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:24.513Z",
+  "updatedAt": "2026-10-08T19:09:03.893Z",
+  "titleEn": "Slay the Spire",
+  "steamAppId": 646570,
+  "release": "2019-01",
+  "developer": "Mega Crit",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/slay-the-spire/cover.jpg",
+  "hero": "/media/slay-the-spire/hero.jpg",
+  "thumb": "/media/slay-the-spire/thumb-muzwxuky.webp"
+}

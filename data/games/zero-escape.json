@@ -1,0 +1,29 @@
+{
+  "id": "zero-escape",
+  "title": "极限脱出系列",
+  "platforms": [],
+  "genres": [
+    "文字冒险",
+    "解谜",
+    "悬疑",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 88,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:25.968Z",
+  "updatedAt": "2026-10-08T19:07:26.356Z",
+  "titleEn": "Zero Escape: The Nonary Games",
+  "titleJa": "極限脱出",
+  "steamAppId": 477740,
+  "release": "2009-12",
+  "developer": "Chunsoft / Spike Chunsoft",
+  "inferred": [
+    "score"
+  ],
+  "cover": "/media/zero-escape/cover.jpg",
+  "hero": "/media/zero-escape/hero.jpg",
+  "thumb": "/media/zero-escape/thumb-muzwxuro.webp"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "portal-2",
+  "title": "传送门2",
+  "platforms": [],
+  "genres": [
+    "解谜",
+    "合作",
+    "叙事"
+  ],
+  "status": "dropped",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:37.061Z",
+  "updatedAt": "2026-10-08T19:07:37.329Z",
+  "titleEn": "Portal 2",
+  "steamAppId": 620,
+  "release": "2011-04",
+  "developer": "Valve",
+  "oneLiner": "太晕了",
+  "cover": "/media/portal-2/cover.jpg",
+  "hero": "/media/portal-2/hero.jpg",
+  "thumb": "/media/portal-2/thumb-muzwxuf9.webp"
+}

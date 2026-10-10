@@ -1,0 +1,28 @@
+{
+  "id": "human-fall-flat",
+  "title": "人类一败涂地",
+  "platforms": [],
+  "genres": [
+    "平台跳跃",
+    "解谜",
+    "合作"
+  ],
+  "status": "finished",
+  "score": 72,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.365Z",
+  "updatedAt": "2026-10-08T19:07:32.661Z",
+  "titleEn": "Human: Fall Flat",
+  "steamAppId": 477160,
+  "release": "2016-07",
+  "developer": "No Brakes Games",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/human-fall-flat/cover.jpg",
+  "hero": "/media/human-fall-flat/hero.jpg",
+  "thumb": "/media/human-fall-flat/thumb-muzwxu56.webp"
+}

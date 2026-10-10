@@ -1,0 +1,24 @@
+{
+  "id": "mortal-shell-2",
+  "title": "致命躯壳2",
+  "platforms": [],
+  "genres": [
+    "魂系",
+    "动作",
+    "角色扮演"
+  ],
+  "status": "unplayed",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:30.477Z",
+  "updatedAt": "2026-10-08T19:08:23.740Z",
+  "titleEn": "Mortal Shell II",
+  "steamAppId": 2584270,
+  "release": "2026-08",
+  "developer": "Cold Symmetry",
+  "hero": "/media/mortal-shell-2/hero.jpg",
+  "cover": "/media/mortal-shell-2/cover.jpg",
+  "thumb": "/media/mortal-shell-2/thumb-muzwxuba.webp"
+}

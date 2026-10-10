@@ -1,0 +1,28 @@
+{
+  "id": "rusty-lake",
+  "title": "锈湖系列",
+  "platforms": [],
+  "genres": [
+    "解谜",
+    "悬疑",
+    "恐怖"
+  ],
+  "status": "finished",
+  "score": 79,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.592Z",
+  "updatedAt": "2026-10-08T19:07:32.991Z",
+  "titleEn": "Rusty Lake Hotel",
+  "steamAppId": 435120,
+  "release": "2016-01",
+  "developer": "Rusty Lake",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/rusty-lake/cover.jpg",
+  "hero": "/media/rusty-lake/hero.jpg",
+  "thumb": "/media/rusty-lake/thumb-muzwxui2.webp"
+}

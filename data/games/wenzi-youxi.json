@@ -1,0 +1,26 @@
+{
+  "id": "wenzi-youxi",
+  "title": "文字游戏",
+  "platforms": [],
+  "genres": [
+    "解谜"
+  ],
+  "status": "finished",
+  "score": 76,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.137Z",
+  "updatedAt": "2026-10-08T19:07:33.918Z",
+  "titleEn": "Word Game",
+  "steamAppId": 1109570,
+  "release": "2022-01",
+  "developer": "Team9",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/wenzi-youxi/cover.jpg",
+  "hero": "/media/wenzi-youxi/hero.jpg",
+  "thumb": "/media/wenzi-youxi/thumb-muzwxuoq.webp"
+}

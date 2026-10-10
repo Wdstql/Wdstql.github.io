@@ -1,0 +1,56 @@
+{
+  "id": "sekiro",
+  "title": "只狼：影逝二度",
+  "platforms": [],
+  "genres": [
+    "魂系",
+    "动作"
+  ],
+  "status": "finished",
+  "score": 99,
+  "moments": [
+    {
+      "id": "6107316a",
+      "src": "/media/sekiro/moments/1791568011080-6107316a.jpg",
+      "addedAt": "2026-10-09T17:46:51.089Z"
+    }
+  ],
+  "fanworks": [
+    {
+      "bvid": "BV1Da4y1p7Vj",
+      "title": "[熊人族大讲堂]《只狼》打铁教学4 义父、心中的义父",
+      "author": "熊人族嗷非秀",
+      "duration": 4498,
+      "cover": "/media/sekiro/fanworks/BV1Da4y1p7Vj.jpg",
+      "id": "4e6fe034",
+      "addedAt": "2026-10-09T17:48:21.069Z"
+    },
+    {
+      "bvid": "BV1V4411h7f8",
+      "title": "【只狼】超越动作电影的极致华丽打斗 苇名之狼VS巅峰剑圣",
+      "author": "萨摩定春",
+      "duration": 511,
+      "cover": "/media/sekiro/fanworks/BV1V4411h7f8.jpg",
+      "id": "2294c100",
+      "addedAt": "2026-10-09T17:50:21.261Z"
+    }
+  ],
+  "tags": [
+    "打铁"
+  ],
+  "createdAt": "2026-10-08T19:07:24.513Z",
+  "updatedAt": "2026-10-09T18:01:16.412Z",
+  "titleEn": "Sekiro: Shadows Die Twice",
+  "titleJa": "SEKIRO: SHADOWS DIE TWICE",
+  "steamAppId": 814380,
+  "release": "2019-03",
+  "developer": "FromSoftware",
+  "cover": "/media/sekiro/cover.jpg",
+  "hero": "/media/sekiro/hero.jpg",
+  "thumb": "/media/sekiro/thumb-muzwxuin.webp",
+  "playedFrom": "2024-03",
+  "playedTo": "2024-06",
+  "hours": 200,
+  "oneLiner": "这是攻，这是防，这是苇名弦一郎",
+  "review": "玩的第一款魂游，却最不像魂游。\n简单的动作系统，平砍、弹反、滑步、跳跃，在配合上优秀的敌人设计后，让我获得了爽快的战斗体验。\n爽快并不是指不受苦，相反的是我在一周目打大多数 Boss的时候都打了比较久，但过了之后在绝大多数情况下都是看破了敌人的招式，整体战斗体验概括起来就是见招拆招。\n比较喜欢的 boss 是弦一郎，一心，义父，破戒僧；最粪的 boss 是怨鬼；最难的 boss 是心中的义父。\n除了本体的体验外，构成只狼内容丰富的很重要一点是只狼有非常多优秀的 mod，可以打到更多的 boss，包括其他游戏移植过来的。\n缺点的话，没有一想就能想到的缺点，没拿满分的原因纯粹是给未来的游戏机会，不能这么早把上限封死。\n总之就是打的很爽。"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "duck-detective",
+  "title": "鸭鸭侦探：萨拉米香肠之谜",
+  "platforms": [],
+  "genres": [
+    "推理",
+    "解谜",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 77,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:34.318Z",
+  "updatedAt": "2026-10-08T19:07:35.179Z",
+  "titleEn": "Duck Detective: The Secret Salami",
+  "steamAppId": 2637990,
+  "release": "2024-05",
+  "developer": "Happy Broccoli Games",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/duck-detective/cover.jpg",
+  "hero": "/media/duck-detective/hero.jpg",
+  "thumb": "/media/duck-detective/thumb-muzwxtwk.webp"
+}

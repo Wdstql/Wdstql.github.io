@@ -1,0 +1,24 @@
+{
+  "id": "mobile-escape-rooms",
+  "title": "手机密室逃脱类游戏",
+  "platforms": [
+    "Mobile"
+  ],
+  "genres": [
+    "解谜"
+  ],
+  "status": "finished",
+  "score": 68,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.656Z",
+  "updatedAt": "2026-10-08T19:07:32.656Z",
+  "titleEn": "Escape room games (mobile)",
+  "steamAppId": null,
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ]
+}

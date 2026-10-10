@@ -1,0 +1,25 @@
+{
+  "id": "cytus-2",
+  "title": "Cytus II",
+  "platforms": [],
+  "genres": [
+    "音游",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 78,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:31.846Z",
+  "updatedAt": "2026-10-08T19:07:31.932Z",
+  "titleEn": "Cytus II",
+  "steamAppId": null,
+  "release": "2018-04",
+  "developer": "Rayark",
+  "inferred": [
+    "score"
+  ],
+  "cover": "/media/cytus-2/cover.jpg",
+  "thumb": "/media/cytus-2/thumb-muzwxttf.webp"
+}

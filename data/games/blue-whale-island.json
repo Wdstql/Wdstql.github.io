@@ -1,0 +1,25 @@
+{
+  "id": "blue-whale-island",
+  "title": "重返蓝鲸岛",
+  "platforms": [],
+  "genres": [
+    "推理",
+    "悬疑",
+    "文字冒险"
+  ],
+  "status": "watched",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:36.377Z",
+  "updatedAt": "2026-10-08T19:07:37.244Z",
+  "titleEn": "Return to Shironagasu Island",
+  "titleJa": "シロナガス島への帰還",
+  "steamAppId": 1156990,
+  "release": "2018-12",
+  "developer": "ONIMUSHI Hyogo",
+  "cover": "/media/blue-whale-island/cover.jpg",
+  "hero": "/media/blue-whale-island/hero.jpg",
+  "thumb": "/media/blue-whale-island/thumb-muzwxtrv.webp"
+}

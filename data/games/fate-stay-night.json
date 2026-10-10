@@ -1,0 +1,29 @@
+{
+  "id": "fate-stay-night",
+  "title": "Fate/stay night",
+  "platforms": [],
+  "genres": [
+    "文字冒险",
+    "叙事",
+    "恋爱"
+  ],
+  "status": "paused",
+  "score": 80,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.077Z",
+  "updatedAt": "2026-10-08T19:07:32.364Z",
+  "titleEn": "Fate/stay night REMASTERED",
+  "titleJa": "Fate/stay night",
+  "steamAppId": 2396980,
+  "release": "2004-01",
+  "developer": "TYPE-MOON",
+  "oneLiner": "saber 和凛线玩完了，樱线玩了一点",
+  "inferred": [
+    "score"
+  ],
+  "cover": "/media/fate-stay-night/cover.jpg",
+  "hero": "/media/fate-stay-night/hero.jpg",
+  "thumb": "/media/fate-stay-night/thumb-muzwxtz9.webp"
+}

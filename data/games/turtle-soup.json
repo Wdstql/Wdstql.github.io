@@ -1,0 +1,22 @@
+{
+  "id": "turtle-soup",
+  "title": "海龟汤",
+  "platforms": [],
+  "genres": [
+    "推理",
+    "解谜"
+  ],
+  "status": "finished",
+  "score": 70,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.657Z",
+  "updatedAt": "2026-10-08T19:07:32.657Z",
+  "titleEn": "Lateral Thinking Puzzles (Situation Puzzles)",
+  "steamAppId": null,
+  "inferred": [
+    "score",
+    "status"
+  ]
+}

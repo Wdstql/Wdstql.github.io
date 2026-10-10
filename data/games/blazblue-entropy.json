@@ -1,0 +1,28 @@
+{
+  "id": "blazblue-entropy",
+  "title": "苍翼：混沌效应",
+  "platforms": [],
+  "genres": [
+    "Roguelike",
+    "动作"
+  ],
+  "status": "finished",
+  "score": 76,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.661Z",
+  "updatedAt": "2026-10-08T19:07:32.964Z",
+  "titleEn": "BlazBlue Entropy Effect",
+  "titleJa": "ブレイブルー エントロピーエフェクト",
+  "steamAppId": 2273430,
+  "release": "2024-02",
+  "developer": "91Act",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/blazblue-entropy/cover.jpg",
+  "hero": "/media/blazblue-entropy/hero.jpg",
+  "thumb": "/media/blazblue-entropy/thumb-muzwxtrb.webp"
+}

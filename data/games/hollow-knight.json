@@ -1,0 +1,28 @@
+{
+  "id": "hollow-knight",
+  "title": "空洞骑士",
+  "platforms": [],
+  "genres": [
+    "类银河恶魔城",
+    "动作",
+    "平台跳跃"
+  ],
+  "status": "finished",
+  "score": 97,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:24.513Z",
+  "updatedAt": "2026-10-09T18:07:04.794Z",
+  "titleEn": "Hollow Knight",
+  "steamAppId": 367520,
+  "release": "2017-02",
+  "developer": "Team Cherry",
+  "cover": "/media/hollow-knight/cover.jpg",
+  "hero": "/media/hollow-knight/hero.jpg",
+  "thumb": "/media/hollow-knight/thumb-muzwxu4v.webp",
+  "playedFrom": "2020-11",
+  "playedTo": "2021-06",
+  "hours": 542.2,
+  "oneLiner": "第一款单机游戏"
+}

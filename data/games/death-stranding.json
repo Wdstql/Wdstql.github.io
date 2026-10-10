@@ -1,0 +1,25 @@
+{
+  "id": "death-stranding",
+  "title": "死亡搁浅",
+  "platforms": [],
+  "genres": [
+    "动作",
+    "开放世界",
+    "叙事"
+  ],
+  "status": "unplayed",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:29.676Z",
+  "updatedAt": "2026-10-08T19:07:29.973Z",
+  "titleEn": "DEATH STRANDING",
+  "titleJa": "デス・ストランディング",
+  "steamAppId": 1850570,
+  "release": "2019-11",
+  "developer": "Kojima Productions",
+  "cover": "/media/death-stranding/cover.jpg",
+  "hero": "/media/death-stranding/hero.jpg",
+  "thumb": "/media/death-stranding/thumb-muzwxtvd.webp"
+}

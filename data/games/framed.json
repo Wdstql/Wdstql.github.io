@@ -1,0 +1,27 @@
+{
+  "id": "framed",
+  "title": "Framed Collection",
+  "platforms": [],
+  "genres": [
+    "解谜",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 75,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:34.182Z",
+  "updatedAt": "2026-10-08T19:07:34.457Z",
+  "titleEn": "FRAMED Collection",
+  "steamAppId": 322450,
+  "release": "2014-10",
+  "developer": "Loveshack Entertainment",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/framed/cover.jpg",
+  "hero": "/media/framed/hero.jpg",
+  "thumb": "/media/framed/thumb-muzwxu0i.webp"
+}

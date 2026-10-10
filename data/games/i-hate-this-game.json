@@ -1,0 +1,29 @@
+{
+  "id": "i-hate-this-game",
+  "title": "I hate this game",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "解谜"
+  ],
+  "status": "finished",
+  "score": 70,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.154Z",
+  "updatedAt": "2026-10-08T19:07:32.655Z",
+  "titleEn": "I hate this game",
+  "steamAppId": 976010,
+  "release": "2019-03",
+  "developer": "Pixel Error",
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ],
+  "cover": "/media/i-hate-this-game/cover.jpg",
+  "hero": "/media/i-hate-this-game/hero.jpg",
+  "thumb": "/media/i-hate-this-game/thumb-muzwxu5j.webp"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "god-of-war",
+  "title": "战神（2018）",
+  "platforms": [],
+  "genres": [
+    "动作",
+    "角色扮演",
+    "叙事"
+  ],
+  "status": "unplayed",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:28.163Z",
+  "updatedAt": "2026-10-08T19:07:28.437Z",
+  "titleEn": "God of War (2018)",
+  "steamAppId": 1593500,
+  "release": "2018-04",
+  "developer": "Santa Monica Studio",
+  "cover": "/media/god-of-war/cover.jpg",
+  "hero": "/media/god-of-war/hero.jpg",
+  "thumb": "/media/god-of-war/thumb-muzwxu23.webp"
+}

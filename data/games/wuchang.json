@@ -1,0 +1,28 @@
+{
+  "id": "wuchang",
+  "title": "明末：渊虚之羽",
+  "platforms": [],
+  "genres": [
+    "魂系",
+    "动作",
+    "角色扮演"
+  ],
+  "status": "finished",
+  "score": 77,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:35.180Z",
+  "updatedAt": "2026-10-08T19:07:35.464Z",
+  "titleEn": "WUCHANG: Fallen Feathers",
+  "steamAppId": 2277560,
+  "release": "2025-07",
+  "developer": "Leenzee",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/wuchang/cover.jpg",
+  "hero": "/media/wuchang/hero.jpg",
+  "thumb": "/media/wuchang/thumb-muzwxups.webp"
+}

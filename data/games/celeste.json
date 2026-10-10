@@ -1,0 +1,27 @@
+{
+  "id": "celeste",
+  "title": "蔚蓝",
+  "platforms": [],
+  "genres": [
+    "平台跳跃",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 92,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:24.513Z",
+  "updatedAt": "2026-10-08T19:09:08.951Z",
+  "titleEn": "Celeste",
+  "steamAppId": 504230,
+  "release": "2018-01",
+  "developer": "Maddy Makes Games",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/celeste/cover.jpg",
+  "hero": "/media/celeste/hero.jpg",
+  "thumb": "/media/celeste/thumb-muzwxts7.webp"
+}

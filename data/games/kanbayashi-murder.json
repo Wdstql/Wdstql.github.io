@@ -1,0 +1,26 @@
+{
+  "id": "kanbayashi-murder",
+  "title": "神林家的杀人事件",
+  "platforms": [],
+  "genres": [
+    "推理",
+    "悬疑",
+    "恐怖"
+  ],
+  "status": "finished",
+  "score": 78,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:34.743Z",
+  "updatedAt": "2026-10-08T19:07:34.805Z",
+  "titleEn": "Kanbayashi Family Murder Case",
+  "steamAppId": null,
+  "developer": "鳥籠（作者）",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/kanbayashi-murder/cover.webp",
+  "thumb": "/media/kanbayashi-murder/thumb-muzwxu7j.webp"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ise-mermaid",
+  "title": "灵视异闻 FILE38 伊势人鱼物语",
+  "platforms": [],
+  "genres": [
+    "推理",
+    "悬疑",
+    "文字冒险",
+    "恐怖"
+  ],
+  "status": "finished",
+  "score": 73,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:34.701Z",
+  "updatedAt": "2026-10-08T19:08:16.045Z",
+  "titleEn": "PARANORMASIGHT: The Mermaid's Curse",
+  "titleJa": "パラノマサイト FILE38 伊勢人魚物語",
+  "steamAppId": 2701440,
+  "release": "2026-02",
+  "developer": "Xeen / Square Enix",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/ise-mermaid/cover.jpg",
+  "hero": "/media/ise-mermaid/hero.jpg",
+  "thumb": "/media/ise-mermaid/thumb-muzwxu68.webp"
+}

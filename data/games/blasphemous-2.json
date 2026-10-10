@@ -1,0 +1,27 @@
+{
+  "id": "blasphemous-2",
+  "title": "神之亵渎2",
+  "platforms": [],
+  "genres": [
+    "类银河恶魔城",
+    "动作"
+  ],
+  "status": "finished",
+  "score": 76,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.406Z",
+  "updatedAt": "2026-10-08T19:07:32.669Z",
+  "titleEn": "Blasphemous 2",
+  "steamAppId": 2114740,
+  "release": "2023-08",
+  "developer": "The Game Kitchen",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/blasphemous-2/cover.jpg",
+  "hero": "/media/blasphemous-2/hero.jpg",
+  "thumb": "/media/blasphemous-2/thumb-muzwxtqp.webp"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "rhythm-doctor",
+  "title": "节奏医生",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "音游"
+  ],
+  "status": "finished",
+  "score": 86,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:26.742Z",
+  "updatedAt": "2026-10-08T19:07:27.055Z",
+  "titleEn": "Rhythm Doctor",
+  "steamAppId": 774181,
+  "release": "2025-12",
+  "developer": "7th Beat Games",
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ],
+  "cover": "/media/rhythm-doctor/cover.jpg",
+  "hero": "/media/rhythm-doctor/hero.jpg",
+  "thumb": "/media/rhythm-doctor/thumb-muzwxuh8.webp"
+}

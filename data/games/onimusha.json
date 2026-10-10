@@ -1,0 +1,23 @@
+{
+  "id": "onimusha",
+  "title": "鬼武者 Way of the Sword",
+  "platforms": [],
+  "genres": [
+    "动作"
+  ],
+  "status": "unplayed",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:30.189Z",
+  "updatedAt": "2026-10-08T19:07:30.476Z",
+  "titleEn": "Onimusha: Way of the Sword",
+  "titleJa": "鬼武者 Way of the Sword",
+  "steamAppId": 2638890,
+  "release": "2026-09",
+  "developer": "Capcom",
+  "cover": "/media/onimusha/cover.jpg",
+  "hero": "/media/onimusha/hero.jpg",
+  "thumb": "/media/onimusha/thumb-muzwxudz.webp"
+}

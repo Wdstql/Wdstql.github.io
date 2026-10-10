@@ -1,0 +1,21 @@
+{
+  "id": "draw-guess",
+  "title": "你画我猜",
+  "platforms": [],
+  "genres": [
+    "派对"
+  ],
+  "status": "finished",
+  "score": 68,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.405Z",
+  "updatedAt": "2026-10-08T19:07:32.405Z",
+  "titleEn": "Draw and Guess",
+  "steamAppId": null,
+  "inferred": [
+    "score",
+    "status"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "binding-of-isaac",
+  "title": "以撒的结合：重生",
+  "platforms": [],
+  "genres": [
+    "Roguelike",
+    "射击",
+    "动作"
+  ],
+  "status": "dropped",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:37.439Z",
+  "updatedAt": "2026-10-08T19:07:37.721Z",
+  "titleEn": "The Binding of Isaac: Rebirth",
+  "steamAppId": 250900,
+  "release": "2014-11",
+  "developer": "Nicalis / Edmund McMillen",
+  "oneLiner": "玩了一些",
+  "cover": "/media/binding-of-isaac/cover.jpg",
+  "hero": "/media/binding-of-isaac/hero.jpg",
+  "thumb": "/media/binding-of-isaac/thumb-muzwxtq1.webp"
+}

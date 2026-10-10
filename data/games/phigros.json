@@ -1,0 +1,27 @@
+{
+  "id": "phigros",
+  "title": "Phigros",
+  "platforms": [
+    "Mobile"
+  ],
+  "genres": [
+    "音游"
+  ],
+  "status": "finished",
+  "score": 77,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:31.932Z",
+  "updatedAt": "2026-10-08T19:07:31.969Z",
+  "titleEn": "Phigros",
+  "steamAppId": null,
+  "release": "2021-11",
+  "developer": "Pigeon Games（鸽游）",
+  "inferred": [
+    "score",
+    "platforms"
+  ],
+  "cover": "/media/phigros/cover.jpg",
+  "thumb": "/media/phigros/thumb-muzwxuey.webp"
+}

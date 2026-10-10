@@ -1,0 +1,28 @@
+{
+  "id": "dark-souls-3",
+  "title": "黑暗之魂3",
+  "platforms": [],
+  "genres": [
+    "魂系",
+    "动作",
+    "角色扮演"
+  ],
+  "status": "finished",
+  "score": 87,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:25.975Z",
+  "updatedAt": "2026-10-08T19:07:26.302Z",
+  "titleEn": "DARK SOULS III",
+  "titleJa": "ダークソウルIII",
+  "steamAppId": 374320,
+  "release": "2016-04",
+  "developer": "FromSoftware",
+  "inferred": [
+    "score"
+  ],
+  "cover": "/media/dark-souls-3/cover.jpg",
+  "hero": "/media/dark-souls-3/hero.jpg",
+  "thumb": "/media/dark-souls-3/thumb-muzwxtud.webp"
+}

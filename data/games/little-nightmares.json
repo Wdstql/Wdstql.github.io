@@ -1,0 +1,28 @@
+{
+  "id": "little-nightmares",
+  "title": "小小梦魇",
+  "platforms": [],
+  "genres": [
+    "恐怖",
+    "平台跳跃",
+    "解谜"
+  ],
+  "status": "finished",
+  "score": 79,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:35.203Z",
+  "updatedAt": "2026-10-08T19:07:35.483Z",
+  "titleEn": "Little Nightmares",
+  "steamAppId": 424840,
+  "release": "2017-04",
+  "developer": "Tarsier Studios",
+  "oneLiner": "1 玩完了",
+  "inferred": [
+    "score"
+  ],
+  "cover": "/media/little-nightmares/cover.jpg",
+  "hero": "/media/little-nightmares/hero.jpg",
+  "thumb": "/media/little-nightmares/thumb-muzwxu94.webp"
+}

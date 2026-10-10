@@ -1,0 +1,32 @@
+{
+  "id": "jiali-mansion",
+  "title": "加利宅邸悬案",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "推理",
+    "悬疑",
+    "解谜",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 74,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:34.806Z",
+  "updatedAt": "2026-10-08T19:08:18.260Z",
+  "titleEn": "The Incident at Galley House",
+  "steamAppId": 3641000,
+  "release": "2026-07",
+  "developer": "William Rous / Evil Trout Inc.",
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ],
+  "hero": "/media/jiali-mansion/hero.jpg",
+  "cover": "/media/jiali-mansion/cover.jpg",
+  "thumb": "/media/jiali-mansion/thumb-muzwxu6w.webp"
+}

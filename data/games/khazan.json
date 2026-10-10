@@ -1,0 +1,28 @@
+{
+  "id": "khazan",
+  "title": "第一狂战士：卡赞",
+  "platforms": [],
+  "genres": [
+    "魂系",
+    "动作",
+    "角色扮演"
+  ],
+  "status": "finished",
+  "score": 78,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:35.114Z",
+  "updatedAt": "2026-10-08T19:07:35.405Z",
+  "titleEn": "The First Berserker: Khazan",
+  "steamAppId": 2680010,
+  "release": "2025-03",
+  "developer": "Neople",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/khazan/cover.jpg",
+  "hero": "/media/khazan/hero.jpg",
+  "thumb": "/media/khazan/thumb-muzwxu7s.webp"
+}

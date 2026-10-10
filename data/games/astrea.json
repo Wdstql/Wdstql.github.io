@@ -1,0 +1,28 @@
+{
+  "id": "astrea",
+  "title": "Astrea",
+  "platforms": [],
+  "genres": [
+    "Roguelike",
+    "策略",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 76,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.657Z",
+  "updatedAt": "2026-10-08T19:07:32.985Z",
+  "titleEn": "Astrea: Six-Sided Oracles",
+  "steamAppId": 1755830,
+  "release": "2023-09",
+  "developer": "Little Leo Games",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/astrea/cover.jpg",
+  "hero": "/media/astrea/hero.jpg",
+  "thumb": "/media/astrea/thumb-muzwxtoz.webp"
+}

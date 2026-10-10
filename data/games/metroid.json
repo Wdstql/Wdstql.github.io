@@ -1,0 +1,30 @@
+{
+  "id": "metroid",
+  "title": "密特罗德 Dread",
+  "platforms": [
+    "Switch"
+  ],
+  "genres": [
+    "类银河恶魔城",
+    "动作"
+  ],
+  "status": "finished",
+  "score": 85,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:27.768Z",
+  "updatedAt": "2026-10-08T19:07:28.235Z",
+  "titleEn": "Metroid Dread",
+  "titleJa": "メトロイド ドレッド",
+  "steamAppId": null,
+  "release": "2021-10",
+  "developer": "MercurySteam / Nintendo",
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ],
+  "cover": "/media/metroid/cover.png",
+  "thumb": "/media/metroid/thumb-muzwxuag.webp"
+}

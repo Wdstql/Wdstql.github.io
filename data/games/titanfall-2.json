@@ -1,0 +1,27 @@
+{
+  "id": "titanfall-2",
+  "title": "泰坦陨落2",
+  "platforms": [],
+  "genres": [
+    "射击",
+    "动作"
+  ],
+  "status": "finished",
+  "score": 83,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:33.496Z",
+  "updatedAt": "2026-10-08T19:07:33.782Z",
+  "titleEn": "Titanfall 2",
+  "steamAppId": 1237970,
+  "release": "2016-10",
+  "developer": "Respawn Entertainment",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/titanfall-2/cover.jpg",
+  "hero": "/media/titanfall-2/hero.jpg",
+  "thumb": "/media/titanfall-2/thumb-muzwxun4.webp"
+}

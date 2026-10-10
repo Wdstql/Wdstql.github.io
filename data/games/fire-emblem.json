@@ -1,0 +1,29 @@
+{
+  "id": "fire-emblem",
+  "title": "火焰纹章 风花雪月",
+  "platforms": [
+    "Switch"
+  ],
+  "genres": [
+    "策略",
+    "角色扮演",
+    "叙事"
+  ],
+  "status": "unplayed",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:30.477Z",
+  "updatedAt": "2026-10-08T19:07:30.758Z",
+  "titleEn": "Fire Emblem: Three Houses",
+  "titleJa": "ファイアーエムブレム 風花雪月",
+  "steamAppId": null,
+  "release": "2019-07",
+  "developer": "Intelligent Systems",
+  "cover": "/media/fire-emblem/cover.jpg",
+  "thumb": "/media/fire-emblem/thumb-muzwxtzx.webp",
+  "inferred": [
+    "platforms"
+  ]
+}

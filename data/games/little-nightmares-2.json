@@ -1,0 +1,25 @@
+{
+  "id": "little-nightmares-2",
+  "title": "小小梦魇2",
+  "platforms": [],
+  "genres": [
+    "恐怖",
+    "平台跳跃",
+    "解谜"
+  ],
+  "status": "paused",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:35.406Z",
+  "updatedAt": "2026-10-08T19:07:35.672Z",
+  "titleEn": "Little Nightmares II",
+  "steamAppId": 860510,
+  "release": "2021-02",
+  "developer": "Tarsier Studios",
+  "oneLiner": "玩到后期了",
+  "cover": "/media/little-nightmares-2/cover.jpg",
+  "hero": "/media/little-nightmares-2/hero.jpg",
+  "thumb": "/media/little-nightmares-2/thumb-muzwxu8s.webp"
+}

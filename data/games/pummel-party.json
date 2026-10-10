@@ -1,0 +1,30 @@
+{
+  "id": "pummel-party",
+  "title": "Pummel Party",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "派对",
+    "策略"
+  ],
+  "status": "finished",
+  "score": 88,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:26.383Z",
+  "updatedAt": "2026-10-08T19:07:26.690Z",
+  "titleEn": "Pummel Party",
+  "steamAppId": 880940,
+  "release": "2018-09",
+  "developer": "Rebuilt Games",
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ],
+  "cover": "/media/pummel-party/cover.jpg",
+  "hero": "/media/pummel-party/hero.jpg",
+  "thumb": "/media/pummel-party/thumb-muzwxufx.webp"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "428-shibuya",
+  "title": "428 被封锁的涩谷",
+  "platforms": [],
+  "genres": [
+    "文字冒险",
+    "推理",
+    "悬疑",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 92,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:27.006Z",
+  "updatedAt": "2026-10-08T19:07:27.336Z",
+  "titleEn": "428: Shibuya Scramble",
+  "titleJa": "428 ～封鎖された渋谷で～",
+  "steamAppId": 648580,
+  "release": "2008-12",
+  "developer": "Chunsoft",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/428-shibuya/cover.jpg",
+  "hero": "/media/428-shibuya/hero.jpg",
+  "thumb": "/media/428-shibuya/thumb-muzwxtl7.webp"
+}

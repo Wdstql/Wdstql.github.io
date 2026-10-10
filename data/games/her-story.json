@@ -1,0 +1,28 @@
+{
+  "id": "her-story",
+  "title": "Her Story",
+  "platforms": [],
+  "genres": [
+    "推理",
+    "叙事",
+    "解谜"
+  ],
+  "status": "finished",
+  "score": 79,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:31.576Z",
+  "updatedAt": "2026-10-08T19:07:32.153Z",
+  "titleEn": "Her Story",
+  "steamAppId": 368370,
+  "release": "2015-06",
+  "developer": "Sam Barlow",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/her-story/cover.jpg",
+  "hero": "/media/her-story/hero.jpg",
+  "thumb": "/media/her-story/thumb-muzwxu45.webp"
+}

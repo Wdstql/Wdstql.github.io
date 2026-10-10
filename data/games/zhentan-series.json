@@ -1,0 +1,31 @@
+{
+  "id": "zhentan-series",
+  "title": "真探",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "推理",
+    "解谜",
+    "悬疑"
+  ],
+  "status": "finished",
+  "score": 84,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:26.727Z",
+  "updatedAt": "2026-10-08T19:07:27.481Z",
+  "titleEn": "CaseCracker",
+  "steamAppId": 1723260,
+  "release": "2022-12",
+  "developer": "BlackRobe（黑袍）",
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ],
+  "cover": "/media/zhentan-series/cover.jpg",
+  "hero": "/media/zhentan-series/hero.jpg",
+  "thumb": "/media/zhentan-series/thumb-muzwxusd.webp"
+}

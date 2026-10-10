@@ -1,0 +1,25 @@
+{
+  "id": "arcaea",
+  "title": "Arcaea",
+  "platforms": [],
+  "genres": [
+    "音游",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 77,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:31.933Z",
+  "updatedAt": "2026-10-08T19:07:32.099Z",
+  "titleEn": "Arcaea",
+  "steamAppId": null,
+  "release": "2017-03",
+  "developer": "lowiro",
+  "inferred": [
+    "score"
+  ],
+  "cover": "/media/arcaea/cover.jpg",
+  "thumb": "/media/arcaea/thumb-muzwxto0.webp"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "bloodborne",
+  "title": "血源诅咒",
+  "platforms": [
+    "PS4"
+  ],
+  "genres": [
+    "魂系",
+    "动作",
+    "恐怖"
+  ],
+  "status": "finished",
+  "score": 91,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:26.304Z",
+  "updatedAt": "2026-10-08T19:07:27.140Z",
+  "titleEn": "Bloodborne",
+  "titleJa": "ブラッドボーン",
+  "steamAppId": null,
+  "release": "2015-03",
+  "developer": "FromSoftware",
+  "inferred": [
+    "score",
+    "platforms"
+  ],
+  "cover": "/media/bloodborne/cover.jpg",
+  "thumb": "/media/bloodborne/thumb-muzwxtrm.webp"
+}

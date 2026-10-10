@@ -1,0 +1,26 @@
+{
+  "id": "ai-somnium-files",
+  "title": "AI：梦境档案",
+  "platforms": [],
+  "genres": [
+    "推理",
+    "文字冒险",
+    "悬疑",
+    "叙事"
+  ],
+  "status": "unplayed",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:28.487Z",
+  "updatedAt": "2026-10-08T19:07:28.799Z",
+  "titleEn": "AI: The Somnium Files",
+  "titleJa": "AI: ソムニウム ファイル",
+  "steamAppId": 948740,
+  "release": "2019-09",
+  "developer": "Spike Chunsoft",
+  "cover": "/media/ai-somnium-files/cover.jpg",
+  "hero": "/media/ai-somnium-files/hero.jpg",
+  "thumb": "/media/ai-somnium-files/thumb-muzwxtmz.webp"
+}

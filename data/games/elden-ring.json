@@ -1,0 +1,29 @@
+{
+  "id": "elden-ring",
+  "title": "艾尔登法环",
+  "platforms": [],
+  "genres": [
+    "魂系",
+    "动作",
+    "角色扮演",
+    "开放世界"
+  ],
+  "status": "finished",
+  "score": 96,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:25.912Z",
+  "updatedAt": "2026-10-08T19:08:59.108Z",
+  "titleEn": "ELDEN RING",
+  "titleJa": "エルデンリング",
+  "steamAppId": 1245620,
+  "release": "2022-02",
+  "developer": "FromSoftware",
+  "inferred": [
+    "score"
+  ],
+  "cover": "/media/elden-ring/cover.jpg",
+  "hero": "/media/elden-ring/hero.jpg",
+  "thumb": "/media/elden-ring/thumb-muzwxtxk.webp"
+}

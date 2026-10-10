@@ -1,0 +1,27 @@
+{
+  "id": "naruto-storm",
+  "title": "火影忍者 疾风传 究极风暴4",
+  "platforms": [],
+  "genres": [
+    "动作"
+  ],
+  "status": "finished",
+  "score": 75,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:31.276Z",
+  "updatedAt": "2026-10-08T19:07:31.575Z",
+  "titleEn": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 4",
+  "titleJa": "NARUTO－ナルト－ 疾風伝 ナルティメットストーム4",
+  "steamAppId": 349040,
+  "release": "2016-02",
+  "developer": "CyberConnect2",
+  "oneLiner": "玩了 3 和 4",
+  "inferred": [
+    "score"
+  ],
+  "cover": "/media/naruto-storm/cover.jpg",
+  "hero": "/media/naruto-storm/hero.jpg",
+  "thumb": "/media/naruto-storm/thumb-muzwxuby.webp"
+}

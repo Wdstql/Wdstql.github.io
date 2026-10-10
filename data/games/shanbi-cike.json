@@ -1,0 +1,27 @@
+{
+  "id": "shanbi-cike",
+  "title": "闪避刺客",
+  "platforms": [],
+  "genres": [
+    "动作",
+    "平台跳跃"
+  ],
+  "status": "finished",
+  "score": 83,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:27.381Z",
+  "updatedAt": "2026-10-08T19:07:27.790Z",
+  "titleEn": "SANABI",
+  "steamAppId": 1562700,
+  "release": "2023-11",
+  "developer": "Wonder Potion",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/shanbi-cike/cover.jpg",
+  "hero": "/media/shanbi-cike/hero.jpg",
+  "thumb": "/media/shanbi-cike/thumb-muzwxuix.webp"
+}

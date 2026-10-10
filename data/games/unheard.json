@@ -1,0 +1,28 @@
+{
+  "id": "unheard",
+  "title": "疑案追声",
+  "platforms": [],
+  "genres": [
+    "推理",
+    "悬疑",
+    "解谜"
+  ],
+  "status": "finished",
+  "score": 85,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:27.407Z",
+  "updatedAt": "2026-10-08T19:07:27.768Z",
+  "titleEn": "Unheard - Voices of Crime",
+  "steamAppId": 942970,
+  "release": "2019-03",
+  "developer": "NEXT Studios",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/unheard/cover.jpg",
+  "hero": "/media/unheard/hero.jpg",
+  "thumb": "/media/unheard/thumb-muzwxuog.webp"
+}

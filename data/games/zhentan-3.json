@@ -1,0 +1,31 @@
+{
+  "id": "zhentan-3",
+  "title": "真探3",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "推理",
+    "解谜",
+    "悬疑"
+  ],
+  "status": "finished",
+  "score": 76,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:34.457Z",
+  "updatedAt": "2026-10-08T19:08:32.680Z",
+  "titleEn": "CaseCracker 3",
+  "steamAppId": 3296830,
+  "release": "2026-05",
+  "developer": "BlackRobe（黑袍）",
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ],
+  "hero": "/media/zhentan-3/hero.jpg",
+  "cover": "/media/zhentan-3/cover.jpg",
+  "thumb": "/media/zhentan-3/thumb-muzwxus2.webp"
+}

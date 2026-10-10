@@ -1,0 +1,28 @@
+{
+  "id": "ace-attorney-trilogy",
+  "title": "逆转裁判123 成步堂精选集",
+  "platforms": [],
+  "genres": [
+    "推理",
+    "文字冒险",
+    "解谜"
+  ],
+  "status": "finished",
+  "score": 93,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:24.513Z",
+  "updatedAt": "2026-10-08T19:09:21.742Z",
+  "titleEn": "Phoenix Wright: Ace Attorney Trilogy",
+  "titleJa": "逆転裁判123 成歩堂セレクション",
+  "steamAppId": 787480,
+  "release": "2001-10",
+  "developer": "Capcom",
+  "inferred": [
+    "score"
+  ],
+  "cover": "/media/ace-attorney-trilogy/cover.jpg",
+  "hero": "/media/ace-attorney-trilogy/hero.jpg",
+  "thumb": "/media/ace-attorney-trilogy/thumb-muzwxtma.webp"
+}

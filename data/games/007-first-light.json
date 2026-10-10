@@ -1,0 +1,24 @@
+{
+  "id": "007-first-light",
+  "title": "007 初露锋芒",
+  "platforms": [],
+  "genres": [
+    "动作",
+    "射击"
+  ],
+  "status": "dropped",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:37.331Z",
+  "updatedAt": "2026-10-08T19:08:09.203Z",
+  "titleEn": "007 First Light",
+  "steamAppId": 3768760,
+  "release": "2026-05",
+  "developer": "IO Interactive",
+  "oneLiner": "前期枪战玩法没意思",
+  "hero": "/media/007-first-light/hero.jpg",
+  "cover": "/media/007-first-light/cover.jpg",
+  "thumb": "/media/007-first-light/thumb-muzwxtku.webp"
+}

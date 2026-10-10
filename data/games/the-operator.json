@@ -1,0 +1,32 @@
+{
+  "id": "the-operator",
+  "title": "接线疑云",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "推理",
+    "悬疑",
+    "解谜",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 79,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:33.536Z",
+  "updatedAt": "2026-10-08T19:07:33.793Z",
+  "titleEn": "The Operator",
+  "steamAppId": 1771980,
+  "release": "2024-07",
+  "developer": "Bureau 81",
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ],
+  "cover": "/media/the-operator/cover.jpg",
+  "hero": "/media/the-operator/hero.jpg",
+  "thumb": "/media/the-operator/thumb-muzwxumm.webp"
+}

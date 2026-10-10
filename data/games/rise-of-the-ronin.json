@@ -1,0 +1,25 @@
+{
+  "id": "rise-of-the-ronin",
+  "title": "浪人崛起",
+  "platforms": [],
+  "genres": [
+    "动作",
+    "角色扮演",
+    "开放世界"
+  ],
+  "status": "unplayed",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:29.974Z",
+  "updatedAt": "2026-10-08T19:07:30.278Z",
+  "titleEn": "Rise of the Ronin",
+  "titleJa": "Rise of the Ronin",
+  "steamAppId": 1340990,
+  "release": "2024-03",
+  "developer": "Team NINJA",
+  "cover": "/media/rise-of-the-ronin/cover.jpg",
+  "hero": "/media/rise-of-the-ronin/hero.jpg",
+  "thumb": "/media/rise-of-the-ronin/thumb-muzwxuhq.webp"
+}

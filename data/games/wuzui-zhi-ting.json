@@ -1,0 +1,29 @@
+{
+  "id": "wuzui-zhi-ting",
+  "title": "无罪之庭",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "推理",
+    "文字冒险",
+    "解谜"
+  ],
+  "status": "unplayed",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:28.757Z",
+  "updatedAt": "2026-10-08T19:07:29.043Z",
+  "titleEn": "Trials of Innocence",
+  "steamAppId": 2983140,
+  "release": "2025-03",
+  "developer": "猫龙游戏（C&D Games）",
+  "cover": "/media/wuzui-zhi-ting/cover.jpg",
+  "hero": "/media/wuzui-zhi-ting/hero.jpg",
+  "thumb": "/media/wuzui-zhi-ting/thumb-muzwxuqc.webp",
+  "inferred": [
+    "platforms"
+  ]
+}

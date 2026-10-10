@@ -1,0 +1,30 @@
+{
+  "id": "manosaba",
+  "title": "魔法少女的魔女审判",
+  "platforms": [],
+  "genres": [
+    "推理",
+    "文字冒险",
+    "悬疑",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 89,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:33.888Z",
+  "updatedAt": "2026-10-08T19:07:34.181Z",
+  "titleEn": "Magical Girl Witch Trials",
+  "titleJa": "魔法少女ノ魔女裁判",
+  "steamAppId": 3101040,
+  "release": "2025-07",
+  "developer": "Acacia",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/manosaba/cover.jpg",
+  "hero": "/media/manosaba/hero.jpg",
+  "thumb": "/media/manosaba/thumb-muzwxua3.webp"
+}

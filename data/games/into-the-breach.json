@@ -1,0 +1,27 @@
+{
+  "id": "into-the-breach",
+  "title": "陷阵之志",
+  "platforms": [],
+  "genres": [
+    "策略",
+    "Roguelike"
+  ],
+  "status": "finished",
+  "score": 80,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:31.116Z",
+  "updatedAt": "2026-10-08T19:07:31.403Z",
+  "titleEn": "Into the Breach",
+  "steamAppId": 590380,
+  "release": "2018-02",
+  "developer": "Subset Games",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/into-the-breach/cover.jpg",
+  "hero": "/media/into-the-breach/hero.jpg",
+  "thumb": "/media/into-the-breach/thumb-muzwxu5y.webp"
+}

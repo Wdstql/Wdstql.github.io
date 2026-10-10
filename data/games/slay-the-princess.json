@@ -1,0 +1,28 @@
+{
+  "id": "slay-the-princess",
+  "title": "杀死公主",
+  "platforms": [],
+  "genres": [
+    "叙事",
+    "恐怖",
+    "文字冒险"
+  ],
+  "status": "finished",
+  "score": 81,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:33.257Z",
+  "updatedAt": "2026-10-08T19:07:33.535Z",
+  "titleEn": "Slay the Princess",
+  "steamAppId": 1989270,
+  "release": "2023-10",
+  "developer": "Black Tabby Games",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/slay-the-princess/cover.jpg",
+  "hero": "/media/slay-the-princess/hero.jpg",
+  "thumb": "/media/slay-the-princess/thumb-muzwxukm.webp"
+}

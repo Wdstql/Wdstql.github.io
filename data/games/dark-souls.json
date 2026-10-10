@@ -1,0 +1,29 @@
+{
+  "id": "dark-souls",
+  "title": "黑暗之魂 重制版",
+  "platforms": [],
+  "genres": [
+    "魂系",
+    "动作",
+    "角色扮演"
+  ],
+  "status": "finished",
+  "score": 82,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:30.761Z",
+  "updatedAt": "2026-10-08T19:07:31.115Z",
+  "titleEn": "DARK SOULS: REMASTERED",
+  "titleJa": "ダークソウル リマスタード",
+  "steamAppId": 570940,
+  "release": "2011-09",
+  "developer": "FromSoftware",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/dark-souls/cover.jpg",
+  "hero": "/media/dark-souls/hero.jpg",
+  "thumb": "/media/dark-souls/thumb-muzwxtup.webp"
+}

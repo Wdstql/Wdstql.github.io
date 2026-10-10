@@ -1,0 +1,24 @@
+{
+  "id": "lords-of-the-fallen",
+  "title": "堕落之主",
+  "platforms": [],
+  "genres": [
+    "魂系",
+    "动作",
+    "角色扮演"
+  ],
+  "status": "unplayed",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:29.378Z",
+  "updatedAt": "2026-10-08T19:07:29.674Z",
+  "titleEn": "Lords of the Fallen",
+  "steamAppId": 1501750,
+  "release": "2023-10",
+  "developer": "Hexworks / CI Games",
+  "cover": "/media/lords-of-the-fallen/cover.jpg",
+  "hero": "/media/lords-of-the-fallen/hero.jpg",
+  "thumb": "/media/lords-of-the-fallen/thumb-muzwxu9e.webp"
+}

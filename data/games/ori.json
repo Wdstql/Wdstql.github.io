@@ -1,0 +1,27 @@
+{
+  "id": "ori",
+  "title": "奥日与萤火意志",
+  "platforms": [],
+  "genres": [
+    "类银河恶魔城",
+    "平台跳跃",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 88,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:25.963Z",
+  "updatedAt": "2026-10-08T19:07:26.373Z",
+  "titleEn": "Ori and the Will of the Wisps",
+  "steamAppId": 1057090,
+  "release": "2020-03",
+  "developer": "Moon Studios",
+  "inferred": [
+    "score"
+  ],
+  "cover": "/media/ori/cover.jpg",
+  "hero": "/media/ori/hero.jpg",
+  "thumb": "/media/ori/thumb-muzwxuea.webp"
+}

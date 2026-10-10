@@ -1,0 +1,28 @@
+{
+  "id": "deemo",
+  "title": "古树旋律",
+  "platforms": [
+    "Mobile"
+  ],
+  "genres": [
+    "音游",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 75,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.008Z",
+  "updatedAt": "2026-10-08T19:07:32.135Z",
+  "titleEn": "DEEMO",
+  "steamAppId": null,
+  "release": "2013-11",
+  "developer": "Rayark",
+  "inferred": [
+    "score",
+    "platforms"
+  ],
+  "cover": "/media/deemo/cover.jpg",
+  "thumb": "/media/deemo/thumb-muzwxtvn.webp"
+}

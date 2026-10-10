@@ -1,0 +1,28 @@
+{
+  "id": "quanwang-gongdi",
+  "title": "全网公敌",
+  "platforms": [],
+  "genres": [
+    "解谜",
+    "悬疑",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 84,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:26.374Z",
+  "updatedAt": "2026-10-08T19:07:26.726Z",
+  "titleEn": "Cyber Manhunt",
+  "steamAppId": 1216710,
+  "release": "2021-02",
+  "developer": "Aluba Studio",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/quanwang-gongdi/cover.jpg",
+  "hero": "/media/quanwang-gongdi/hero.jpg",
+  "thumb": "/media/quanwang-gongdi/thumb-muzwxugh.webp"
+}

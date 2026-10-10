@@ -1,0 +1,30 @@
+{
+  "id": "hengshui-school",
+  "title": "恒水中学连环虐杀",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "推理",
+    "文字冒险",
+    "悬疑",
+    "叙事"
+  ],
+  "status": "unplayed",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:28.867Z",
+  "updatedAt": "2026-10-08T19:08:14.352Z",
+  "titleEn": "The Untold Story of Hengshui School",
+  "steamAppId": 682480,
+  "release": "2018-05",
+  "developer": "橙光游戏",
+  "hero": "/media/hengshui-school/hero.jpg",
+  "cover": "/media/hengshui-school/cover.jpg",
+  "thumb": "/media/hengshui-school/thumb-muzwxu3r.webp",
+  "inferred": [
+    "platforms"
+  ]
+}

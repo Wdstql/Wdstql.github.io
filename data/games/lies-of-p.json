@@ -1,0 +1,28 @@
+{
+  "id": "lies-of-p",
+  "title": "匹诺曹的谎言",
+  "platforms": [],
+  "genres": [
+    "魂系",
+    "动作",
+    "角色扮演"
+  ],
+  "status": "finished",
+  "score": 84,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:30.925Z",
+  "updatedAt": "2026-10-08T19:07:31.275Z",
+  "titleEn": "Lies of P",
+  "steamAppId": 1627720,
+  "release": "2023-09",
+  "developer": "Round8 Studio / NEOWIZ",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/lies-of-p/cover.jpg",
+  "hero": "/media/lies-of-p/hero.jpg",
+  "thumb": "/media/lies-of-p/thumb-muzwxu8h.webp"
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "a01",
+    "title": "最爱的",
+    "gameId": "sekiro"
+  },
+  {
+    "id": "a02",
+    "title": "最影响我的",
+    "gameId": "hollow-knight"
+  },
+  {
+    "id": "a03",
+    "title": "最惊艳的",
+    "gameId": "elden-ring"
+  },
+  {
+    "id": "a04",
+    "title": "最长情的",
+    "gameId": "slay-the-spire"
+  },
+  {
+    "id": "a05",
+    "title": "最快乐的",
+    "gameId": "pummel-party"
+  },
+  {
+    "id": "a06",
+    "title": "最想安利的",
+    "gameId": "raging-loop"
+  },
+  {
+    "id": "a07",
+    "title": "最喜欢的剧情",
+    "gameId": "raging-loop"
+  },
+  {
+    "id": "a08",
+    "title": "最喜欢的画面",
+    "gameId": "it-takes-two"
+  },
+  {
+    "id": "a09",
+    "title": "最喜欢的配乐",
+    "gameId": "great-ace-attorney"
+  },
+  {
+    "id": "a10",
+    "title": "最代入的",
+    "gameId": "ace-attorney-trilogy"
+  },
+  {
+    "id": "a11",
+    "title": "最喜欢的角色",
+    "gameId": "raging-loop"
+  },
+  {
+    "id": "a12",
+    "title": "最喜欢的结局",
+    "gameId": "steins-gate"
+  },
+  {
+    "id": "a13",
+    "title": "最爽快的",
+    "gameId": "sekiro"
+  },
+  {
+    "id": "a14",
+    "title": "最受苦的",
+    "gameId": "hollow-knight"
+  },
+  {
+    "id": "a15",
+    "title": "最治愈的",
+    "gameId": "to-the-moon"
+  },
+  {
+    "id": "a16",
+    "title": "最致郁的",
+    "gameId": "bloodborne"
+  },
+  {
+    "id": "a17",
+    "title": "最被低估的",
+    "gameId": "silksong"
+  },
+  {
+    "id": "a18",
+    "title": "最环环相扣的",
+    "gameId": "428-shibuya"
+  },
+  {
+    "id": "a19",
+    "title": "玩的第一款",
+    "gameId": "hollow-knight"
+  },
+  {
+    "id": "a20",
+    "title": "消磨时间就玩",
+    "gameId": "slay-the-spire"
+  },
+  {
+    "id": "a21",
+    "title": "又菜又爱玩",
+    "gameId": "celeste"
+  },
+  {
+    "id": "a22",
+    "title": "总有一天能打完",
+    "gameId": "wo-long"
+  },
+  {
+    "id": "a23",
+    "title": "爷青回",
+    "gameId": "silksong"
+  },
+  {
+    "id": "a24",
+    "title": "它好小众我好爱",
+    "gameId": "manosaba"
+  }
+]

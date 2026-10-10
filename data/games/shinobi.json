@@ -1,0 +1,28 @@
+{
+  "id": "shinobi",
+  "title": "超级忍 反攻的斩击",
+  "platforms": [],
+  "genres": [
+    "动作",
+    "平台跳跃"
+  ],
+  "status": "finished",
+  "score": 76,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:33.828Z",
+  "updatedAt": "2026-10-08T19:07:34.700Z",
+  "titleEn": "SHINOBI: Art of Vengeance",
+  "titleJa": "SHINOBI 復讐の斬撃",
+  "steamAppId": 2361770,
+  "release": "2025-08",
+  "developer": "Lizardcube",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/shinobi/cover.jpg",
+  "hero": "/media/shinobi/hero.jpg",
+  "thumb": "/media/shinobi/thumb-muzwxujn.webp"
+}

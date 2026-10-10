@@ -1,0 +1,23 @@
+{
+  "id": "dishonored",
+  "title": "耻辱",
+  "platforms": [],
+  "genres": [
+    "动作",
+    "叙事"
+  ],
+  "status": "unplayed",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:28.566Z",
+  "updatedAt": "2026-10-08T19:07:28.866Z",
+  "titleEn": "Dishonored",
+  "steamAppId": 205100,
+  "release": "2012-10",
+  "developer": "Arkane Studios",
+  "cover": "/media/dishonored/cover.jpg",
+  "hero": "/media/dishonored/hero.jpg",
+  "thumb": "/media/dishonored/thumb-muzwxtw9.webp"
+}

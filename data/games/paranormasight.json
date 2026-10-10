@@ -1,0 +1,30 @@
+{
+  "id": "paranormasight",
+  "title": "灵视异闻 FILE23 本所七大不可思议",
+  "platforms": [],
+  "genres": [
+    "推理",
+    "悬疑",
+    "文字冒险",
+    "恐怖"
+  ],
+  "status": "finished",
+  "score": 82,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:30.620Z",
+  "updatedAt": "2026-10-08T19:07:30.924Z",
+  "titleEn": "PARANORMASIGHT: The Seven Mysteries of Honjo",
+  "titleJa": "パラノマサイト FILE23 本所七不思議",
+  "steamAppId": 2106840,
+  "release": "2023-03",
+  "developer": "Xeen / Square Enix",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/paranormasight/cover.jpg",
+  "hero": "/media/paranormasight/hero.jpg",
+  "thumb": "/media/paranormasight/thumb-muzwxuem.webp"
+}

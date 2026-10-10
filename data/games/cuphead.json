@@ -1,0 +1,28 @@
+{
+  "id": "cuphead",
+  "title": "茶杯头",
+  "platforms": [],
+  "genres": [
+    "动作",
+    "射击",
+    "合作"
+  ],
+  "status": "finished",
+  "score": 85,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:27.711Z",
+  "updatedAt": "2026-10-08T19:07:28.065Z",
+  "titleEn": "Cuphead",
+  "steamAppId": 268910,
+  "release": "2017-09",
+  "developer": "Studio MDHR",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/cuphead/cover.jpg",
+  "hero": "/media/cuphead/hero.jpg",
+  "thumb": "/media/cuphead/thumb-muzwxtt7.webp"
+}

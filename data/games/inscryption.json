@@ -1,0 +1,26 @@
+{
+  "id": "inscryption",
+  "title": "邪恶冥刻",
+  "platforms": [],
+  "genres": [
+    "卡牌",
+    "Roguelike",
+    "恐怖",
+    "解谜"
+  ],
+  "status": "paused",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:28.735Z",
+  "updatedAt": "2026-10-08T19:07:29.007Z",
+  "titleEn": "Inscryption",
+  "steamAppId": 1092790,
+  "release": "2021-10",
+  "developer": "Daniel Mullins Games",
+  "oneLiner": "应该是玩到中期了",
+  "cover": "/media/inscryption/cover.jpg",
+  "hero": "/media/inscryption/hero.jpg",
+  "thumb": "/media/inscryption/thumb-muzwxu5o.webp"
+}

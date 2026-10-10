@@ -1,0 +1,28 @@
+{
+  "id": "nine-sols",
+  "title": "九日",
+  "platforms": [],
+  "genres": [
+    "类银河恶魔城",
+    "动作",
+    "平台跳跃"
+  ],
+  "status": "finished",
+  "score": 83,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:33.188Z",
+  "updatedAt": "2026-10-08T19:07:33.495Z",
+  "titleEn": "Nine Sols",
+  "steamAppId": 1809540,
+  "release": "2024-05",
+  "developer": "Red Candle Games",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/nine-sols/cover.jpg",
+  "hero": "/media/nine-sols/hero.jpg",
+  "thumb": "/media/nine-sols/thumb-muzwxucz.webp"
+}

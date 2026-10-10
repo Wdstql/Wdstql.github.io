@@ -1,0 +1,31 @@
+{
+  "id": "yanmie-xian",
+  "title": "湮灭线",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "类银河恶魔城",
+    "Roguelike",
+    "动作"
+  ],
+  "status": "finished",
+  "score": 75,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.670Z",
+  "updatedAt": "2026-10-08T19:07:33.563Z",
+  "titleEn": "Oblivion Override",
+  "steamAppId": 1952370,
+  "release": "2024-01",
+  "developer": "Humble Mill（谦游坊）",
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ],
+  "cover": "/media/yanmie-xian/cover.jpg",
+  "hero": "/media/yanmie-xian/hero.jpg",
+  "thumb": "/media/yanmie-xian/thumb-muzwxuqo.webp"
+}

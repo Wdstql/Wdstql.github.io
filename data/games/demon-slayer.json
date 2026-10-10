@@ -1,0 +1,27 @@
+{
+  "id": "demon-slayer",
+  "title": "鬼灭之刃 火之神血风谭",
+  "platforms": [],
+  "genres": [
+    "动作"
+  ],
+  "status": "finished",
+  "score": 73,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:31.404Z",
+  "updatedAt": "2026-10-08T19:07:31.721Z",
+  "titleEn": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles",
+  "titleJa": "鬼滅の刃 ヒノカミ血風譚",
+  "steamAppId": 1490890,
+  "release": "2021-10",
+  "developer": "CyberConnect2",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/demon-slayer/cover.jpg",
+  "hero": "/media/demon-slayer/hero.jpg",
+  "thumb": "/media/demon-slayer/thumb-muzwxtvw.webp"
+}

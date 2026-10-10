@@ -1,0 +1,30 @@
+{
+  "id": "sanxiang-qitan",
+  "title": "三相奇谈",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "叙事",
+    "解谜"
+  ],
+  "status": "finished",
+  "score": 76,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:34.091Z",
+  "updatedAt": "2026-10-08T19:07:34.403Z",
+  "titleEn": "Threefold Recital",
+  "steamAppId": 3084280,
+  "release": "2025-01",
+  "developer": "森罗万象游戏（Everscape Games）",
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ],
+  "cover": "/media/sanxiang-qitan/cover.jpg",
+  "hero": "/media/sanxiang-qitan/hero.jpg",
+  "thumb": "/media/sanxiang-qitan/thumb-muzwxuib.webp"
+}

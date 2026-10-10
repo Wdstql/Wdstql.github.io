@@ -1,0 +1,27 @@
+{
+  "id": "the-rewinder",
+  "title": "山海旅人",
+  "platforms": [],
+  "genres": [
+    "解谜",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 78,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.992Z",
+  "updatedAt": "2026-10-08T19:07:33.255Z",
+  "titleEn": "The Rewinder",
+  "steamAppId": 1161170,
+  "release": "2021-09",
+  "developer": "MistyMountainStudio（迷雾山）",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/the-rewinder/cover.jpg",
+  "hero": "/media/the-rewinder/hero.jpg",
+  "thumb": "/media/the-rewinder/thumb-muzwxumv.webp"
+}

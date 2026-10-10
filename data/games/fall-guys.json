@@ -1,0 +1,27 @@
+{
+  "id": "fall-guys",
+  "title": "糖豆人",
+  "platforms": [],
+  "genres": [
+    "派对",
+    "平台跳跃"
+  ],
+  "status": "finished",
+  "score": 72,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:31.722Z",
+  "updatedAt": "2026-10-08T19:07:32.007Z",
+  "titleEn": "Fall Guys",
+  "steamAppId": 1097150,
+  "release": "2020-08",
+  "developer": "Mediatonic",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/fall-guys/cover.jpg",
+  "hero": "/media/fall-guys/hero.jpg",
+  "thumb": "/media/fall-guys/thumb-muzwxtyx.webp"
+}

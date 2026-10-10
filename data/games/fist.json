@@ -1,0 +1,27 @@
+{
+  "id": "fist",
+  "title": "暗影火炬城",
+  "platforms": [],
+  "genres": [
+    "类银河恶魔城",
+    "动作"
+  ],
+  "status": "finished",
+  "score": 77,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:33.564Z",
+  "updatedAt": "2026-10-08T19:07:33.886Z",
+  "titleEn": "F.I.S.T.: Forged In Shadow Torch",
+  "steamAppId": 1330470,
+  "release": "2021-10",
+  "developer": "TiGames",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/fist/cover.jpg",
+  "hero": "/media/fist/hero.jpg",
+  "thumb": "/media/fist/thumb-muzwxu06.webp"
+}

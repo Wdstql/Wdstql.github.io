@@ -1,0 +1,27 @@
+{
+  "id": "black-myth-wukong",
+  "title": "黑神话：悟空",
+  "platforms": [],
+  "genres": [
+    "动作",
+    "角色扮演"
+  ],
+  "status": "finished",
+  "score": 86,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:26.466Z",
+  "updatedAt": "2026-10-08T19:07:26.741Z",
+  "titleEn": "Black Myth: Wukong",
+  "steamAppId": 2358720,
+  "release": "2024-08",
+  "developer": "Game Science（游戏科学）",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/black-myth-wukong/cover.jpg",
+  "hero": "/media/black-myth-wukong/hero.jpg",
+  "thumb": "/media/black-myth-wukong/thumb-muzwxtqd.webp"
+}

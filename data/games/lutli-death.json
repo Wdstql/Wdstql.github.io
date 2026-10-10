@@ -1,0 +1,29 @@
+{
+  "id": "lutli-death",
+  "title": "鲁特里一家死了",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "推理",
+    "解谜",
+    "叙事"
+  ],
+  "status": "dropped",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:37.722Z",
+  "updatedAt": "2026-10-08T19:07:37.983Z",
+  "titleEn": "The Roottrees are Dead",
+  "steamAppId": 2754380,
+  "release": "2025-01",
+  "developer": "Evil Trout Inc.",
+  "cover": "/media/lutli-death/cover.jpg",
+  "hero": "/media/lutli-death/hero.jpg",
+  "thumb": "/media/lutli-death/thumb-muzwxu9r.webp",
+  "inferred": [
+    "platforms"
+  ]
+}

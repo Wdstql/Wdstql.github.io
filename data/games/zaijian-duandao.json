@@ -1,0 +1,31 @@
+{
+  "id": "zaijian-duandao",
+  "title": "再见断刀",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "推理",
+    "悬疑",
+    "文字冒险"
+  ],
+  "status": "finished",
+  "score": 73,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:34.404Z",
+  "updatedAt": "2026-10-08T19:07:35.113Z",
+  "titleEn": "再见断刀 (Zaijian Duandao)",
+  "steamAppId": 2663950,
+  "release": "2025-02",
+  "developer": "非侠游戏",
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ],
+  "cover": "/media/zaijian-duandao/cover.jpg",
+  "hero": "/media/zaijian-duandao/hero.jpg",
+  "thumb": "/media/zaijian-duandao/thumb-muzwxurd.webp"
+}

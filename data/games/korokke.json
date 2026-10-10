@@ -1,0 +1,32 @@
+{
+  "id": "korokke",
+  "title": "买个可乐饼吧！",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "推理",
+    "解谜",
+    "叙事",
+    "角色扮演"
+  ],
+  "status": "finished",
+  "score": 72,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.965Z",
+  "updatedAt": "2026-10-08T19:07:34.439Z",
+  "titleEn": "Buy a Croquette!",
+  "steamAppId": 2167960,
+  "release": "2024-04",
+  "developer": "越青",
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ],
+  "cover": "/media/korokke/cover.jpg",
+  "hero": "/media/korokke/hero.jpg",
+  "thumb": "/media/korokke/thumb-muzwxu85.webp"
+}

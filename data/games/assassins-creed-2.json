@@ -1,0 +1,27 @@
+{
+  "id": "assassins-creed-2",
+  "title": "刺客信条2",
+  "platforms": [],
+  "genres": [
+    "动作",
+    "开放世界"
+  ],
+  "status": "finished",
+  "score": 76,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.101Z",
+  "updatedAt": "2026-10-08T19:07:32.404Z",
+  "titleEn": "Assassin's Creed II",
+  "steamAppId": 33230,
+  "release": "2009-11",
+  "developer": "Ubisoft Montreal",
+  "oneLiner": "就玩过艾吉欧，忘记有没有玩完了",
+  "inferred": [
+    "score"
+  ],
+  "cover": "/media/assassins-creed-2/cover.jpg",
+  "hero": "/media/assassins-creed-2/hero.jpg",
+  "thumb": "/media/assassins-creed-2/thumb-muzwxtoc.webp"
+}

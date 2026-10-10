@@ -1,0 +1,32 @@
+{
+  "id": "yineng-jixiong",
+  "title": "异能缉凶",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "推理",
+    "悬疑",
+    "解谜",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 74,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.985Z",
+  "updatedAt": "2026-10-08T19:07:33.827Z",
+  "titleEn": "Staffer Case",
+  "steamAppId": 2128480,
+  "release": "2023-04",
+  "developer": "Team Tetrapod",
+  "inferred": [
+    "score",
+    "status",
+    "platforms"
+  ],
+  "cover": "/media/yineng-jixiong/cover.jpg",
+  "hero": "/media/yineng-jixiong/hero.jpg",
+  "thumb": "/media/yineng-jixiong/thumb-muzwxur0.webp"
+}

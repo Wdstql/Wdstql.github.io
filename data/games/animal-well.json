@@ -1,0 +1,25 @@
+{
+  "id": "animal-well",
+  "title": "动物井",
+  "platforms": [],
+  "genres": [
+    "类银河恶魔城",
+    "解谜",
+    "平台跳跃"
+  ],
+  "status": "paused",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:29.313Z",
+  "updatedAt": "2026-10-08T19:07:29.636Z",
+  "titleEn": "ANIMAL WELL",
+  "steamAppId": 813230,
+  "release": "2024-05",
+  "developer": "Billy Basso",
+  "oneLiner": "玩了两个小时左右",
+  "cover": "/media/animal-well/cover.jpg",
+  "hero": "/media/animal-well/hero.jpg",
+  "thumb": "/media/animal-well/thumb-muzwxtnd.webp"
+}

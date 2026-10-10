@@ -1,0 +1,28 @@
+{
+  "id": "shanhe-detective",
+  "title": "山河旅探",
+  "platforms": [],
+  "genres": [
+    "推理",
+    "悬疑",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 85,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:26.357Z",
+  "updatedAt": "2026-10-08T19:07:26.716Z",
+  "titleEn": "Murders on the Yangtze River",
+  "steamAppId": 1746030,
+  "release": "2024-01",
+  "developer": "OMEGAMES STUDIO（奥秘之家）",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/shanhe-detective/cover.jpg",
+  "hero": "/media/shanhe-detective/hero.jpg",
+  "thumb": "/media/shanhe-detective/thumb-muzwxujb.webp"
+}

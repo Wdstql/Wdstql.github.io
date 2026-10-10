@@ -1,0 +1,29 @@
+{
+  "id": "steins-gate",
+  "title": "命运石之门",
+  "platforms": [],
+  "genres": [
+    "文字冒险",
+    "叙事",
+    "悬疑"
+  ],
+  "status": "paused",
+  "score": 90,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:27.141Z",
+  "updatedAt": "2026-10-08T19:07:27.455Z",
+  "titleEn": "STEINS;GATE",
+  "titleJa": "STEINS;GATE",
+  "steamAppId": 412830,
+  "release": "2009-10",
+  "developer": "5pb. / Nitroplus（Steam 版 MAGES.）",
+  "oneLiner": "本篇没玩完，0 玩完了",
+  "inferred": [
+    "score"
+  ],
+  "cover": "/media/steins-gate/cover.jpg",
+  "hero": "/media/steins-gate/hero.jpg",
+  "thumb": "/media/steins-gate/thumb-muzwxum0.webp"
+}

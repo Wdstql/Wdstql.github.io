@@ -1,0 +1,29 @@
+{
+  "id": "raging-loop",
+  "title": "人狼村之谜",
+  "platforms": [],
+  "genres": [
+    "文字冒险",
+    "推理",
+    "悬疑"
+  ],
+  "status": "finished",
+  "score": 94,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:25.961Z",
+  "updatedAt": "2026-10-08T19:07:26.382Z",
+  "titleEn": "Raging Loop",
+  "titleJa": "レイジングループ",
+  "steamAppId": 648100,
+  "release": "2015-12",
+  "developer": "Kemco",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/raging-loop/cover.jpg",
+  "hero": "/media/raging-loop/hero.jpg",
+  "thumb": "/media/raging-loop/thumb-muzwxugs.webp"
+}

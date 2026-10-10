@@ -1,0 +1,27 @@
+{
+  "id": "hi-fi-rush",
+  "title": "Hi-Fi RUSH",
+  "platforms": [],
+  "genres": [
+    "动作",
+    "音游"
+  ],
+  "status": "finished",
+  "score": 80,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:33.919Z",
+  "updatedAt": "2026-10-08T19:07:34.317Z",
+  "titleEn": "Hi-Fi RUSH",
+  "steamAppId": 1817230,
+  "release": "2023-01",
+  "developer": "Tango Gameworks",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/hi-fi-rush/cover.jpg",
+  "hero": "/media/hi-fi-rush/hero.jpg",
+  "thumb": "/media/hi-fi-rush/thumb-muzwxu4g.webp"
+}

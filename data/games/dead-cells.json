@@ -1,0 +1,28 @@
+{
+  "id": "dead-cells",
+  "title": "死亡细胞",
+  "platforms": [],
+  "genres": [
+    "Roguelike",
+    "类银河恶魔城",
+    "动作"
+  ],
+  "status": "finished",
+  "score": 80,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:32.908Z",
+  "updatedAt": "2026-10-08T19:07:33.187Z",
+  "titleEn": "Dead Cells",
+  "steamAppId": 588650,
+  "release": "2018-08",
+  "developer": "Motion Twin",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/dead-cells/cover.jpg",
+  "hero": "/media/dead-cells/hero.jpg",
+  "thumb": "/media/dead-cells/thumb-muzwxtv2.webp"
+}

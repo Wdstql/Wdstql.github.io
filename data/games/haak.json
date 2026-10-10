@@ -1,0 +1,24 @@
+{
+  "id": "haak",
+  "title": "勇敢的哈克",
+  "platforms": [],
+  "genres": [
+    "类银河恶魔城",
+    "动作",
+    "平台跳跃"
+  ],
+  "status": "paused",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:29.008Z",
+  "updatedAt": "2026-10-08T19:07:29.893Z",
+  "titleEn": "HAAK",
+  "steamAppId": 1352930,
+  "release": "2022-08",
+  "developer": "Blingame",
+  "cover": "/media/haak/cover.jpg",
+  "hero": "/media/haak/hero.jpg",
+  "thumb": "/media/haak/thumb-muzwxu2t.webp"
+}

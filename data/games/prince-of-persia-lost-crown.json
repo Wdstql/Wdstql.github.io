@@ -1,0 +1,26 @@
+{
+  "id": "prince-of-persia-lost-crown",
+  "title": "波斯王子：失落的王冠",
+  "platforms": [],
+  "genres": [
+    "类银河恶魔城",
+    "动作",
+    "平台跳跃"
+  ],
+  "status": "playing",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:30.278Z",
+  "updatedAt": "2026-10-09T17:21:11.366Z",
+  "titleEn": "Prince of Persia: The Lost Crown",
+  "steamAppId": 2751000,
+  "release": "2024-01",
+  "developer": "Ubisoft Montpellier",
+  "cover": "/media/prince-of-persia-lost-crown/cover.jpg",
+  "hero": "/media/prince-of-persia-lost-crown/hero.jpg",
+  "thumb": "/media/prince-of-persia-lost-crown/thumb-muzwxufl.webp",
+  "playedFrom": "2026-09",
+  "hours": null
+}

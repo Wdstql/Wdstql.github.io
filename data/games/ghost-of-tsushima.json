@@ -1,0 +1,24 @@
+{
+  "id": "ghost-of-tsushima",
+  "title": "对马岛之魂",
+  "platforms": [],
+  "genres": [
+    "动作",
+    "开放世界"
+  ],
+  "status": "unplayed",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:28.438Z",
+  "updatedAt": "2026-10-08T19:07:28.752Z",
+  "titleEn": "Ghost of Tsushima",
+  "titleJa": "ゴースト・オブ・ツシマ",
+  "steamAppId": 2215430,
+  "release": "2020-07",
+  "developer": "Sucker Punch Productions",
+  "cover": "/media/ghost-of-tsushima/cover.jpg",
+  "hero": "/media/ghost-of-tsushima/hero.jpg",
+  "thumb": "/media/ghost-of-tsushima/thumb-muzwxu0v.webp"
+}

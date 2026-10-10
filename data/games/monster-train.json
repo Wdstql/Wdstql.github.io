@@ -1,0 +1,24 @@
+{
+  "id": "monster-train",
+  "title": "怪物火车",
+  "platforms": [],
+  "genres": [
+    "卡牌",
+    "Roguelike",
+    "策略"
+  ],
+  "status": "unplayed",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:29.799Z",
+  "updatedAt": "2026-10-08T19:07:30.107Z",
+  "titleEn": "Monster Train",
+  "steamAppId": 1102190,
+  "release": "2020-05",
+  "developer": "Shiny Shoe",
+  "cover": "/media/monster-train/cover.jpg",
+  "hero": "/media/monster-train/hero.jpg",
+  "thumb": "/media/monster-train/thumb-muzwxuax.webp"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "silksong",
+  "title": "空洞骑士：丝之歌",
+  "platforms": [],
+  "genres": [
+    "类银河恶魔城",
+    "动作",
+    "平台跳跃"
+  ],
+  "status": "finished",
+  "score": 90,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:33.783Z",
+  "updatedAt": "2026-10-08T19:07:34.089Z",
+  "titleEn": "Hollow Knight: Silksong",
+  "steamAppId": 1030300,
+  "release": "2025-09",
+  "developer": "Team Cherry",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/silksong/cover.jpg",
+  "hero": "/media/silksong/hero.jpg",
+  "thumb": "/media/silksong/thumb-muzwxuka.webp"
+}

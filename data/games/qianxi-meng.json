@@ -1,0 +1,29 @@
+{
+  "id": "qianxi-meng",
+  "title": "千禧梦",
+  "platforms": [
+    "PC"
+  ],
+  "genres": [
+    "叙事",
+    "恐怖"
+  ],
+  "status": "dropped",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:37.984Z",
+  "updatedAt": "2026-10-08T19:07:38.952Z",
+  "titleEn": "Millennium Dream",
+  "steamAppId": 3470560,
+  "release": "2026-01",
+  "developer": "LucidDreamLab",
+  "oneLiner": "玩了两小时，晕了",
+  "cover": "/media/qianxi-meng/cover.jpg",
+  "hero": "/media/qianxi-meng/hero.jpg",
+  "thumb": "/media/qianxi-meng/thumb-muzwxug6.webp",
+  "inferred": [
+    "platforms"
+  ]
+}

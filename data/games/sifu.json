@@ -1,0 +1,23 @@
+{
+  "id": "sifu",
+  "title": "Sifu",
+  "platforms": [],
+  "genres": [
+    "动作"
+  ],
+  "status": "dropped",
+  "score": null,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:37.245Z",
+  "updatedAt": "2026-10-08T19:07:37.503Z",
+  "titleEn": "Sifu",
+  "steamAppId": 2138710,
+  "release": "2022-02",
+  "developer": "Sloclap",
+  "oneLiner": "玩到前期，但不太想玩了",
+  "cover": "/media/sifu/cover.jpg",
+  "hero": "/media/sifu/hero.jpg",
+  "thumb": "/media/sifu/thumb-muzwxuk1.webp"
+}

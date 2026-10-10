@@ -1,0 +1,28 @@
+{
+  "id": "it-takes-two",
+  "title": "双人成行",
+  "platforms": [],
+  "genres": [
+    "合作",
+    "平台跳跃",
+    "叙事"
+  ],
+  "status": "finished",
+  "score": 89,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:26.717Z",
+  "updatedAt": "2026-10-08T19:07:27.061Z",
+  "titleEn": "It Takes Two",
+  "steamAppId": 1426210,
+  "release": "2021-03",
+  "developer": "Hazelight Studios",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/it-takes-two/cover.jpg",
+  "hero": "/media/it-takes-two/hero.jpg",
+  "thumb": "/media/it-takes-two/thumb-muzwxu6k.webp"
+}

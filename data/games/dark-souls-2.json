@@ -1,0 +1,29 @@
+{
+  "id": "dark-souls-2",
+  "title": "黑暗之魂2",
+  "platforms": [],
+  "genres": [
+    "魂系",
+    "动作",
+    "角色扮演"
+  ],
+  "status": "finished",
+  "score": 76,
+  "moments": [],
+  "fanworks": [],
+  "tags": [],
+  "createdAt": "2026-10-08T19:07:34.440Z",
+  "updatedAt": "2026-10-08T19:07:34.742Z",
+  "titleEn": "DARK SOULS II: Scholar of the First Sin",
+  "titleJa": "ダークソウルII",
+  "steamAppId": 335300,
+  "release": "2014-03",
+  "developer": "FromSoftware",
+  "inferred": [
+    "score",
+    "status"
+  ],
+  "cover": "/media/dark-souls-2/cover.jpg",
+  "hero": "/media/dark-souls-2/hero.jpg",
+  "thumb": "/media/dark-souls-2/thumb-muzwxtu2.webp"
+}
