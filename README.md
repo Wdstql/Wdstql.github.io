@@ -40,7 +40,7 @@ npm run game -- add "只狼" --steam auto --en Sekiro --status 已完结 --score
 - **本地改完发布**：`git pull --rebase && git add -A && git commit -m "..." && git push`
 - **在网站上直接改**：点右上角「编辑」，输入编辑密码。改动会直接提交到仓库，再自动部署。
   - 在线模式不能搜索 Steam（浏览器跨域限制）。添加游戏时填 Steam 商店链接或 AppID，部署时自动下载封面和信息。
-  - 在线添加的 B 站视频只记 BV 号，标题和封面在部署时补全（`npm run hydrate`）。
+  - 在线添加 B 站视频时，浏览器会直接读取标题和封面（Chromium 内核浏览器实测可用）。读取失败时只记 BV 号，之后在本地运行 `npm run hydrate` 补全再推送。部署服务器访问 B 站会被拦截（HTTP 412），补不了。
   - 在线改过之后，本地动手前先 `git pull --rebase`。
 
 ### 编辑密码

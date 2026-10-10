@@ -103,6 +103,47 @@ function keepThumb(g: Game): Game {
   return g
 }
 
+/**
+ * Bilibili's API has no CORS and blocks datacenter IPs (the deploy runner gets HTTP 412),
+ * but it still answers JSONP from the owner's own browser. The JSONP script runs in a
+ * sandboxed iframe with an opaque origin, so it can't read this page's storage (the token).
+ */
+function biliMeta(bvid: string): Promise<{ title?: string; author?: string; duration?: number; pic?: string } | null> {
+  return new Promise((resolve) => {
+    const frame = document.createElement('iframe')
+    frame.sandbox.add('allow-scripts')
+    frame.style.display = 'none'
+    frame.srcdoc = `<script>function cb(d){var v=d&&d.code===0&&d.data;parent.postMessage(v?{title:v.title,author:v.owner&&v.owner.name,duration:v.duration,pic:v.pic}:null,'*')}<\/script>`
+      + `<script src="https://api.bilibili.com/x/web-interface/view?bvid=${bvid}&jsonp=jsonp&callback=cb" onerror="parent.postMessage(null,'*')"><\/script>`
+    const done = (v: Awaited<ReturnType<typeof biliMeta>>) => { clearTimeout(timer); removeEventListener('message', onMessage); frame.remove(); resolve(v) }
+    const onMessage = (e: MessageEvent) => {
+      if (e.source !== frame.contentWindow) return
+      const d = (e.data ?? {}) as Record<string, unknown>
+      const str = (v: unknown) => (typeof v === 'string' && v ? v.slice(0, 300) : undefined)
+      const pic = str(d.pic)?.replace(/^http:/, 'https:')
+      done(e.data ? {
+        title: str(d.title), author: str(d.author),
+        duration: typeof d.duration === 'number' ? d.duration : undefined,
+        pic: pic && /^https:\/\/i\d\.hdslb\.com\/bfs\//.test(pic) ? pic : undefined,
+      } : null)
+    }
+    const timer = setTimeout(() => done(null), 10000)
+    addEventListener('message', onMessage)
+    document.body.append(frame)
+  })
+}
+
+/** hdslb refuses foreign Referers but allows CORS reads without one. */
+async function biliCover(pic: string): Promise<Uint8Array | null> {
+  for (const url of [`${pic}@640w_400h_1c.jpg`, pic]) {
+    try {
+      const res = await fetch(url, { referrerPolicy: 'no-referrer' })
+      if (res.ok && res.headers.get('content-type')?.startsWith('image/')) return await bytes(await res.blob())
+    } catch { /* try the next size */ }
+  }
+  return null
+}
+
 const parseBvid = (s: string) => s.match(/BV[0-9A-Za-z]{10}/)?.[0] ?? null
 const shortId = () => crypto.randomUUID().slice(0, 8)
 
@@ -177,11 +218,17 @@ export function githubApi(r: Remote, onWrite: (games: Game[], removed: string[],
     async addFanwork(id: string, url: string) {
       const bvid = parseBvid(url)
       if (!bvid) throw new HttpError(400, `没有识别出 BV 号：${url}`)
-      // Title, author and cover are filled in by the deploy workflow.
-      const f: Fanwork = { id: shortId(), bvid, addedAt: new Date().toISOString() }
+      // If the browser can't reach Bilibili, only the BV id is saved; `npm run hydrate` fills the rest.
+      const meta = await biliMeta(bvid)
+      const img = meta?.pic ? await biliCover(meta.pic) : null
+      const up = img && uploadTo(id, 'fanworks', `${bvid}.jpg`, img)
+      const f: Fanwork = {
+        id: shortId(), bvid, title: meta?.title, author: meta?.author, duration: meta?.duration,
+        cover: up ? up.src : undefined, addedAt: new Date().toISOString(),
+      }
       return edit(id, `fanwork: ${id}`, async (prev) => {
         if (prev.fanworks.some((x) => x.bvid === bvid)) throw new HttpError(409, `${bvid} 已经在二创列表里`)
-        return { patch: { fanworks: [...prev.fanworks, f] } }
+        return { patch: { fanworks: [...prev.fanworks, f] }, files: up ? [up] : [] }
       })
     },
 
