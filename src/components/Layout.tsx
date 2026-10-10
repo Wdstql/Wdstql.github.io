@@ -65,14 +65,14 @@ export function Layout({ children }: { children: (location: Location) => ReactNo
 
           {/* Below lg every action collapses to an icon so the bar never wraps or clips. */}
           <div className="ml-auto flex shrink-0 items-center gap-1.5 sm:gap-3">
-            <button onClick={() => setPaletteOpen(true)} className="hidden h-9 items-center gap-3 whitespace-nowrap px-3 text-[13px] lg:flex"
+            <button onClick={() => setPaletteOpen(true)} className="hidden h-9 items-center gap-3 whitespace-nowrap px-3 text-[13px] transition-colors hover:border-[var(--cyan)]! hover:text-white! lg:flex"
               style={{ border: '1px solid var(--line-2)', color: 'var(--dim)', background: 'rgba(255,255,255,.02)' }}>
               <SearchIcon /> 搜索游戏… <Kbd>⌘K</Kbd>
             </button>
-            <button onClick={() => setPaletteOpen(true)} className="flex h-9 w-8 items-center justify-center min-[380px]:w-9 lg:hidden" aria-label="搜索"
+            <button onClick={() => setPaletteOpen(true)} className="flex h-9 w-8 items-center justify-center transition-colors hover:border-[var(--cyan)]! hover:text-white! min-[380px]:w-9 lg:hidden" aria-label="搜索"
               style={{ border: '1px solid var(--line-2)', color: 'var(--muted)' }}><SearchIcon /></button>
             {lockable && !unlocked && (
-              <button onClick={() => setUnlockOpen(true)} className="flex h-9 shrink-0 items-center gap-2 whitespace-nowrap px-1.5 text-[12.5px] font-semibold min-[380px]:px-2 lg:px-3"
+              <button onClick={() => setUnlockOpen(true)} className="flex h-9 shrink-0 items-center gap-2 whitespace-nowrap px-1.5 text-[12.5px] font-semibold transition-colors hover:border-[var(--cyan)]! hover:text-white! min-[380px]:px-2 lg:px-3"
                 title="输入密码后可以在线编辑" aria-label="编辑" style={{ border: '1px solid var(--line-2)', color: 'var(--muted)' }}>
                 <LockIcon /><span className="hidden lg:inline">编辑</span>
               </button>

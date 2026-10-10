@@ -441,7 +441,7 @@ function Moments({ game, save }: { game: Game; save: (p: Partial<Game>, msg?: st
                 <div className="absolute inset-x-2 bottom-2"><InlineInput initial={m.caption ?? ''} placeholder="给这张截图写一句说明，回车保存" onDone={(c) => setCaption(m, c)} /></div>
               ) : m.caption && <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 px-3 pb-2.5 pt-8 text-[12.5px]" style={{ color: '#dfe4f2', background: 'linear-gradient(180deg, transparent, rgba(5,6,10,.88))' }}>{m.caption}</figcaption>}
               {editMode && (
-                <div className="absolute right-2 top-2 flex gap-1 opacity-0 transition-opacity group-hover:opacity-100">
+                <div className="absolute right-2 top-2 flex gap-1 opacity-0 transition-opacity focus-within:opacity-100 group-hover:opacity-100 [@media(hover:none)]:opacity-100">
                   <button className="btn h-7 px-2 text-[11px]" onClick={() => setCaptioning(m.id)}>说明</button>
                   <button className="btn btn-danger h-7 px-2 text-[11px]" onClick={() => remove(m)}>删除</button>
                 </div>
@@ -476,7 +476,7 @@ function Lightbox({ items, index, setIndex }: { items: Moment[]; index: number |
           <motion.img key={m.id} src={m.src} alt="" initial={{ opacity: 0, scale: .96 }} animate={{ opacity: 1, scale: 1 }} className="max-h-[82vh] max-w-full object-contain" style={{ boxShadow: '0 0 0 1px var(--line-2), 0 40px 120px -20px #000' }} onClick={(e) => e.stopPropagation()} />
           <div className="mt-4 flex items-center gap-6" onClick={(e) => e.stopPropagation()}>
             <button className="btn h-9" onClick={() => setIndex((index! - 1 + items.length) % items.length)}>←</button>
-            <div className="text-center">
+            <div className="min-w-0 max-w-[60vw] text-center">
               <div className="mono text-[11px]" style={{ color: 'var(--cyan)' }}>{String(index! + 1).padStart(2, '0')} / {String(items.length).padStart(2, '0')}</div>
               {m.caption && <div className="mt-1 text-[14px]">{m.caption}</div>}
             </div>

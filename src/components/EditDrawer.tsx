@@ -98,13 +98,13 @@ export function EditDrawer({ game, open, onClose }: { game: Game; open: boolean;
                     ))}
                   </div>
                 </F>
-                <div className="grid grid-cols-[1fr_1fr_1fr] gap-3">
-                  <F label={<>评分 0-100<Inferred show={!!game.inferred?.includes('score')} /></>}>
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                  <div className="col-span-2 sm:col-span-1"><F label={<>评分 0-100<Inferred show={!!game.inferred?.includes('score')} /></>}>
                     <div className="flex items-center gap-2">
                       <input className="input hud text-[17px]" type="number" min={0} max={100} value={d.score} onChange={(e) => set('score', e.target.value)} placeholder="—" />
                       <TierTag score={d.score === '' ? null : Number(d.score)} />
                     </div>
-                  </F>
+                  </F></div>
                   <F label="开始（年-月）"><input className="input" type="month" value={d.playedFrom ?? ''} onChange={(e) => set('playedFrom', e.target.value)} /></F>
                   <F label="结束（年-月）"><input className="input" type="month" value={d.playedTo ?? ''} onChange={(e) => set('playedTo', e.target.value)} /></F>
                 </div>

@@ -176,6 +176,7 @@ export function Constellation({ games, basis }: { games: Game[]; basis: TimeBasi
             </span>
           )
         })}
+        <span className="label absolute left-3" style={{ top: H - PAD.bottom + 22 }}>未评分</span>
       </div>
       {edge.left && <EdgeFade side="left" />}
       {edge.right && <EdgeFade side="right" />}
@@ -194,7 +195,6 @@ export function Constellation({ games, basis }: { games: Game[]; basis: TimeBasi
             )
           })}
           <div className="absolute left-0 right-0" style={{ top: H - PAD.bottom + 14, height: 1, background: 'linear-gradient(90deg, transparent, var(--line-2), transparent)' }} />
-          <span className="label absolute left-3" style={{ top: H - PAD.bottom + 22 }}>未评分</span>
 
           {/* year columns */}
           {years.map((y) => (

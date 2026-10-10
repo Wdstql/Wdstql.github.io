@@ -173,10 +173,10 @@ export function Inferred({ show }: { show: boolean }) {
 export function Toasts() {
   const { toasts } = useDb()
   return (
-    <div className="fixed bottom-6 right-6 z-[100] flex flex-col gap-2">
+    <div className="fixed bottom-6 left-6 right-6 z-[100] flex flex-col items-end gap-2 pointer-events-none sm:left-auto">
       {toasts.map((t) => (
         <motion.div key={t.id} initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }}
-          className="panel cut cut-sm px-4 py-3 text-sm"
+          className="panel cut cut-sm pointer-events-auto max-w-[420px] break-words px-4 py-3 text-sm"
           style={{ borderColor: t.kind === 'ok' ? 'rgba(70,227,255,.4)' : 'rgba(255,95,122,.5)', ['--cut' as string]: '8px' }}>
           <span className="mono mr-2" style={{ color: t.kind === 'ok' ? 'var(--cyan)' : '#ff5f7a' }}>{t.kind === 'ok' ? 'OK' : 'ERR'}</span>
           {t.msg}

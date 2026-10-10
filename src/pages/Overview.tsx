@@ -421,7 +421,7 @@ function TopStrip({ games }: { games: Game[] }) {
   return (
     <div className="mt-4 grid grid-cols-2 gap-px sm:grid-cols-5" style={{ background: 'var(--line)', border: '1px solid var(--line)' }}>
       {top.map((g, i) => (
-        <Link key={g.id} to={`/game/${g.id}`} className="group flex items-center gap-3 p-3 transition-colors hover:bg-white/[.03]" style={{ background: 'rgba(7,9,15,.9)' }}>
+        <Link key={g.id} to={`/game/${g.id}`} className={`group flex items-center gap-3 p-3 transition-colors hover:bg-white/[.03] ${top.length % 2 && i === top.length - 1 ? 'col-span-2 sm:col-span-1' : ''}`} style={{ background: 'rgba(7,9,15,.9)' }}>
           <span className="display text-[22px] font-black" style={{ color: i === 0 ? 'var(--pink)' : 'var(--dim)' }}>{i + 1}</span>
           <Cover game={g} sizes="sm" className="h-[54px] w-9 shrink-0" />
           <div className="min-w-0">
