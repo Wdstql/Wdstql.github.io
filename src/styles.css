@@ -242,6 +242,11 @@ button:focus:not(:focus-visible), a:focus:not(:focus-visible) { outline: none; }
 .prose-gl a { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; }
 .prose-gl blockquote { margin: 1.2em 0; padding: 12px 18px; border-left: 2px solid var(--cyan); background: rgba(70,227,255,.05); color: #b7c3dd; }
 .prose-gl ul, .prose-gl ol { padding-left: 1.4em; margin: 0 0 1em; }
+/* Tailwind's preflight strips list markers; bring them back for Markdown. */
+.prose-gl ul { list-style: disc; }
+.prose-gl ol { list-style: decimal; }
+.prose-gl ul ul { list-style: circle; margin-bottom: 0; }
+.prose-gl li + li { margin-top: .35em; }
 .prose-gl li::marker { color: var(--cyan); }
 .prose-gl code { font-family: var(--font-mono); font-size: .88em; padding: 2px 6px; background: rgba(255,255,255,.06); }
 .prose-gl hr { border: 0; height: 1px; background: var(--line-2); margin: 2em 0; }
