@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState, type MouseEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { AnimatePresence, motion } from 'motion/react'
+import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from 'motion/react'
 import type { Game } from '../types'
 import { STATUSES, STATUS_META } from '../types'
 import { useDb } from '../lib/db'
@@ -97,7 +97,7 @@ function Loading() {
         <div className="cover h-5 w-[520px] max-w-full" /><div className="cover h-5 w-[420px] max-w-full" />
         <div className="cover mt-8 h-24 w-full" />
       </div>
-      <div className="cover h-[600px] w-full" />
+      <div className="cover mx-auto aspect-[2/3] w-[78%] max-w-[340px]" />
     </div>
   )
 }
@@ -117,6 +117,15 @@ function Hero({ games, onBrowse }: { games: Game[]; onBrowse: () => void }) {
   const { db, byId } = useDb()
   const awardGame = (t: string) => { const a = db?.awards.find((x) => x.title === t); return a?.gameId ? byId.get(a.gameId) : undefined }
   const first = awardGame('玩的第一款')
+  // A fresh pick every time the home page mounts; "换一个" rerolls without repeating the current one.
+  const pool = useMemo(() => games.filter((g) => g.cover && g.hero && (g.status === 'finished' || g.status === 'playing' || g.status === 'paused')), [games])
+  const [seed, setSeed] = useState(Math.random)
+  const pick = pool.length ? pool[Math.floor(seed * pool.length)] : undefined
+  const shuffle = () => setSeed((s) => {
+    let n = Math.random()
+    while (pool.length > 1 && Math.floor(n * pool.length) === Math.floor(s * pool.length)) n = Math.random()
+    return n
+  })
   const stats = useMemo(() => {
     const scored = games.filter((g) => g.score != null)
     const count = (s: string) => games.filter((g) => g.status === s).length
@@ -130,7 +139,15 @@ function Hero({ games, onBrowse }: { games: Game[]; onBrowse: () => void }) {
 
   return (
     <section className="relative overflow-hidden">
-      {/* giant outline word */}
+      {/* backdrop: the picked game's banner, faded into the page like the detail page */}
+      <AnimatePresence>
+        {pick?.hero && (
+          <motion.img key={pick.id} src={pick.hero} alt="" aria-hidden className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+            initial={{ opacity: 0, scale: 1.04 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
+            style={{ filter: 'saturate(1.1)' }} />
+        )}
+      </AnimatePresence>
+      <div className="pointer-events-none absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(5,6,10,.55) 0%, rgba(5,6,10,.35) 38%, rgba(5,6,10,.88) 80%, var(--bg) 100%), linear-gradient(90deg, rgba(5,6,10,.95) 0%, rgba(5,6,10,.84) 40%, rgba(5,6,10,.3) 75%, rgba(5,6,10,.4) 100%)' }} />
 
       <div className="relative mx-auto grid max-w-[1480px] items-center gap-12 px-4 pb-16 pt-14 sm:px-8 lg:grid-cols-[1.25fr_1fr] lg:pt-20">
         <div>
@@ -181,44 +198,61 @@ function Hero({ games, onBrowse }: { games: Game[]; onBrowse: () => void }) {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .9 }}><PendingBanner className="mt-3" /></motion.div>
         </div>
 
-        <AwardBoard />
+        {pick && <FeatureCard key={pick.id} game={pick} onShuffle={shuffle} />}
       </div>
     </section>
   )
 }
 
-function AwardBoard() {
-  const { db, byId } = useDb()
-  const awards = db?.awards ?? []
-  if (!awards.length) return null
+function FeatureCard({ game, onShuffle }: { game: Game; onShuffle: () => void }) {
+  const mx = useMotionValue(0.5)
+  const my = useMotionValue(0.5)
+  const rx = useSpring(useTransform(my, [0, 1], [10, -10]), { stiffness: 150, damping: 18 })
+  const ry = useSpring(useTransform(mx, [0, 1], [-12, 12]), { stiffness: 150, damping: 18 })
+  const glareX = useTransform(mx, [0, 1], ['0%', '100%'])
+  const onMove = (e: MouseEvent<HTMLDivElement>) => {
+    const r = e.currentTarget.getBoundingClientRect()
+    mx.set((e.clientX - r.left) / r.width)
+    my.set((e.clientY - r.top) / r.height)
+  }
   return (
     <motion.div initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: .3, duration: .9, ease: [0.16, 1, 0.3, 1] }}
-      className="panel cut relative w-full p-4 sm:p-5">
-      <div className="mb-3 flex items-baseline justify-between gap-3">
-        <div className="flex items-baseline gap-2.5">
-          <span className="ttl text-[20px]">喜好表</span>
-          <span className="label" style={{ color: 'var(--amber)' }}>HALL OF FAME · {awards.length}</span>
-        </div>
-        <Link to="/hall" className="text-[12px] transition-colors hover:text-white" style={{ color: 'var(--muted)' }}>完整版 <span style={{ color: 'var(--cyan)' }}>→</span></Link>
-      </div>
-      <div className="grid grid-cols-2 gap-px" style={{ background: 'var(--line)', border: '1px solid var(--line)' }}>
-        {awards.map((a, i) => {
-          const g = a.gameId ? byId.get(a.gameId) : undefined
-          const inner = (
-            <>
-              {g ? <Cover game={g} sizes="sm" className="h-[42px] w-7 shrink-0 transition-transform duration-300 group-hover:-translate-y-0.5" />
-                : <span className="h-[42px] w-7 shrink-0" style={{ border: '1px dashed var(--line-2)' }} />}
-              <div className="min-w-0">
-                <div className="truncate text-[11px] font-semibold" style={{ color: 'var(--amber)' }}>{a.title}</div>
-                <div className="ttl truncate text-[14px] leading-snug" style={{ color: g ? '#e9edf8' : 'var(--dim)' }}>{g?.title ?? '空缺'}</div>
-              </div>
-            </>
-          )
-          const cls = `group flex items-center gap-2.5 px-2.5 py-1.5 transition-colors ${awards.length % 2 && i === awards.length - 1 ? 'col-span-2' : ''}`
-          return g
-            ? <Link key={a.id} to={`/game/${g.id}`} className={`${cls} hover:bg-white/[.04]`} style={{ background: 'rgba(7,9,15,.88)' }} title={`${a.title} · ${g.title}`}>{inner}</Link>
-            : <div key={a.id} className={cls} style={{ background: 'rgba(7,9,15,.88)' }}>{inner}</div>
-        })}
+      className="relative mx-auto w-full max-w-[440px]" style={{ perspective: 1200 }}>
+      {/* manga focus lines */}
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[150%] w-[150%] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-[.06]"
+        style={{ background: 'repeating-conic-gradient(from 0deg, #fff 0deg .6deg, transparent .6deg 6deg)', maskImage: 'radial-gradient(circle, transparent 32%, #000 46%, transparent 70%)', WebkitMaskImage: 'radial-gradient(circle, transparent 32%, #000 46%, transparent 70%)', animation: 'spin-slow 140s linear infinite' }} />
+      {/* orbit rings */}
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[118%] w-[118%] -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ border: '1px dashed rgba(70,227,255,.18)', animation: 'spin-slow 60s linear infinite' }} />
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[96%] w-[96%] -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ border: '1px solid rgba(255,92,168,.12)' }} />
+
+      <Link to={`/game/${game.id}`}>
+        <motion.div onMouseMove={onMove} onMouseLeave={() => { mx.set(.5); my.set(.5) }} style={{ rotateX: rx, rotateY: ry, transformStyle: 'preserve-3d' }}
+          className="relative mx-auto aspect-[2/3] w-[78%]">
+          <div className="absolute -inset-3 blur-2xl" style={{ background: 'linear-gradient(140deg, var(--cyan), var(--pink))', opacity: .18 }} />
+          <div className="relative h-full w-full overflow-hidden" style={{ clipPath: 'polygon(0 0, calc(100% - 26px) 0, 100% 26px, 100% 100%, 26px 100%, 0 calc(100% - 26px))', boxShadow: '0 30px 80px -20px rgba(0,0,0,.9)' }}>
+            <Cover game={game} sizes="lg" eager className="h-full w-full" />
+            <motion.div className="pointer-events-none absolute inset-0" style={{ background: useTransform(glareX, (x) => `linear-gradient(115deg, transparent 20%, rgba(255,255,255,.22) ${x}, transparent 70%)`) }} />
+          </div>
+          {/* Name plate sits on its own surface so it never fights the cover's logo. */}
+          <div className="absolute -bottom-8 left-5 right-5 px-5 py-3" style={{ transform: 'translateZ(50px)', background: 'rgba(8,10,17,.95)', border: '1px solid rgba(255,92,168,.45)', clipPath: 'polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)', boxShadow: '0 20px 40px -10px rgba(0,0,0,.8)' }}>
+            <div className="text-[11.5px] font-semibold tracking-[.12em]" style={{ color: 'var(--pink)' }}>随机推荐 · RANDOM PICK</div>
+            <div className="ttl mt-0.5 truncate text-[26px] leading-tight">{game.title}</div>
+          </div>
+          <div className="absolute -right-7 top-8 flex flex-col items-center" style={{ transform: 'translateZ(60px)' }}>
+            <div className="hud flex h-[74px] w-[74px] flex-col items-center justify-center" style={{ background: 'rgba(5,6,10,.85)', border: '1px solid var(--pink)', clipPath: 'polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)', boxShadow: '0 0 30px rgba(255,92,168,.4)' }}>
+              <span className="text-[26px] font-bold leading-none">{game.score ?? '—'}{isPending(game) && <sup className="text-[12px]" style={{ color: 'var(--amber)' }}>?</sup>}</span>
+              <span className="label text-[8px]" style={{ color: 'var(--pink)' }}>SCORE</span>
+            </div>
+          </div>
+          <div className="absolute -left-6 top-10 px-3 py-1.5" style={{ transform: 'translateZ(40px)', background: 'rgba(5,6,10,.9)', border: '1px solid rgba(70,227,255,.5)' }}>
+            <StatusBadge status={game.status} size="sm" />
+          </div>
+        </motion.div>
+      </Link>
+      <div className="mt-14 flex justify-center">
+        <button onClick={onShuffle} className="btn btn-ghost h-9 px-4 text-[12.5px]" style={{ color: 'var(--muted)' }}>
+          <span style={{ color: 'var(--cyan)' }}>↻</span> 换一个
+        </button>
       </div>
     </motion.div>
   )
