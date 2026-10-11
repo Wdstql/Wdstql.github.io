@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useRef, useState, type MouseEvent } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from 'motion/react'
+import { AnimatePresence, motion } from 'motion/react'
 import type { Game } from '../types'
 import { STATUSES, STATUS_META } from '../types'
 import { useDb } from '../lib/db'
@@ -97,7 +97,7 @@ function Loading() {
         <div className="cover h-5 w-[520px] max-w-full" /><div className="cover h-5 w-[420px] max-w-full" />
         <div className="cover mt-8 h-24 w-full" />
       </div>
-      <div className="cover mx-auto aspect-[2/3] w-[78%] max-w-[340px]" />
+      <div className="cover h-[600px] w-full" />
     </div>
   )
 }
@@ -116,7 +116,6 @@ function Empty() {
 function Hero({ games, onBrowse }: { games: Game[]; onBrowse: () => void }) {
   const { db, byId } = useDb()
   const awardGame = (t: string) => { const a = db?.awards.find((x) => x.title === t); return a?.gameId ? byId.get(a.gameId) : undefined }
-  const fav = awardGame('最爱的') ?? sortGames(games, 'score')[0]
   const first = awardGame('玩的第一款')
   const stats = useMemo(() => {
     const scored = games.filter((g) => g.score != null)
@@ -156,13 +155,11 @@ function Hero({ games, onBrowse }: { games: Game[]; onBrowse: () => void }) {
             {first ? <>从《<Link to={`/game/${first.id}`} className="font-bold text-white underline decoration-[var(--cyan)] decoration-2 underline-offset-4">{first.title}</Link>》出发，</> : null}
             这里存放着 <b className="text-white">{OWNER}</b> 的 <b className="hud text-white">{stats.total}</b> 款游戏记忆：<b className="hud text-white">{stats.finished}</b> 次通关，
             <b className="hud text-white">{stats.top}</b> 部打出了 90 分以上。
-            {fav && <>最爱，始终是《<Link to={`/game/${fav.id}`} className="font-bold" style={{ color: 'var(--pink)' }}>{fav.title}</Link>》。</>}
           </motion.p>
 
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .65 }} className="mt-9 flex flex-wrap gap-3">
             <button className="btn btn-primary h-11 px-6" onClick={onBrowse}>浏览档案 <span>↓</span></button>
             <Link to="/ranking" className="btn h-11 px-6">天梯榜 <span style={{ color: 'var(--cyan)' }}>→</span></Link>
-            <Link to="/hall" className="btn btn-ghost h-11 px-4" style={{ color: 'var(--muted)' }}>我的喜好表</Link>
           </motion.div>
 
           <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .75 }}
@@ -184,57 +181,45 @@ function Hero({ games, onBrowse }: { games: Game[]; onBrowse: () => void }) {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .9 }}><PendingBanner className="mt-3" /></motion.div>
         </div>
 
-        {fav && <FeatureCard game={fav} />}
+        <AwardBoard />
       </div>
     </section>
   )
 }
 
-function FeatureCard({ game }: { game: Game }) {
-  const mx = useMotionValue(0.5)
-  const my = useMotionValue(0.5)
-  const rx = useSpring(useTransform(my, [0, 1], [10, -10]), { stiffness: 150, damping: 18 })
-  const ry = useSpring(useTransform(mx, [0, 1], [-12, 12]), { stiffness: 150, damping: 18 })
-  const glareX = useTransform(mx, [0, 1], ['0%', '100%'])
-  const onMove = (e: MouseEvent<HTMLDivElement>) => {
-    const r = e.currentTarget.getBoundingClientRect()
-    mx.set((e.clientX - r.left) / r.width)
-    my.set((e.clientY - r.top) / r.height)
-  }
+function AwardBoard() {
+  const { db, byId } = useDb()
+  const awards = db?.awards ?? []
+  if (!awards.length) return null
   return (
     <motion.div initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: .3, duration: .9, ease: [0.16, 1, 0.3, 1] }}
-      className="relative mx-auto w-full max-w-[440px]" style={{ perspective: 1200 }}>
-      {/* manga focus lines */}
-      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[150%] w-[150%] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-[.06]"
-        style={{ background: 'repeating-conic-gradient(from 0deg, #fff 0deg .6deg, transparent .6deg 6deg)', maskImage: 'radial-gradient(circle, transparent 32%, #000 46%, transparent 70%)', WebkitMaskImage: 'radial-gradient(circle, transparent 32%, #000 46%, transparent 70%)', animation: 'spin-slow 140s linear infinite' }} />
-      {/* orbit rings */}
-      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[118%] w-[118%] -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ border: '1px dashed rgba(70,227,255,.18)', animation: 'spin-slow 60s linear infinite' }} />
-      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[96%] w-[96%] -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ border: '1px solid rgba(255,92,168,.12)' }} />
-
-      <Link to={`/game/${game.id}`}>
-        <motion.div onMouseMove={onMove} onMouseLeave={() => { mx.set(.5); my.set(.5) }} style={{ rotateX: rx, rotateY: ry, transformStyle: 'preserve-3d' }}
-          className="relative mx-auto aspect-[2/3] w-[78%]">
-          <div className="absolute -inset-3 blur-2xl" style={{ background: 'linear-gradient(140deg, var(--cyan), var(--pink))', opacity: .18 }} />
-          <div className="relative h-full w-full overflow-hidden" style={{ clipPath: 'polygon(0 0, calc(100% - 26px) 0, 100% 26px, 100% 100%, 26px 100%, 0 calc(100% - 26px))', boxShadow: '0 30px 80px -20px rgba(0,0,0,.9)' }}>
-            <Cover game={game} sizes="lg" eager className="h-full w-full" />
-            <motion.div className="pointer-events-none absolute inset-0" style={{ background: useTransform(glareX, (x) => `linear-gradient(115deg, transparent 20%, rgba(255,255,255,.22) ${x}, transparent 70%)`) }} />
-          </div>
-          {/* Name plate sits on its own surface so it never fights the cover's logo. */}
-          <div className="absolute -bottom-8 left-5 right-5 px-5 py-3" style={{ transform: 'translateZ(50px)', background: 'rgba(8,10,17,.95)', border: '1px solid rgba(255,92,168,.45)', clipPath: 'polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 0 100%)', boxShadow: '0 20px 40px -10px rgba(0,0,0,.8)' }}>
-            <div className="text-[11.5px] font-semibold tracking-[.12em]" style={{ color: 'var(--pink)' }}>最爱的 · No.1</div>
-            <div className="ttl mt-0.5 truncate text-[26px] leading-tight">{game.title}</div>
-          </div>
-          <div className="absolute -right-7 top-8 flex flex-col items-center" style={{ transform: 'translateZ(60px)' }}>
-            <div className="hud flex h-[74px] w-[74px] flex-col items-center justify-center" style={{ background: 'rgba(5,6,10,.85)', border: '1px solid var(--pink)', clipPath: 'polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)', boxShadow: '0 0 30px rgba(255,92,168,.4)' }}>
-              <span className="text-[26px] font-bold leading-none">{game.score ?? '—'}{isPending(game) && <sup className="text-[12px]" style={{ color: 'var(--amber)' }}>?</sup>}</span>
-              <span className="label text-[8px]" style={{ color: 'var(--pink)' }}>SCORE</span>
-            </div>
-          </div>
-          <div className="absolute -left-6 top-10 px-3 py-1.5" style={{ transform: 'translateZ(40px)', background: 'rgba(5,6,10,.9)', border: '1px solid rgba(70,227,255,.5)' }}>
-            <StatusBadge status={game.status} size="sm" />
-          </div>
-        </motion.div>
-      </Link>
+      className="panel cut relative w-full p-4 sm:p-5">
+      <div className="mb-3 flex items-baseline justify-between gap-3">
+        <div className="flex items-baseline gap-2.5">
+          <span className="ttl text-[20px]">喜好表</span>
+          <span className="label" style={{ color: 'var(--amber)' }}>HALL OF FAME · {awards.length}</span>
+        </div>
+        <Link to="/hall" className="text-[12px] transition-colors hover:text-white" style={{ color: 'var(--muted)' }}>完整版 <span style={{ color: 'var(--cyan)' }}>→</span></Link>
+      </div>
+      <div className="grid grid-cols-2 gap-px" style={{ background: 'var(--line)', border: '1px solid var(--line)' }}>
+        {awards.map((a, i) => {
+          const g = a.gameId ? byId.get(a.gameId) : undefined
+          const inner = (
+            <>
+              {g ? <Cover game={g} sizes="sm" className="h-[42px] w-7 shrink-0 transition-transform duration-300 group-hover:-translate-y-0.5" />
+                : <span className="h-[42px] w-7 shrink-0" style={{ border: '1px dashed var(--line-2)' }} />}
+              <div className="min-w-0">
+                <div className="truncate text-[11px] font-semibold" style={{ color: 'var(--amber)' }}>{a.title}</div>
+                <div className="ttl truncate text-[14px] leading-snug" style={{ color: g ? '#e9edf8' : 'var(--dim)' }}>{g?.title ?? '空缺'}</div>
+              </div>
+            </>
+          )
+          const cls = `group flex items-center gap-2.5 px-2.5 py-1.5 transition-colors ${awards.length % 2 && i === awards.length - 1 ? 'col-span-2' : ''}`
+          return g
+            ? <Link key={a.id} to={`/game/${g.id}`} className={`${cls} hover:bg-white/[.04]`} style={{ background: 'rgba(7,9,15,.88)' }} title={`${a.title} · ${g.title}`}>{inner}</Link>
+            : <div key={a.id} className={cls} style={{ background: 'rgba(7,9,15,.88)' }}>{inner}</div>
+        })}
+      </div>
     </motion.div>
   )
 }
