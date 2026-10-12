@@ -12,11 +12,16 @@
   "fanworks": [],
   "tags": [],
   "createdAt": "2026-10-08T19:07:32.657Z",
-  "updatedAt": "2026-10-08T19:07:32.657Z",
-  "titleEn": "Lateral Thinking Puzzles (Situation Puzzles)",
-  "steamAppId": null,
+  "updatedAt": "2026-10-12T15:37:40.263Z",
+  "titleEn": "",
+  "steamAppId": 1788850,
   "inferred": [
     "score",
     "status"
-  ]
+  ],
+  "release": "2022-07",
+  "developer": "橘音",
+  "cover": "/media/turtle-soup/cover.jpg",
+  "hero": "/media/turtle-soup/hero.jpg",
+  "thumb": "/media/turtle-soup/thumb-mv5f1drd.webp"
 }

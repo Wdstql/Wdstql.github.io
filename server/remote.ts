@@ -18,7 +18,9 @@ export async function searchSteam(term: string): Promise<SteamHit[]> {
   const body = (await res.json()) as { items?: { name: string; logo: string }[] }
   const hits = (body.items ?? []).flatMap((it) => {
     const m = it.logo.match(/\/apps\/(\d+)\//)
-    return m ? [{ appid: Number(m[1]), name: it.name, logo: it.logo }] : []
+    // Names come back HTML-escaped ("Draw &amp; Guess").
+    const name = it.name.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#0?39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+    return m ? [{ appid: Number(m[1]), name, logo: it.logo }] : []
   })
   // Steam ranks by popularity; prefer names that actually match what was typed
   // (e.g. "空洞骑士" should beat "空洞骑士：丝之歌").
