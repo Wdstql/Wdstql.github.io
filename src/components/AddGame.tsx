@@ -17,7 +17,8 @@ export function AddGameModal({ open, onClose, initialTitle = '' }: { open: boole
   const [score, setScore] = useState('')
   const [from, setFrom] = useState('')
   const [busy, setBusy] = useState(false)
-  // Online edit mode can't reach the Steam search API (no CORS); the owner pastes an AppID or store link instead.
+  // Online edit mode can't reach the Steam search API (no CORS). The deploy workflow looks the name up
+  // (exact match only); the owner pastes an AppID or store link when the name doesn't match.
   const [appLink, setAppLink] = useState('')
   const linkedAppId = Number(appLink.match(/\/app\/(\d+)/)?.[1] ?? (/^\s*\d+\s*$/.test(appLink) ? appLink.trim() : 0)) || null
 
@@ -46,7 +47,7 @@ export function AddGameModal({ open, onClose, initialTitle = '' }: { open: boole
         score: score === '' ? null : Number(score), playedFrom: from || undefined,
       })
       await reload()
-      toast(`已添加《${g.title}》${!appid ? '' : unlocked ? '，封面会在部署时从 Steam 下载' : '，封面已从 Steam 下载'}`)
+      toast(`已添加《${g.title}》${unlocked ? (appid ? '，封面会在部署时从 Steam 下载' : '，部署时会按名字在 Steam 上查找') : appid ? '，封面已从 Steam 下载' : ''}`)
       onClose()
       nav(`/game/${g.id}`)
     } catch (e) {
@@ -67,7 +68,7 @@ export function AddGameModal({ open, onClose, initialTitle = '' }: { open: boole
             <div className="label" style={{ color: 'var(--cyan)' }}>NEW RECORD // 新增档案</div>
             <h3 className="mt-2 text-2xl font-extrabold">添加一款游戏</h3>
             <p className="mt-1 text-[13px]" style={{ color: 'var(--muted)' }}>{unlocked
-              ? '输入名字。填上 Steam 商店链接或 AppID，部署时会自动下载封面、发售时间和开发商。'
+              ? '输入名字。部署时会按名字在 Steam 上查找，名字完全一致才会关联，并自动下载封面、发售时间和开发商。名字对不上时，填 Steam 商店链接或 AppID。'
               : '输入名字，从 Steam 结果里选一个，就会自动填好封面、发售时间和开发商。找不到也能直接手动创建。'}</p>
 
             <div className="mt-6">

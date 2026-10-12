@@ -2,13 +2,21 @@
   "id": "g-e45pzu",
   "title": "沉星之序",
   "platforms": [],
-  "genres": [],
+  "genres": [
+    "解谜"
+  ],
   "status": "unplayed",
   "score": null,
   "moments": [],
   "fanworks": [],
   "tags": [],
   "createdAt": "2026-10-12T15:21:28.810Z",
-  "updatedAt": "2026-10-12T15:21:28.811Z",
-  "steamAppId": null
+  "updatedAt": "2026-10-12T15:32:41.341Z",
+  "steamAppId": 499170,
+  "titleEn": "Order of the Sinking Star",
+  "release": "2026-10",
+  "developer": "Thekla, Inc.",
+  "cover": "/media/g-e45pzu/cover.jpg",
+  "hero": "/media/g-e45pzu/hero.jpg",
+  "thumb": "/media/g-e45pzu/thumb-mv5et0hd.webp"
 }

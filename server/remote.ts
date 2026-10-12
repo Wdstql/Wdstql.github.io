@@ -28,6 +28,22 @@ export async function searchSteam(term: string): Promise<SteamHit[]> {
   return hits.map((h, i) => ({ h, i })).sort((a, b) => rank(a.h.name) - rank(b.h.name) || a.i - b.i).map((x) => x.h).slice(0, 10)
 }
 
+/**
+ * Finds the AppID for a game added by name only. Accepts a hit only when its Steam name equals
+ * the title or English title exactly (ignoring case, spaces and ™®:-), and only when one AppID
+ * matches; anything fuzzier is left for the owner to link by hand.
+ */
+export async function findSteamApp(title: string, titleEn?: string): Promise<SteamHit | null> {
+  const norm = (x: string) => x.toLowerCase().replace(/[\s™®:：\-—]/g, '')
+  const names = new Set([title, titleEn].filter((x): x is string => !!x).map(norm))
+  for (const term of [title, titleEn]) {
+    if (!term) continue
+    const exact = (await searchSteam(term)).filter((h) => names.has(norm(h.name)))
+    if (new Set(exact.map((h) => h.appid)).size === 1) return exact[0]
+  }
+  return null
+}
+
 const GENRE_MAP: Record<string, string> = {
   动作: '动作', 'Action': '动作', 角色扮演: '角色扮演', 'RPG': '角色扮演', 策略: '策略', 'Strategy': '策略',
 }
