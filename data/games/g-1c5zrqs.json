@@ -2,13 +2,22 @@
   "id": "g-1c5zrqs",
   "title": "亰都幻都 樱花幻舞",
   "platforms": [],
-  "genres": [],
+  "genres": [
+    "动作",
+    "角色扮演"
+  ],
   "status": "finished",
   "score": null,
   "moments": [],
   "fanworks": [],
   "tags": [],
   "createdAt": "2026-10-12T15:49:12.905Z",
-  "updatedAt": "2026-10-12T15:49:12.905Z",
-  "steamAppId": null
+  "updatedAt": "2026-10-12T15:49:37.068Z",
+  "steamAppId": 4449410,
+  "titleEn": "KYOTO XANADU -the Blooming Phantom-",
+  "release": "2026-01",
+  "developer": "Nihon Falcom",
+  "cover": "/media/g-1c5zrqs/cover.jpg",
+  "hero": "/media/g-1c5zrqs/hero.jpg",
+  "thumb": "/media/g-1c5zrqs/thumb-mv5fgxet.webp"
 }
