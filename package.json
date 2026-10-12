@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "game": "node scripts/game.ts",
+    "anime": "node scripts/anime.ts",
     "typecheck": "tsc -b",
     "hydrate": "node scripts/hydrate.ts",
     "edit-key": "node scripts/edit-key.ts"

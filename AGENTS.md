@@ -2,6 +2,8 @@
 
 wdstql 的个人游戏生涯档案网站，发布在 https://wdstql.github.io/ 。Vite + React + TypeScript，数据全部是本地文件，没有数据库。
 
+同一个项目里还有一个独立的**番剧子站**，地址 https://wdstql.github.io/anime/ ，说明见文末「番剧子站」一节。
+
 ## 数据在哪里
 
 | 路径 | 内容 |
@@ -75,3 +77,42 @@ npm run game -- list --status 游玩中
 - 改完代码跑 `npm run typecheck`。
 - 网站部署在 GitHub Pages：推送到 `main` 就会自动构建发布。只有用户要求发布时才 `git push`。动手前先 `git pull --rebase`，因为用户可能在网站上在线改过数据。
 - 不要读取、打印或改动 `public/edit-key.json` 的内容，也不要尝试解密。更换密码让用户自己运行 `npm run edit-key`。
+
+## 番剧子站（/anime）
+
+番剧记录和游戏主站共用项目、路由和编辑密码，页面与数据完全独立。游戏主站顶栏的「番剧」是它唯一的入口。
+
+| 路径 | 内容 |
+| --- | --- |
+| `data/anime/<id>.json` | 一季一个文件。同一部作品的不同季度是不同记录，用 `series` 串起来 |
+| `public/media/anime/<id>/` | 封面 `cover-*.jpg`、横幅 `hero-*.jpg`、缩略图 `thumb-*.webp` |
+| `src/anime/model.ts` | 数据结构与校验（`Anime`、`WatchStatus`、`AirStatus`） |
+| `src/anime/sources.ts` | 从 Bangumi（中文名、简介、标签、封面）和 AniList（横幅、主色、放送状态）读取资料 |
+
+```bash
+npm run anime -- search "间谍过家家"                  # 查 Bangumi 条目 ID（每一季是单独的条目）
+npm run anime -- add 498378 --status 正在看            # 按 Bangumi ID 新增，资料和封面自动填
+npm run anime -- add 975 --status 已看过 --progress "看到多弗朗明哥之前" --title 海贼王
+npm run anime -- set spy-family-s3 status=已看过 score=90 oneLiner="阿尼亚最可爱"
+npm run anime -- refresh all                          # 重新读取放送状态、集数、Bangumi 评分
+npm run anime -- rm <id>                              # 移到 data/.trash/anime
+```
+
+主要字段：
+
+| 字段 | 说明 |
+| --- | --- |
+| `title` / `titleJa` / `titleRomaji` | 中文名（必填）/ 日文名 / 罗马音 |
+| `series` / `season` | 系列名（同系列各季相同）/ 季度标签，如「第二季」「剧场版」 |
+| `air` | **是否完结**（必填）：`finished` 已完结 · `airing` 连载中 · `upcoming` 未开播 |
+| `airStart` / `airEnd` | 首播 / 完结，`YYYY-MM`。首页「季度表」按 `airStart` 分到冬春夏秋 |
+| `format` / `episodes` / `studio` / `source` | 形式（TV、剧场版、OVA、WEB、特别篇）/ 集数 / 制作公司 / 原作类型 |
+| `status` | 用户的观看状态：`watched` 已看过 · `watching` 正在看 · `planned` 待观看 · `dropped` 已弃坑 |
+| `progress` / `watchedEps` | 没看完时的进度说明 / 看到第几话 |
+| `score` / `oneLiner` / `review` / `tags` / `watchedFrom` / `watchedTo` | 与游戏相同，都是用户的主观记录，不要编造 |
+| `bgmScore` | Bangumi 社区评分（0–10），不是用户的评分 |
+| `inferred` | 推断、未经用户确认的字段名，编辑模式下显示「待确认」 |
+
+- 在线编辑：浏览器可以直接搜索 Bangumi 和 AniList（两者都允许跨域）。封面先存远程地址，部署时 `npm run hydrate` 下载进仓库。
+- 部署流程每周日自动跑一次，`hydrate` 会刷新「连载中 / 未开播」番剧的放送状态和集数。
+

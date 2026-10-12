@@ -4,7 +4,10 @@
 //   - games added by name only (no steamAppId, no cover): look up the AppID by exact name
 //   - games with a steamAppId but no cover: Steam art + empty info fields
 //   - fanworks without a title: Bilibili title, author, duration, cover
+//   - anime added online: download the Bangumi / AniList art the record still links to
+//   - anime that are airing or upcoming: refresh 是否完结 and the episode count
 import { listGames, updateGame } from '../server/store.ts'
+import { listAnime, refreshAnime, updateAnime } from '../server/anime.ts'
 import { biliInfo, fetchSteamArt, findSteamApp, steamInfo } from '../server/remote.ts'
 import type { Game } from '../src/types.ts'
 
@@ -49,6 +52,22 @@ for (const g of await listGames()) {
     await updateGame(g.id, patch)
     changed++
     console.log(`[hydrate] ${g.id}: ${Object.keys(patch).join(', ')}`)
+  }
+}
+
+for (const a of await listAnime()) {
+  try {
+    if (a.air !== 'finished' && a.bangumiId) {
+      const r = await refreshAnime(a.id)
+      if (r.air !== a.air || r.episodes !== a.episodes) { changed++; console.log(`[hydrate] anime ${a.id}: ${a.air} → ${r.air}，${a.episodes ?? '?'} → ${r.episodes ?? '?'} 话`) }
+    } else if (/^https?:/.test(a.cover ?? '') || /^https?:/.test(a.hero ?? '')) {
+      // updateAnime downloads remote art into public/media/anime/<id>/ and makes the thumbnail.
+      await updateAnime(a.id, {})
+      changed++
+      console.log(`[hydrate] anime ${a.id}: 已下载封面 / 横幅`)
+    }
+  } catch (e) {
+    console.warn(`[hydrate] anime ${a.id}: ${(e as Error).message}`)
   }
 }
 

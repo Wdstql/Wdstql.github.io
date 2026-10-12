@@ -61,6 +61,12 @@ export function Layout({ children }: { children: (location: Location) => ReactNo
                 )}
               </NavLink>
             ))}
+            {/* The anime sub-site lives at /anime with its own look; this is its only entrance. */}
+            <Link to="/anime" className="group relative flex items-center gap-1 whitespace-nowrap px-1 py-2 min-[380px]:px-1.5 sm:px-4" title="番剧生涯 · ANIME LIFE">
+              <svg width="9" height="9" viewBox="0 0 24 24" aria-hidden className="hidden transition-transform duration-500 group-hover:rotate-90 min-[400px]:block"><path d="M12 0c.9 6.4 5.6 11.1 12 12-6.4.9-11.1 5.6-12 12-.9-6.4-5.6-11.1-12-12C6.4 11.1 11.1 6.4 12 0Z" fill="#ff7eb6" /></svg>
+              <span className="text-[12.5px] font-semibold transition-colors group-hover:text-white min-[380px]:text-[13px] sm:text-[14px]" style={{ color: '#ff9cc8' }}>番剧</span>
+              <span className="mono ml-0.5 hidden text-[9px] tracking-[.2em] lg:inline" style={{ color: 'rgba(255,156,200,.6)' }}>ANIME</span>
+            </Link>
           </nav>
 
           {/* Below lg every action collapses to an icon so the bar never wraps or clips. */}

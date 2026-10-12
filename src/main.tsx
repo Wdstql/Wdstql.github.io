@@ -1,4 +1,4 @@
-import { StrictMode, useEffect, useState, type ReactNode } from 'react'
+import { lazy, StrictMode, Suspense, useEffect, useState, type ReactNode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes, type Location } from 'react-router-dom'
 import { MotionConfig, MotionGlobalConfig } from 'motion/react'
@@ -9,6 +9,9 @@ import { Overview } from './pages/Overview'
 import { GameDetail } from './pages/GameDetail'
 import { Ranking } from './pages/Ranking'
 import { Hall } from './pages/Hall'
+
+// The anime sub-site shares the shell and router but nothing else; it loads as its own chunk.
+const AnimeApp = lazy(() => import('./anime/AnimeApp'))
 
 // Background tabs never fire requestAnimationFrame, which would freeze entrance
 // animations half-way (e.g. when opened via ctrl+click or captured headlessly).
@@ -30,19 +33,24 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Motion>
       <BrowserRouter>
-        <DbProvider>
-          <Layout>
-            {(location: Location) => (
-            <Routes location={location}>
-              <Route path="/" element={<Overview />} />
-              <Route path="/game/:id" element={<GameDetail />} />
-              <Route path="/ranking" element={<Ranking />} />
-              <Route path="/hall" element={<Hall />} />
-              <Route path="*" element={<Overview />} />
-            </Routes>
-            )}
-          </Layout>
-        </DbProvider>
+        <Routes>
+          <Route path="/anime/*" element={<Suspense fallback={<div style={{ minHeight: '100vh', background: '#07061a' }} />}><AnimeApp /></Suspense>} />
+          <Route path="*" element={
+            <DbProvider>
+              <Layout>
+                {(location: Location) => (
+                <Routes location={location}>
+                  <Route path="/" element={<Overview />} />
+                  <Route path="/game/:id" element={<GameDetail />} />
+                  <Route path="/ranking" element={<Ranking />} />
+                  <Route path="/hall" element={<Hall />} />
+                  <Route path="*" element={<Overview />} />
+                </Routes>
+                )}
+              </Layout>
+            </DbProvider>
+          } />
+        </Routes>
       </BrowserRouter>
     </Motion>
   </StrictMode>,

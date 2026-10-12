@@ -1,7 +1,7 @@
 // Vite plugin: serves a small JSON API under /api during `vite dev` / `vite preview`,
 // and writes a read-only snapshot (data/db.json) into the static build.
 import { watch } from 'node:fs'
-import { readFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import type { IncomingMessage, ServerResponse } from 'node:http'
 import type { Connect, Plugin, ViteDevServer } from 'vite'
@@ -11,6 +11,7 @@ import {
   readAwards, setCoverFromBytes, updateGame, writeAwards, AWARDS_FILE, MEDIA_DIR,
 } from './store.ts'
 import { biliInfo, fetchSteamArt, searchSteam, steamInfo } from './remote.ts'
+import { ANIME_DIR, animeRoute, listAnime } from './anime.ts'
 
 const MAX_UPLOAD = 40 * 1024 * 1024
 
@@ -97,6 +98,11 @@ function middleware(): Connect.NextHandleFunction {
       // GET /api/db
       if (parts[0] === 'db' && method === 'GET') return send(res, 200, await snapshot(true))
 
+      if (parts[0] === 'anime') {
+        const done = await animeRoute(parts, method, url, req, () => readBody(req), <T,>() => readJson<T>(req), (status, body) => send(res, status, body))
+        if (done) return
+      }
+
       if (parts[0] === 'steam') {
         if (parts[1] === 'search') return send(res, 200, await searchSteam(url.searchParams.get('q') ?? ''))
         if (parts[1] === 'app' && parts[2]) return send(res, 200, await steamInfo(Number(parts[2])))
@@ -150,16 +156,17 @@ function middleware(): Connect.NextHandleFunction {
 }
 
 function watchData(server: ViteDevServer) {
-  let timer: ReturnType<typeof setTimeout> | undefined
-  const ping = () => {
-    clearTimeout(timer)
-    timer = setTimeout(() => server.ws.send({ type: 'custom', event: 'game-life:changed' }), 150)
+  const timers: Record<string, ReturnType<typeof setTimeout>> = {}
+  const ping = (event: string) => () => {
+    clearTimeout(timers[event])
+    timers[event] = setTimeout(() => server.ws.send({ type: 'custom', event }), 150)
   }
-  try {
-    watch(GAMES_DIR, ping)
-    watch(AWARDS_FILE, ping)
-  } catch {
-    // Directory may not exist yet on first run.
+  for (const [target, event] of [[GAMES_DIR, 'game-life:changed'], [AWARDS_FILE, 'game-life:changed'], [ANIME_DIR, 'anime-life:changed']]) {
+    try {
+      watch(target, ping(event))
+    } catch {
+      // Directory may not exist yet on first run.
+    }
   }
 }
 
@@ -175,6 +182,21 @@ export function gameLifeApi(): Plugin {
     },
     async generateBundle() {
       this.emitFile({ type: 'asset', fileName: 'data/db.json', source: JSON.stringify(await snapshot(false)) })
+      this.emitFile({ type: 'asset', fileName: 'data/anime.json', source: JSON.stringify({ anime: await listAnime(), editable: false }) })
+    },
+    // /anime/ gets its own copy of the shell so it answers 200 with the sub-site's title and colours
+    // (GitHub Pages would otherwise serve 404.html for it).
+    async writeBundle(options) {
+      const dir = options.dir ?? 'dist'
+      const html = await readFile(path.join(dir, 'index.html'), 'utf8').catch(() => null)
+      if (!html) return
+      const anime = html
+        .replace(/<title>[^<]*<\/title>/, '<title>wdstql 的番剧生涯 · ANIME LIFE</title>')
+        .replace(/(<meta name="description" content=")[^"]*/, '$1wdstql 的番剧档案：看过、在看、想看的每一部番剧，按季度记录。')
+        .replace(/(<meta name="theme-color" content=")[^"]*/, '$1#07061a')
+        .replace(/(html,body\{[^}]*background:)#05060a/, '$1#07061a')
+      await mkdir(path.join(dir, 'anime'), { recursive: true })
+      await writeFile(path.join(dir, 'anime', 'index.html'), anime)
     },
   }
 }

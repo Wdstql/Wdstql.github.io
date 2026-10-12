@@ -8,6 +8,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Weekly rebuild so airing anime flip to 已完结 without a manual push.
+  schedule:
+    - cron: '0 20 * * 0'
 
 permissions:
   contents: write
@@ -34,7 +37,7 @@ jobs:
 
       - run: npm ci
 
-      - name: Fetch Steam art and Bilibili info
+      - name: Fetch Steam art, Bilibili info and anime art / airing status
         run: npm run hydrate
 
       - name: Commit fetched media
@@ -43,7 +46,7 @@ jobs:
           if git diff --cached --quiet; then exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "hydrate: Steam art and Bilibili info"
+          git commit -m "hydrate: Steam art, Bilibili info and anime data"
           git pull --rebase origin main && git push origin HEAD:main || echo "push skipped; the next run will retry"
 
       - run: npm run build

@@ -6,9 +6,9 @@ import { slugify } from '../types'
 import { HttpError, normalizeGame } from '../record'
 import { toBase64, type Remote } from './editKey'
 
-type FileChange = { path: string; content: string | Uint8Array } | { path: string; delete: true }
+export type FileChange = { path: string; content: string | Uint8Array } | { path: string; delete: true }
 
-async function gh<T>(r: Remote, method: string, path: string, body?: unknown): Promise<T> {
+export async function gh<T>(r: Remote, method: string, path: string, body?: unknown): Promise<T> {
   const res = await fetch(`https://api.github.com/repos/${r.repo}${path}`, {
     method,
     cache: 'no-store',
@@ -23,7 +23,7 @@ async function gh<T>(r: Remote, method: string, path: string, body?: unknown): P
   return data as T
 }
 
-async function readFile(r: Remote, path: string): Promise<string | null> {
+export async function readFile(r: Remote, path: string): Promise<string | null> {
   try {
     const f = await gh<{ content: string }>(r, 'GET', `/contents/${path}?ref=${r.branch}`)
     const bytes = Uint8Array.from(atob(f.content.replace(/\n/g, '')), (c) => c.charCodeAt(0))
@@ -44,7 +44,7 @@ async function readGame(r: Remote, id: string): Promise<Game> {
  * One atomic commit. `build` runs again on every retry, so it always works from the
  * latest branch head (the deploy workflow also pushes, e.g. after fetching Steam art).
  */
-async function commit(r: Remote, message: string, build: () => Promise<FileChange[]>): Promise<void> {
+export async function commit(r: Remote, message: string, build: () => Promise<FileChange[]>): Promise<void> {
   for (let attempt = 0; ; attempt++) {
     const ref = await gh<{ object: { sha: string } }>(r, 'GET', `/git/ref/heads/${r.branch}`)
     const head = await gh<{ tree: { sha: string } }>(r, 'GET', `/git/commits/${ref.object.sha}`)
@@ -70,7 +70,7 @@ const gameFile = (g: Game): FileChange => ({ path: `data/games/${g.id}.json`, co
 
 const EXT_BY_TYPE: Record<string, string> = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp', 'image/gif': 'gif', 'image/avif': 'avif' }
 
-function extFor(file: File): string {
+export function extFor(file: File): string {
   const fromName = file.name.match(/\.([a-z0-9]{2,5})$/i)?.[1]?.toLowerCase()
   if (fromName && ['jpg', 'jpeg', 'png', 'webp', 'gif', 'avif'].includes(fromName)) return fromName === 'jpeg' ? 'jpg' : fromName
   return EXT_BY_TYPE[file.type] ?? 'jpg'
@@ -79,7 +79,7 @@ function extFor(file: File): string {
 const bytes = async (b: Blob) => new Uint8Array(await b.arrayBuffer())
 
 /** 300×450 cover-fit thumbnail, like server/store.ts withThumb (which uses sharp). */
-async function makeThumb(file: File): Promise<{ data: Uint8Array; ext: string } | null> {
+export async function makeThumb(file: File): Promise<{ data: Uint8Array; ext: string } | null> {
   try {
     const img = await createImageBitmap(file)
     const W = 300, H = 450
