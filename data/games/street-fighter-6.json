@@ -2,14 +2,22 @@
   "id": "street-fighter-6",
   "title": "street fighter 6",
   "platforms": [],
-  "genres": [],
+  "genres": [
+    "动作"
+  ],
   "status": "playing",
   "score": null,
   "moments": [],
   "fanworks": [],
   "tags": [],
   "createdAt": "2026-10-17T11:43:16.416Z",
-  "updatedAt": "2026-10-17T11:43:16.417Z",
-  "steamAppId": null,
-  "playedFrom": "2026-10"
+  "updatedAt": "2026-10-17T11:43:41.976Z",
+  "steamAppId": 1364780,
+  "playedFrom": "2026-10",
+  "titleEn": "Street Fighter 6",
+  "release": "2023-06",
+  "developer": "CAPCOM Co., Ltd.",
+  "cover": "/media/street-fighter-6/cover.jpg",
+  "hero": "/media/street-fighter-6/hero.jpg",
+  "thumb": "/media/street-fighter-6/thumb-mvcbvxdh.webp"
 }
