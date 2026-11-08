@@ -2,14 +2,23 @@
   "id": "g-cd8onh",
   "title": "影之刃零",
   "platforms": [],
-  "genres": [],
+  "genres": [
+    "动作",
+    "角色扮演"
+  ],
   "status": "finished",
   "score": 96,
   "moments": [],
   "fanworks": [],
   "tags": [],
   "createdAt": "2026-11-08T15:04:47.511Z",
-  "updatedAt": "2026-11-08T15:04:47.511Z",
-  "steamAppId": null,
-  "playedFrom": "2026-11"
+  "updatedAt": "2026-11-08T15:05:08.834Z",
+  "steamAppId": 4115450,
+  "playedFrom": "2026-11",
+  "titleEn": "Phantom Blade Zero",
+  "release": "2026-10",
+  "developer": "S-GAME Studio",
+  "cover": "/media/g-cd8onh/cover.jpg",
+  "hero": "/media/g-cd8onh/hero.jpg",
+  "thumb": "/media/g-cd8onh/thumb-mw7yrqbm.webp"
 }
